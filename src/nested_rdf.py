@@ -27,7 +27,7 @@ class NestedRDF(object):
 
         try:
 
-            # may only supply to the serialized rdflib.query.Result in json-ld
+            # may only apply to the serialized rdflib.query.Result in json-ld
 
             ori = json.loads(rdf)
             mapping = {}

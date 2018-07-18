@@ -1,7 +1,6 @@
 from rdflib import Graph
 from rdflib.plugins.stores.sparqlstore import SPARQLStore
 from rdflib.query import Result
-from SPARQLWrapper import XML, JSON, JSONLD
 
 from .sparql_query import SPARQLQuery
 from .nested_rdf import NestedRDF
