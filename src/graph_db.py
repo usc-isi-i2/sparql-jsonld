@@ -2,6 +2,8 @@ from rdflib import Graph
 from rdflib.plugins.stores.sparqlstore import SPARQLStore
 from rdflib.query import Result
 
+from SPARQLWrapper import SPARQLWrapper, JSONLD
+
 from .sparql_query import SPARQLQuery
 from .nested_rdf import NestedRDF
 
@@ -19,6 +21,11 @@ class GraphDB(object):
         """
 
         self.graph = Graph(SPARQLStore(endpoint=database, context_aware=False))
+
+        # TODO: remove when rdflib update (merge pr #744 https://github.com/RDFLib/rdflib/pull/744)
+        self.backup = SPARQLWrapper(database)
+        self.backup.setReturnFormat(JSONLD)
+
         # More possible params:
         # https://github.com/RDFLib/rdflib/blob/d62fa7075da684ffa216c8e6f98cfb3554bb64ab/rdflib/plugins/stores/sparqlstore.py
 
@@ -29,17 +36,6 @@ class GraphDB(object):
         :return: RDFWrapper holding the results
         """
 
-        res = self.send_query(query)
-
-        return self.wrap(res)
-
-    def send_query(self, query: str or SPARQLQuery):
-        """
-        Take in a SPARQL CONSTRUCT query and send it to the database, return a ConjunctiveGraph
-        :param query: a SPARQL query string or a QueryUnit object
-        :return: query results
-        """
-
         try:
             if isinstance(query, str):
                 res = self.graph.query(query)
@@ -48,9 +44,14 @@ class GraphDB(object):
             else:
                 raise Exception('Invalid Type of "query".')
         except Exception:
-            raise Exception('Invalid Query')
+            try:
+                self.backup.setQuery(query if isinstance(query, str) else query.str_query)
+                res = self.backup.query().convert()
+            except Exception as e:
+                print(e)
+                res = Result(type_='')
 
-        return res
+        return self.wrap(res)
 
     @staticmethod
     def wrap(res: Result):
@@ -66,4 +67,3 @@ class GraphDB(object):
         else:
             print('Unknown type.')
         return None
-

@@ -2,6 +2,7 @@ from rdflib.plugins.sparql.parserutils import prettify_parsetree, CompValue
 from rdflib.term import URIRef, Literal, BNode, Variable
 from pyparsing import ParseResults
 
+# TODO: refactor, support [], functions, graph etc.
 
 class TreeStringifier(object):
     def __init__(self):
@@ -113,7 +114,7 @@ class TreeStringifier(object):
                         ret.append(self.tree2str(x))
                     out.append('{\n%s\n}' % ('\n} UNION {\n'.join(ret)))
                 elif len(t['graph']) == 1:
-                    out.append('{\n%s\n}'%self.tree2str(t['graph']))
+                    out.append('{\n%s\n}' % self.tree2str(t['graph']))
             elif t.name in ['Filter']:
                 out.append('\n%s ( %s ) .\n' % (t.name.upper(), self.ele2str(t['expr'])))
 
@@ -139,6 +140,6 @@ class TreeStringifier(object):
         return joiner.join(out)
 
     @staticmethod
-    def pretty_print(self, query_tree):
+    def pretty_print(query_tree):
         print(prettify_parsetree(query_tree))
 

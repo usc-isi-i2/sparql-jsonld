@@ -1,5 +1,6 @@
 from src.graph_db import GraphDB
 from src.sparql_query import SPARQLQuery
+import json
 
 db = "http://dbpedia.org/sparql"
 
@@ -33,8 +34,6 @@ frame = {
 
 graph = GraphDB(db)
 q = SPARQLQuery(query, frame)
-
 res = graph.query(q)
 
-import json
 print(json.dumps(res.nested_jsonld, indent=2))
