@@ -3,12 +3,13 @@ from rdflib.term import URIRef, Literal, BNode, Variable
 from pyparsing import ParseResults
 
 
-class TreeFormatter(object):
+class TreeStringifier(object):
     def __init__(self):
         self.fixed_recursion = {
             'where': '\nWHERE { \n%s\n}\n',
             'orderby': 'ORDER BY %s\n',
-            'groupby': 'GROUP BY %s\n'
+            'groupby': 'GROUP BY %s\n',
+            'datasetClause': 'FROM %s'
         }
 
     def format(self, query_tree):
@@ -18,7 +19,10 @@ class TreeFormatter(object):
     def ele2str(self, ele):
         if isinstance(ele, Literal):
             return str(ele.value)
-        elif isinstance(ele, (URIRef, BNode, Variable)):
+        elif isinstance(ele, BNode):
+            ret = str(ele.toPython())
+            return ret if ret[0] == '_' else '[]'
+        elif isinstance(ele, (URIRef, Variable)):
             return ele.n3()
         elif isinstance(ele, CompValue):
             if ele.name == 'pname' and 'localname' in ele:
@@ -115,6 +119,7 @@ class TreeFormatter(object):
 
             else:
                 for k, v in t.items():
+                    # if k == 'order':
                     out.append(self.tree2str(v))
         elif isinstance(t, dict):
             for k, v in t.items():
