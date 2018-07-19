@@ -1,6 +1,6 @@
 from src.tree_stringifier import TreeStringifier
 from rdflib.plugins.sparql.parser import parseQuery
-
+from rdflib.plugins.sparql.parserutils import prettify_parsetree
 from rdflib import Graph
 from rdflib.plugins.stores.sparqlstore import SPARQLStore
 
@@ -15,9 +15,9 @@ tf = TreeStringifier()
 g = Graph(SPARQLStore(endpoint=db, context_aware=False))
 sparql = SPARQLWrapper("http://dbpedia.org/sparql")
 
-for i in range(1, 18, 1):
-    print('\n\n ========%d==========' % (i))
-    with open('example_queries/%d.txt' % (i)) as f:
+for i in range(1, 23, 1):
+    print('\n\n ========%d==========' % i)
+    with open('../resources/queries/%d.txt' % i) as f:
         q = f.read()
 
     try:
@@ -54,9 +54,16 @@ for i in range(1, 18, 1):
             sparql.setQuery(q_)
             res = sparql.query()
             print(' -  Good Revert')
+            # print(q)
+            # print('-------')
+            # print(prettify_parsetree(parsed))
+            # print('-------')
+            # print(q_)
         except Exception as e_:
             print(q)
-            print()
+            print('-------')
+            print(prettify_parsetree(parsed))
+            print('-------')
             print(q_)
             print(' x Fail Query', e, e_)
             continue

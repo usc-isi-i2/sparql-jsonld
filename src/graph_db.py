@@ -2,6 +2,7 @@ from rdflib import Graph
 from rdflib.plugins.stores.sparqlstore import SPARQLStore
 from rdflib.query import Result
 
+
 from SPARQLWrapper import SPARQLWrapper, JSONLD
 
 from .sparql_query import SPARQLQuery
@@ -67,3 +68,4 @@ class GraphDB(object):
         else:
             print('Unknown type.')
         return None
+

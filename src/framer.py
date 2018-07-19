@@ -2,7 +2,6 @@ from rdflib.term import Variable, Literal
 from rdflib.plugins.sparql.sparql import CompValue
 from pyparsing import ParseResults
 from rdflib.plugins.sparql.parserutils import plist
-import json
 
 
 class Framer(object):
@@ -26,8 +25,12 @@ class Framer(object):
         for k, v in tree[-1].items():
             if k not in ['projection', 'modifier']:
                 if k == 'where' and 'part' in v:
-                    # TODO: deduplicate and make the extra triples optional
-                    v['part'].append(CompValue('TriplesBlock', triples=plist([ParseResults(x) for x in triples])))
+                    # TODO: deduplicate
+                    v['part'].append(
+                        CompValue(
+                            'OptionalGraphPattern',
+                            graph=CompValue('TriplesBlock',
+                                            triples=plist([ParseResults(x) for x in triples]))))
                 new_query[k] = v
 
         return ParseResults([tree[0], new_query])
@@ -48,6 +51,7 @@ class Framer(object):
                 return CompValue(name='pname', prefix=split[0], localname=split[1])
             if value.startswith('@'):
                 return CompValue(name='pname', prefix='rdf', localname=value[1:])
+            # prefix match? '@context'
             return Literal(value)
         if isinstance(value, dict):
             if not name:

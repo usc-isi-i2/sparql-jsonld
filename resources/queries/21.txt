@@ -1,0 +1,21 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+SELECT (SAMPLE(?name) as ?name_of_university)
+WHERE {
+  ?univ foaf:name ?name .
+  ?univ rdf:type dbo:University .
+  ?univ dbo:state ?state .
+  {
+    SELECT ?state
+    WHERE {
+      ?state rdf:type dbo:AdministrativeRegion .
+      ?state dbo:country dbr:United_States .
+      MINUS { ?state dbo:state ?x . }
+      ?state dbo:areaTotal ?area .
+    } ORDER BY DESC(?area) LIMIT 3
+  }
+} ORDER BY DESC(?name) LIMIT 10

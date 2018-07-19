@@ -49,8 +49,11 @@ class TreeStringifier(object):
                     return self.ele2str(ele['var'])
                 elif 'expr' and 'evar' in ele:
                     return '(%s AS %s)' % (self.ele2str(ele['expr']), self.ele2str(ele['evar']))
-            elif ele.name.startswith('Builtin_') and 'arg' in ele:
-                return '%s(%s)' % (ele.name[8:], self.ele2str(ele['arg']))
+            elif ele.name.startswith('Builtin_'):
+                if 'arg' in ele:
+                    return '%s(%s)' % (ele.name[8:], self.ele2str(ele['arg']))
+                elif 'text' and 'pattern' in ele:
+                    return '%s(%s, %s)' % (ele.name[8:], self.ele2str(ele['text']), self.ele2str(ele['pattern']))
             elif ele.name == 'literal':
                 return "'%s'" % (self.list2str(list(ele.values()), self.ele2str))
 
@@ -117,10 +120,11 @@ class TreeStringifier(object):
                     out.append('{\n%s\n}' % self.tree2str(t['graph']))
             elif t.name in ['Filter']:
                 out.append('\n%s ( %s ) .\n' % (t.name.upper(), self.ele2str(t['expr'])))
+            elif t.name == 'OrderCondition' and 'order' in t and 'expr' in t:
+                out.append('%s(%s)' % (self.ele2str(t['order']), self.ele2str(t['expr'])))
 
             else:
                 for k, v in t.items():
-                    # if k == 'order':
                     out.append(self.tree2str(v))
         elif isinstance(t, dict):
             for k, v in t.items():
