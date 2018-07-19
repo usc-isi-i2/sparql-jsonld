@@ -4,7 +4,7 @@ import json
 
 db = "http://dbpedia.org/sparql"
 
-for i in range(1, 2):
+for i in range(1, 4):
     with open('../resources/frame%d.json' % i) as f:
         frame = json.load(f)
     with open('../resources/query%d.txt' % i) as f:

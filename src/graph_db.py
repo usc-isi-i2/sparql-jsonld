@@ -56,6 +56,10 @@ class GraphDB(object):
 
     @staticmethod
     def wrap(res: Result):
+        # TODO: sparqlwrapper does not return a Result, how to make it a json-ld format result
+        if not isinstance(res, Result):
+            return NestedRDF(res.serialize(format='json-ld'))
+
         # see https://github.com/RDFLib/rdflib/blob/master/rdflib/query.py
         if res.type == 'CONSTRUCT':
             return NestedRDF(res.serialize(format='json-ld'))
