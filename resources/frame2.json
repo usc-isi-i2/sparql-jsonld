@@ -1,13 +1,8 @@
 {
-  "@id": {},
-  "@type": "dbo:University",
-  "dbo:city": {
-    "@id": {},
-    "dbo:area": {
-      "@value": {}
+  "@type": "University",
+  "city": {
+    "area": {
     }
   },
-  "dbo:numberOfGraduateStudents": {},
-  "foaf:name": {},
-  "dbo:Campus": {}
+  "name": {}
 }

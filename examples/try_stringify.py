@@ -1,4 +1,4 @@
-from src.tree_stringifier import TreeStringifier
+from src.stringify import stringify
 from rdflib.plugins.sparql.parser import parseQuery
 from rdflib.plugins.sparql.parserutils import prettify_parsetree
 from rdflib import Graph
@@ -11,9 +11,10 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 
 db = 'http://dbpedia.org/sparql'
 
-tf = TreeStringifier()
+
 g = Graph(SPARQLStore(endpoint=db, context_aware=False))
 sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+
 
 for i in range(1, 23, 1):
     print('\n\n ========%d==========' % i)
@@ -40,7 +41,7 @@ for i in range(1, 23, 1):
         continue
 
     try:
-        q_ = tf.format(parsed)
+        q_ = stringify(parsed)
         print(' -  Can Revert')
     except Exception as e:
         print(' x Fail Revert', e)

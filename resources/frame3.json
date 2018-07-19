@@ -1,18 +1,10 @@
 {
-  "@id": {},
-  "@type": "dbo:Person",
-  "dbo:birthPlace": {
-    "@id": {},
-    "dbo:address": {
-      "@value": {}
-    },
-    "dbo:biggestCity": {
-      "@id": {},
-      "dbo:address": {
-        "@value": {}
-      }
+  "@type": "Person",
+  "birthPlace": {
+    "address": {},
+    "biggestCity": {
+      "address": {}
     }
   },
-  "dbo:flower": {},
-  "dbo:water": {}
+  "name": {}
 }

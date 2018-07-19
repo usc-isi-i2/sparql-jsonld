@@ -1,10 +1,7 @@
 {
-  "@id": {},
-  "@type": "dbo:University",
-  "dbo:city": {
-    "@id": {},
-    "dbo:area": {
-      "@value": {}
-    }
-  }
+  "@type": "University",
+  "city": {
+    "area": {}
+  },
+  "name": {}
 }
