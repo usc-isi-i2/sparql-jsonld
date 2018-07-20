@@ -7,7 +7,7 @@ from rdflib.plugins.sparql.parserutils import plist
 class Updater(object):
     def __init__(self, context: dict=None):
         self.current_naming = 1
-        self.context = context
+        self.context = context if context else {}
         self.prefix = {}
         self.exist_triples = {}
 

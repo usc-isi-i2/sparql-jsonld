@@ -1,4 +1,4 @@
-from SPARQLWrapper import SPARQLWrapper, JSONLD
+from SPARQLWrapper import SPARQLWrapper, JSONLD, JSON
 from pyld import jsonld
 import json
 
@@ -20,7 +20,6 @@ class QueryWrapper(object):
         """
 
         self.graph = SPARQLWrapper(database)
-        self.graph.setReturnFormat(JSONLD)
 
     def query(self, query: str, frame: dict=None, context: dict=None, optional: bool=True) -> dict:
         """
@@ -42,6 +41,7 @@ class QueryWrapper(object):
 
             # query with the updated query:
             self.graph.setQuery(q.str_query)
+            self.graph.setReturnFormat(JSONLD)
             res = self.graph.query().convert().serialize(format='json-ld')
             frame_with_context = {
                 '@context': updater.context,
@@ -54,7 +54,8 @@ class QueryWrapper(object):
         # no frame, just send the original query to the endpoint:
         else:
             self.graph.setQuery(query)
+            self.graph.setReturnFormat(JSON)
             res = self.graph.query().convert()
-            return res.serialize(format='json-ld')
+            return res
 
 
