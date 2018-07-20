@@ -1,7 +1,7 @@
 from rdflib.plugins.sparql.parser import parseQuery
 
 
-from .framer import Framer
+from .updater import Updater
 from .stringify import stringify
 
 
@@ -22,11 +22,11 @@ class SPARQLQuery(object):
             self.generate_new_string()
         return self._str_query
 
-    def update_query_by_frame(self, framer: Framer, frame: dict, optional: bool=True) -> None:
+    def update_query_by_frame(self, updater: Updater, frame: dict, optional: bool=True) -> None:
         """
         Convert a select query to a construct query based on the info from the frame
         """
-        self.parsed_query = framer.frame(self.parsed_query, frame, optional=optional)
+        self.parsed_query = updater.update(self.parsed_query, frame, optional=optional)
         self._str_need_update = True
 
     def generate_new_string(self) -> None:

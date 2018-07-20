@@ -4,14 +4,14 @@ from pyparsing import ParseResults
 from rdflib.plugins.sparql.parserutils import plist
 
 
-class Framer(object):
-    def __init__(self, context):
+class Updater(object):
+    def __init__(self, context: dict=None):
         self.current_naming = 1
-        self.context = context['@context'] if '@context' in context else context
+        self.context = context
         self.prefix = {}
         self.exist_triples = {}
 
-    def frame(self, tree: ParseResults, frame: dict, optional: bool=True) -> ParseResults:
+    def update(self, tree: ParseResults, frame: dict, optional: bool=True) -> ParseResults:
         """
         update a tree based on a json frame
         :param tree: the query tree to be updated
@@ -20,13 +20,21 @@ class Framer(object):
         :return: return the updated tree in ParseResults
         """
 
-        temp = tree[1]['projection'][0]
-        parent = temp['var'] if 'var' in temp else temp['evar']
+        if '@context' in frame:
+            self.context = dict(self.context, **frame['@context'])
 
-        self.prefix = self.prefix2dict(tree[0])
-        self.exist_triples = self.where2triples(tree[1]['where']['part'])
-        # print(self.exist_triples)
-        # print(frame)
+        try:
+            temp = tree[1]['projection'][0]
+            parent = temp['var'] if 'var' in temp else temp['evar']
+
+            self.prefix = self.prefix2dict(tree[0])
+            self.exist_triples = self.where2triples(tree[1]['where']['part'])
+        except KeyError as ke:
+            print('KeyError when parsing existing query: ', ke)
+            return ParseResults([])
+        except Exception as e:
+            print(e)
+            return ParseResults([])
 
         triples = []
         extra = []
@@ -106,7 +114,8 @@ class Framer(object):
             if isinstance(block, CompValue) and block.name == 'TriplesBlock' and 'triples' in block:
                 for tri in block['triples']:
                     s, p, o = [ele2str(x).split(':')[-1] for x in tri]
-                    # p = '@type' if p == 'type' else p
+                    # ???
+                    p = '@type' if p == 'type' else p
                     ret[(s, p)] = o
         return ret
 

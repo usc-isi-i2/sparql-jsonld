@@ -2,11 +2,17 @@
 <html>
     <style type="text/css">
         div {
+            vertical-align: top;
             display: inline-block;
+        }
+        div#left {
             width: 40%;
         }
-        #result_container {
-            width: 100%;
+        div#right {
+            width: 55%;
+        }
+        textarea {
+            width: 95%;
         }
     </style>
         <head>
@@ -15,10 +21,20 @@
 
 
     <body>
-
-
         <div id="left">
+            <form action="/example" method="post">
+                <select name="example">
+                  <option value="1">Example 1</option>
+                  <option value="2">Example 2</option>
+                  <option value="3">Example 3</option>
+                  <option value="4">Example 4</option>
+                  <option value="5">Example 5</option>
+                </select>
+                <input type="submit" value="Apply Example">
+            </form>
             <form action="/query" method="post">
+                <h3>Endpoint</h3>
+                <textarea name="endpoint" cols="50" rows="1">{{ endpoint }}</textarea>
                 <h3>Query</h3>
                 <textarea name="query" cols="50" rows="15">{{ query_str }}</textarea>
                 <h3>Context</h3>
@@ -27,21 +43,11 @@
                 <textarea name="frame" cols="50" rows="15">{{ frame }}</textarea>
                 <input type="submit" value="Send Query">
             </form>
-            <form action="/example" method="post">
-                <select name="example">
-                  <option selected="selected" value="1">Example 1</option>
-                  <option value="2">Example 2</option>
-                  <option value="3">Example 3</option>
-                  <option value="4">Example 4</option>
-                  <option value="5">Example 5</option>
-                </select>
-                <input type="submit" value="Apply Example">
-            </form>
         </div>
 
 
         <div id="right">
-            <textarea id="result_container" disabled rows="60">{{ query_result }}</textarea>
+            <textarea disabled rows="70">{{ query_result }}</textarea>
         </div>
 
 
