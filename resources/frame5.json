@@ -1,0 +1,16 @@
+{
+  "@type": "Person",
+  "name": {},
+  "parent": {
+    "name": {},
+    "birthPlace": {
+      "country": {
+        "leader": {},
+        "color": {},
+        "language": {},
+        "flag": {},
+        "areaRank": {}
+      }
+    }
+  }
+}

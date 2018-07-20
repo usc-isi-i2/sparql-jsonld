@@ -11,7 +11,14 @@ class Framer(object):
         self.prefix = {}
         self.exist_triples = {}
 
-    def frame(self, tree, frame):
+    def frame(self, tree: ParseResults, frame: dict, optional: bool=True) -> ParseResults:
+        """
+        update a tree based on a json frame
+        :param tree: the query tree to be updated
+        :param frame: the frame in json (expected output format)
+        :param optional: if the extra attributes in the frame is optional, default to be true
+        :return: return the updated tree in ParseResults
+        """
 
         temp = tree[1]['projection'][0]
         parent = temp['var'] if 'var' in temp else temp['evar']
@@ -26,8 +33,6 @@ class Framer(object):
 
         # convert the frame to triples in the same structure with parsed query
         self.frame2triple(frame, parent, triples, extra)
-        # print(extra)
-        # print(triples)
 
         # generate the ConstructQuery CompValue
         new_query = CompValue(name='ConstructQuery')
@@ -38,18 +43,27 @@ class Framer(object):
         for k, v in tree[-1].items():
             if k not in ['projection', 'modifier']:
                 if k == 'where' and 'part' in v:
-                    v['part'].append(
-                        CompValue(
-                            'OptionalGraphPattern',
-                            graph=CompValue('TriplesBlock',
-                                            triples=plist([ParseResults(triples[x]) for x in extra]))))
-                    # v['part'].append(CompValue('TriplesBlock',
-                    #                            triples=plist([ParseResults(triples[x]) for x in extra])))
+                    if optional:
+                        v['part'].append(
+                            CompValue(
+                                'OptionalGraphPattern',
+                                graph=CompValue('TriplesBlock',
+                                                triples=plist([ParseResults(triples[x]) for x in extra]))))
+                    else:
+                        v['part'].append(CompValue('TriplesBlock',
+                                                   triples=plist([ParseResults(triples[x]) for x in extra])))
                 new_query[k] = v
 
         return ParseResults([tree[0], new_query])
 
-    def frame2triple(self, root, parent, triples, extra):
+    def frame2triple(self, root: dict, parent: Variable, triples: list, extra: list) -> None:
+        """
+        convert a json frame to s-p-o triples recursively
+        :param root: json frame
+        :param parent: subject for now
+        :param triples: a list to store the results
+        :param extra: indeces of extra triples
+        """
         for k, v in root.items():
             p = self.to_node(k)
             if isinstance(v, str):
@@ -65,7 +79,7 @@ class Framer(object):
             if isinstance(v, dict) and len(v):
                 self.frame2triple(v, o, triples, extra)
 
-    def to_node(self, value: str):
+    def to_node(self, value: str) -> object:
         if value in self.context and '@id' in self.context[value]:
             full = self.context[value]['@id']
             local_name = full.split('/')[-1]

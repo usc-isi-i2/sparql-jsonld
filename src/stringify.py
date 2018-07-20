@@ -12,7 +12,7 @@ fixed_recursion = {
     }
 
 
-def ele2str(ele):
+def ele2str(ele: object) -> str:
     if isinstance(ele, Literal):
         return str(ele.value)
     elif isinstance(ele, BNode):
@@ -57,14 +57,14 @@ def ele2str(ele):
     return str(ele)
 
 
-def list2str(l, method, prefix='', suffix='', joiner='\n'):
+def list2str(l: list, method: staticmethod, prefix: str='', suffix: str='', joiner: str='\n') -> str:
     out = []
     for x in l:
         out.append('%s%s%s' % (prefix, method(x), suffix))
     return joiner.join(out)
 
 
-def triple2str(triple):
+def triple2str(triple: list or tuple) -> str:
     if len(triple) == 3:
         out = []
         for x in triple:
@@ -77,7 +77,7 @@ def triple2str(triple):
     return '\n'.join(out)
 
 
-def tree2str(t, indent=' ', depth=0):
+def tree2str(t: ParseResults) -> str:
     out = []
     if isinstance(t, ParseResults):
         for e in t.asList():
@@ -141,11 +141,11 @@ def tree2str(t, indent=' ', depth=0):
     return "".join(out)
 
 
-def stringify(query_tree):
+def stringify(query_tree: ParseResults) -> str:
     if isinstance(query_tree, ParseResults):
         return tree2str(query_tree)
 
 
-def pretty_print(query_tree):
+def pretty_print(query_tree: ParseResults):
     print(prettify_parsetree(query_tree))
 

@@ -2,7 +2,7 @@ import json
 
 
 class NestedRDF(object):
-    def __init__(self, rdf: str):
+    def __init__(self, rdf: str) -> None:
         if isinstance(rdf, bytes):
             self._data = rdf.decode('utf-8')
         else:
@@ -10,17 +10,17 @@ class NestedRDF(object):
         self._nested_jsonld = self.nest_data(rdf)
 
     @property
-    def original_data(self):
+    def original_data(self) -> str:
         if isinstance(self._data, bytes):
             return self._data.decode('utf-8')
         return self._data
 
     @property
-    def nested_jsonld(self):
+    def nested_jsonld(self) -> list:
         return self._nested_jsonld
 
     @staticmethod
-    def nest_data(rdf: str):
+    def nest_data(rdf: str) -> list:
         """
         Parse the flatten RDF data to a list of nested json objects
         """
