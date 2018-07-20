@@ -7,7 +7,7 @@ from rdflib.plugins.sparql.parserutils import plist
 class Framer(object):
     def __init__(self, context):
         self.current_naming = 1
-        self.context = context
+        self.context = context['@context'] if '@context' in context else context
         self.prefix = {}
         self.exist_triples = {}
 
@@ -65,6 +65,8 @@ class Framer(object):
         :param extra: indeces of extra triples
         """
         for k, v in root.items():
+            if k == '@context':
+                continue
             p = self.to_node(k)
             if isinstance(v, str):
                 o = self.to_node(v)
