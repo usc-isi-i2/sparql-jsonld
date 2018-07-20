@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        div {
+            display: inline-block;
+            width: 40%;
+        }
+        #result_container {
+            width: 100%;
+        }
+    </style>
+        <head>
+        <title>{{ author }}'s app</title>
+    </head>
+
+
+    <body>
+
+
+        <div id="left">
+            <form action="/query" method="post">
+                <h3>Query</h3>
+                <textarea name="query" cols="50" rows="15">{{ query_str }}</textarea>
+                <h3>Context</h3>
+                <textarea name="context" cols="50" rows="15">{{ context }}</textarea>
+                <h3>Frame</h3>
+                <textarea name="frame" cols="50" rows="15">{{ frame }}</textarea>
+                <input type="submit" value="Send Query">
+            </form>
+            <form action="/example" method="post">
+                <select name="example">
+                  <option selected="selected" value="1">Example 1</option>
+                  <option value="2">Example 2</option>
+                  <option value="3">Example 3</option>
+                  <option value="4">Example 4</option>
+                  <option value="5">Example 5</option>
+                </select>
+                <input type="submit" value="Apply Example">
+            </form>
+        </div>
+
+
+        <div id="right">
+            <textarea id="result_container" disabled rows="60">{{ query_result }}</textarea>
+        </div>
+
+
+    </body>
+</html>
