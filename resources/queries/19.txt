@@ -1,0 +1,19 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+SELECT ?name_of_university
+WHERE {
+  {
+    SELECT (SAMPLE(?name) AS ?name_of_university) (COUNT(DISTINCT ?alu) AS ?cnt)
+    WHERE {
+      ?univ foaf:name ?name .
+      ?alu rdf:type dbo:Person .
+      ?alu dbo:education ?univ .
+      ?univ rdf:type dbo:University .
+    } GROUP BY ?univ
+  }
+  FILTER (?cnt > 100) .
+} ORDER BY ?cnt LIMIT 10

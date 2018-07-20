@@ -1,0 +1,12 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+SELECT ?alu
+WHERE {
+  ?alu foaf:name ?name_of_alumni .
+  ?alu rdf:type dbo:Person .
+  ?alu dbo:education dbr:University_of_Southern_California .
+} LIMIT 10

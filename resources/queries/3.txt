@@ -1,0 +1,11 @@
+PREFIX : <http://www.snee.com/ns/demo#>
+
+CONSTRUCT { ?p :hasAunt ?aunt . }
+
+WHERE {?p      :hasParent ?parent .
+       ?parent :hasParent ?g .
+       ?aunt   :hasParent ?g ;
+               :gender    :female .
+
+FILTER (?parent != ?aunt)
+}

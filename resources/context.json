@@ -1,0 +1,56 @@
+{
+    "@context": {
+        "University": {
+            "@id": "http://dbpedia.org/ontology/University",
+            "@type": "@id"
+        },
+        "city": {
+            "@id": "http://dbpedia.org/ontology/city"
+        },
+        "area": {
+            "@id": "http://dbpedia.org/ontology/area"
+        },
+        "birthPlace": {
+            "@id": "http://dbpedia.org/ontology/birthPlace"
+        },
+        "biggestCity": {
+            "@id": "http://dbpedia.org/ontology/biggestCity"
+        },
+        "address": {
+            "@id": "http://dbpedia.org/ontology/address"
+        },
+        "name": {
+            "@id": "http://xmlns.com/foaf/0.1/name"
+        },
+        "Person": {
+            "@id": "http://dbpedia.org/ontology/Person"
+        },
+        "education": {
+            "@id": "http://dbpedia.org/ontology/education"
+        },
+        "mother": {
+            "@id": "http://dbpedia.org/ontology/mother"
+        },
+        "parent": {
+            "@id": "http://dbpedia.org/ontology/parent"
+        },
+        "country": {
+            "@id": "http://dbpedia.org/ontology/country"
+        },
+        "leader": {
+            "@id": "http://dbpedia.org/ontology/leader"
+        },
+        "color": {
+            "@id": "http://dbpedia.org/property/color"
+        },
+        "language": {
+            "@id": "http://dbpedia.org/ontology/language"
+        },
+        "flag": {
+            "@id": "http://dbpedia.org/ontology/flag"
+        },
+        "areaRank": {
+            "@id": "http://dbpedia.org/property/areaRank"
+        }
+    }
+}

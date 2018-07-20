@@ -1,0 +1,10 @@
+{
+  "@type": "Person",
+  "birthPlace": {
+    "address": {},
+    "biggestCity": {
+      "address": {}
+    }
+  },
+  "name": {}
+}

@@ -1,0 +1,10 @@
+PREFIX go: <http://purl.org/obo/owl/GO#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://www.obofoundry.org/ro/ro.owl#>
+SELECT DISTINCT ?label ?process
+WHERE {
+  { ?process obo:part_of go:GO_0007165 } # integral to
+      UNION
+  { ?process rdfs:subClassOf go:GO_0007165 } # refinement of
+  ?process rdfs:label ?label
+}
