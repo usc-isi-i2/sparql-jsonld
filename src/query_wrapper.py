@@ -1,10 +1,9 @@
-from SPARQLWrapper import SPARQLWrapper, JSONLD, JSON
+from SPARQLWrapper import SPARQLWrapper, JSONLD, JSON, SPARQLExceptions
 from pyld import jsonld
 import json
 
 from .sparql_query import SPARQLQuery
 from .updater import Updater
-
 
 
 class QueryWrapper(object):
@@ -34,6 +33,9 @@ class QueryWrapper(object):
         if frame:
             if '@context' in context:
                 context = context['@context']
+
+            frame = self.remove_a(frame, context)
+
             # parse and update the query by the frame:
             q = SPARQLQuery(query)
             updater = Updater(context)
@@ -42,14 +44,39 @@ class QueryWrapper(object):
             # query with the updated query:
             self.graph.setQuery(q.str_query)
             self.graph.setReturnFormat(JSONLD)
-            res = self.graph.query().convert().serialize(format='json-ld')
-            frame_with_context = {
-                '@context': updater.context,
-                **frame
-            }
+            try:
+                res = self.graph.query().convert().serialize(format='json-ld').decode('utf-8')
 
-            framed = jsonld.frame(json.loads(res.decode('utf-8')), frame_with_context)
-            return framed
+                frame_with_context = {
+                    '@context': updater.context,
+                    **frame
+                }
+
+                if res == '[]':
+                    return {'@graph': 'Empty Result'}
+                # print(q.str_query)
+                # print(res)
+
+                framed = jsonld.frame(json.loads(res),
+                                      frame_with_context,
+                                      options={
+                                          'embed': '@always'
+                                      })
+                return framed
+            except jsonld.JsonLdError as e:
+                return {'@graph': 'Framing Error: %s' % e}
+            except SPARQLExceptions.EndPointInternalError as e:
+                return {'@graph': 'Query Error: %s' % e}
+            except SPARQLExceptions.EndPointNotFound as e:
+                return {'@graph': 'Query Error: %s' % e}
+            except SPARQLExceptions.QueryBadFormed as e:
+                return {'@graph': 'Bad Query: %s' % e}
+            except KeyError as e:
+                return {'@graph': 'KeyError: %s' % e}
+            except IndexError as e:
+                return {'@graph': 'IndexError: %s' % e}
+            except Exception as e:
+                return {'@graph': 'Exception: %s' % e}
 
         # no frame, just send the original query to the endpoint:
         else:
@@ -57,5 +84,22 @@ class QueryWrapper(object):
             self.graph.setReturnFormat(JSON)
             res = self.graph.query().convert()
             return res
+
+    def remove_a(self, frame, context):
+        target = {}
+        for k, v in frame.items():
+            if k in context and '@container' in context[k]:
+                if context[k]['@container'] == '@index':
+                    # TODO: solve "@contianer": "@index"
+                    # target[k] = v if v else {'': ''}
+                    print('ignore "@contianer": "@index" in %s.' % k)
+                    del context[k]['@container']
+            if k != 'a':
+                # TODO: solve "a": "@type" -> key collision with "@type"
+                if isinstance(v, dict) and 'a' in v and '@type' in v:
+                    target[k] = self.remove_a(v, context)
+                else:
+                    target[k] = v
+        return target
 
 

@@ -1,0 +1,112 @@
+{
+  "@type": "Topic",
+  "@explicit": true,
+  "a": {},
+  "uri": {},
+  "name": {},
+  "source": {},
+  "publisher": {},
+  "dateRecorded": {},
+  "hasPost": {
+    "@type": "Post",
+    "@explicit": true,
+    "a": {},
+    "uri": {},
+    "language": {},
+    "text": {},
+    "datePublished": {},
+    "source": {},
+    "publisher": {},
+    "dateRecorded": {},
+    "author": {
+      "@type": "PersonOrOrganization",
+      "@explicit": true,
+      "a": {},
+      "uri": {},
+      "name": {},
+      "source": {},
+      "publisher": {},
+      "dateRecorded": {},
+      "hasLoginCredentials": {
+        "@type": "LoginCredentials",
+        "@explicit": true,
+        "a": {},
+        "uri": {},
+        "source": {},
+        "publisher": {},
+        "dateRecorded": {},
+        "email": {
+          "@type": "EmailAddress",
+          "@explicit": true,
+          "a": {},
+          "uri": {},
+          "name": {},
+          "nameSHA1": {},
+          "domainName": {},
+          "source": {},
+          "publisher": {},
+          "dateRecorded": {}
+        },
+        "username": {
+          "@type": "UserName",
+          "@explicit": true,
+          "a": {},
+          "uri": {},
+          "name": {},
+          "nameSHA1": {},
+          "source": {},
+          "publisher": {},
+          "dateRecorded": {}
+        },
+        "password": {
+          "@type": "Password",
+          "@explicit": true,
+          "a": {},
+          "uri": {},
+          "name": {},
+          "nameSHA1": {},
+          "source": {},
+          "publisher": {},
+          "dateRecorded": {}
+        }
+      }
+    },
+    "mentions": {
+      "@type": "Vulnerability",
+      "@explicit": true,
+      "a": {},
+      "uri": {},
+      "startDate": {},
+      "description": {},
+      "name": {},
+      "url": {},
+      "sourcedFrom": {},
+      "source": {},
+      "publisher": {},
+      "dateRecorded": {},
+      "title": {},
+      "vulnerabilityOf": {
+        "@type": "SoftwareSystem",
+        "@explicit": true,
+        "uri": {},
+        "a": {},
+        "productID": {},
+        "name": {},
+        "seller": {},
+        "source": {},
+        "publisher": {},
+        "dateRecorded": {}
+      }
+    }
+  },
+  "isTopicOf": {
+    "@type": "Forum",
+    "@explicit": true,
+    "a": {},
+    "name": {},
+    "uri": {},
+    "source": {},
+    "publisher": {},
+    "dateRecorded": {}
+  }
+}

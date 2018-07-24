@@ -1,0 +1,73 @@
+{
+  "@type": "Blog",
+  "@explicit": true,
+  "a": {},
+  "uri": {},
+  "url": {},
+  "language": {},
+  "text": {},
+  "title": {},
+  "datePublished": {},
+  "datePublishedConfidence": {},
+  "source": {},
+  "publisher": {},
+  "dateRecorded": {},
+  "mentions": {
+    "@type": "Vulnerability",
+    "@explicit": true,
+    "a": {},
+    "uri": {},
+    "startDate": {},
+    "description": {},
+    "name": {},
+    "weaknessEnumeration": {},
+    "url": {},
+    "sourcedFrom": {},
+    "title": {},
+    "source": {},
+    "publisher": {},
+    "dateRecorded": {}
+  },
+  "mentionsSecurityUpdate": {
+    "@type": "SecurityUpdate",
+    "@explicit": true,
+    "a": {},
+    "source": {},
+    "publisher": {},
+    "dateRecorded": {},
+    "name": {},
+    "text": {},
+    "fixesVulnerability": {
+      "@type": "Vulnerability",
+      "@explicit": true,
+      "a": {},
+      "source": {},
+      "publisher": {},
+      "dateRecorded": {},
+      "name": {}
+    }
+  },
+  "hasExtraction": {
+    "@type": "Extraction",
+    "@explicit": true,
+    "a": {},
+    "uri": {},
+    "hasType": {},
+    "text": {},
+    "extractor": {},
+    "source": {},
+    "publisher": {},
+    "dateRecorded": {}
+  },
+  "mentionsIOC": {
+    "@type": "IndicatorOfCompromise",
+    "@explicit": true,
+    "a": {},
+    "uri": {},
+    "name": {},
+    "hasType": {},
+    "source": {},
+    "publisher": {},
+    "dateRecorded": {}
+  }
+}

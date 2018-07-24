@@ -52,11 +52,12 @@ class Updater(object):
             if k not in ['projection', 'modifier']:
                 if k == 'where' and 'part' in v:
                     if optional:
-                        v['part'].append(
-                            CompValue(
-                                'OptionalGraphPattern',
-                                graph=CompValue('TriplesBlock',
-                                                triples=plist([ParseResults(triples[x]) for x in extra]))))
+                        for x in extra:
+                            v['part'].append(
+                                CompValue(
+                                    'OptionalGraphPattern',
+                                    graph=CompValue('TriplesBlock',
+                                                    triples=plist([ParseResults(triples[x])]))))
                     else:
                         v['part'].append(CompValue('TriplesBlock',
                                                    triples=plist([ParseResults(triples[x]) for x in extra])))
@@ -85,12 +86,15 @@ class Updater(object):
                     o = Variable('var%d' % self.current_naming)
                     self.current_naming += 1
                     extra.append(len(triples))
-            triples.append([parent, p, o])
+            if not isinstance(p, Literal):
+                triples.append([parent, p, o])
+            else:
+                print('failed to find context of %s.' % p)
             if isinstance(v, dict) and len(v):
                 self.frame2triple(v, o, triples, extra)
 
     def to_node(self, value: str) -> object:
-        if value in self.context and '@id' in self.context[value]:
+        if value in self.context and isinstance(self.context[value], dict) and '@id' in self.context[value]:
             full = self.context[value]['@id']
             local_name = full.split('/')[-1]
             pre = full[:-len(local_name)]
@@ -98,10 +102,11 @@ class Updater(object):
                return CompValue(name='pname', prefix=self.prefix[pre], localname=local_name)
             return URIRef(self.context[value]['@id'])
         else:
+            if value in self.context and isinstance(self.context[value], str):
+                value = self.context[value]
             split = value.split(':')
             if len(split) == 2:
                 return CompValue(name='pname', prefix=split[0], localname=split[1])
-            # TODO: rdf:type? @type ?
             if value.startswith('@'):
                 return CompValue(name='pname', prefix='rdf', localname=value[1:])
             return Literal(value)
@@ -114,8 +119,7 @@ class Updater(object):
             if isinstance(block, CompValue) and block.name == 'TriplesBlock' and 'triples' in block:
                 for tri in block['triples']:
                     s, p, o = [ele2str(x).split(':')[-1] for x in tri]
-                    # ???
-                    p = '@type' if p == 'type' else p
+                    p = '@'+p if p in ['type', 'id', 'explicit'] else p
                     ret[(s, p)] = o
         return ret
 

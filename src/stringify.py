@@ -14,7 +14,11 @@ fixed_recursion = {
 
 def ele2str(ele: object) -> str:
     if isinstance(ele, Literal):
-        return str(ele.value)
+        try:
+            val = int(ele)
+            return str(val)
+        except ValueError:
+            return '"%s"' % str(ele)
     elif isinstance(ele, BNode):
         ret = str(ele.toPython())
         return ret if ret[0] == '_' else '[]'
@@ -113,7 +117,7 @@ def tree2str(t: ParseResults) -> str:
             for tri in t['triples']:
                 out.append('%s\n' % (triple2str(tri)))
         elif t.name == 'OptionalGraphPattern' and 'graph' in t:
-            out.append('\nOPTIONAL { \n%s\n} .\n' % tree2str(t['graph']))
+            out.append('OPTIONAL {%s} .\n' % tree2str(t['graph']))
         elif t.name == 'GroupOrUnionGraphPattern' and 'graph' in t:
             if len(t['graph']) > 1:
                 ret = []

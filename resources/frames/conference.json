@@ -1,0 +1,50 @@
+{
+  "@type": "Conference",
+  "@explicit": true,
+  "a": {},
+  "uri": {},
+  "url": {},
+  "startDate": {},
+  "text": {},
+  "description": {},
+  "name": {},
+  "keywords": {},
+  "source": {},
+  "publisher": {},
+  "dateRecorded": {},
+  "mentions": {
+    "@type": "Vulnerability",
+    "@explicit": true,
+    "a": {},
+    "uri": {},
+    "startDate": {},
+    "description": {},
+    "name": {},
+    "weaknessEnumeration": {},
+    "url": {},
+    "sourcedFrom": {},
+    "title": {},
+    "source": {},
+    "publisher": {},
+    "dateRecorded": {}
+  },
+  "mentionsSecurityUpdate": {
+    "@type": "SecurityUpdate",
+    "@explicit": true,
+    "a": {},
+    "source": {},
+    "publisher": {},
+    "dateRecorded": {},
+    "name": {},
+    "text": {},
+    "fixesVulnerability": {
+      "@type": "Vulnerability",
+      "@explicit": true,
+      "a": {},
+      "source": {},
+      "publisher": {},
+      "dateRecorded": {},
+      "name": {}
+    }
+  }
+}

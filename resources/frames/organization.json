@@ -1,0 +1,40 @@
+{
+  "@type": "Organization",
+  "@explicit": true,
+  "a": {},
+  "uri": {},
+  "description": {},
+  "name": {},
+  "alternateName": {},
+  "url": {},
+  "source": {},
+  "publisher": {},
+  "dateRecorded": {},
+  "usesSoftware": {
+    "@type": "SoftwareSystemClass",
+    "@explicit": true,
+    "uri": {},
+    "a": {},
+    "name": {},
+    "source": {},
+    "publisher": {},
+    "dateRecorded": {},
+    "includesSoftwares": {
+      "@type": "SoftwareSystem",
+      "@explicit": true,
+      "uri": {},
+      "a": {},
+      "productID": {},
+      "name": {},
+      "title": {},
+      "vendor": {},
+      "version": {},
+      "language": {},
+      "dateModified": {},
+      "source": {},
+      "publisher": {},
+      "dateRecorded": {},
+      "publisher": {}
+    }
+  }
+}
