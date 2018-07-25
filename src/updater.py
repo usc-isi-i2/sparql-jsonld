@@ -11,7 +11,7 @@ class Updater(object):
         self.prefix = {}
         self.exist_triples = {}
 
-    def update(self, tree: ParseResults, frame: dict, optional: bool=True) -> ParseResults:
+    def update(self, tree: ParseResults, frame: dict, optional: bool=True, specified_subjects: list=None) -> ParseResults:
         """
         update a tree based on a json frame
         :param tree: the query tree to be updated
@@ -40,12 +40,12 @@ class Updater(object):
         extra = []
 
         # convert the frame to triples in the same structure with parsed query
-        self.frame2triple(frame, parent, triples, extra)
+        self.frame2triple(frame, parent, triples, extra, [])
 
         # generate the ConstructQuery CompValue
         new_query = CompValue(name='ConstructQuery')
 
-        new_template = plist([ParseResults(x) for x in triples])
+        new_template = plist([ParseResults(x[-1]) for x in triples])
         new_query['template'] = new_template
 
         for k, v in tree[-1].items():
@@ -57,15 +57,21 @@ class Updater(object):
                                 CompValue(
                                     'OptionalGraphPattern',
                                     graph=CompValue('TriplesBlock',
-                                                    triples=plist([ParseResults(triples[x])]))))
+                                                    triples=plist([ParseResults(y) for y in triples[x]]))))
                     else:
-                        v['part'].append(CompValue('TriplesBlock',
-                                                   triples=plist([ParseResults(triples[x]) for x in extra])))
+                        for x in extra:
+                            v['part'].append(CompValue('TriplesBlock',
+                                                        triples=plist([ParseResults(y) for y in triples[x]])))
+                    if specified_subjects:
+                        spec_data = [URIRef(x) for x in specified_subjects]
+                        v['part'].append(CompValue('InlineData', var=tree[-1]['projection'][0]['var'], value=spec_data))
                 new_query[k] = v
+            if k == 'limitoffset' and 'limit' in v:
+                del v['limit']
 
         return ParseResults([tree[0], new_query])
 
-    def frame2triple(self, root: dict, parent: Variable, triples: list, extra: list) -> None:
+    def frame2triple(self, root: dict, parent: Variable, triples: list, extra: list, pref = None) -> None:
         """
         convert a json frame to s-p-o triples recursively
         :param root: json frame
@@ -87,11 +93,11 @@ class Updater(object):
                     self.current_naming += 1
                     extra.append(len(triples))
             if not isinstance(p, Literal):
-                triples.append([parent, p, o])
+                triples.append(pref + [[parent, p, o]])
             else:
                 print('failed to find context of %s.' % p)
             if isinstance(v, dict) and len(v):
-                self.frame2triple(v, o, triples, extra)
+                self.frame2triple(v, o, triples, extra, pref+[[parent, p, o]])
 
     def to_node(self, value: str) -> object:
         if value in self.context and isinstance(self.context[value], dict) and '@id' in self.context[value]:
@@ -122,7 +128,6 @@ class Updater(object):
                     p = '@'+p if p in ['type', 'id', 'explicit'] else p
                     ret[(s, p)] = o
         return ret
-
 
     @staticmethod
     def prefix2dict(tree_prefix):

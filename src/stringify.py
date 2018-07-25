@@ -118,6 +118,9 @@ def tree2str(t: ParseResults) -> str:
                 out.append('%s\n' % (triple2str(tri)))
         elif t.name == 'OptionalGraphPattern' and 'graph' in t:
             out.append('OPTIONAL {%s} .\n' % tree2str(t['graph']))
+        elif t.name == 'InlineData' and 'var' in t and 'value' in t:
+            out.append('Values (%s) {%s} .\n' % (ele2str(t['var']),
+                                                  list2str(t['value'], ele2str, prefix='(', suffix=')', joiner='\n')))
         elif t.name == 'GroupOrUnionGraphPattern' and 'graph' in t:
             if len(t['graph']) > 1:
                 ret = []

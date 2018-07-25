@@ -39,7 +39,11 @@ class QueryWrapper(object):
             # parse and update the query by the frame:
             q = SPARQLQuery(query)
             updater = Updater(context)
-            q.update_query_by_frame(updater, frame, optional=optional)
+
+            subjects = q.get_limit_subjects(graph=self.graph)
+            q.update_query_by_frame(updater, frame, optional=optional, specified_subjects=subjects)
+
+            # print(q.str_query)
 
             # query with the updated query:
             self.graph.setQuery(q.str_query)
@@ -54,7 +58,6 @@ class QueryWrapper(object):
 
                 if res == '[]':
                     return {'@graph': 'Empty Result'}
-                # print(q.str_query)
                 # print(res)
 
                 framed = jsonld.frame(json.loads(res),

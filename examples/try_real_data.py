@@ -1,7 +1,8 @@
 from src.query_wrapper import QueryWrapper
-import json, os
+import json, os, time
 
-endpoint = "http://localhost:3030/ds/query"
+endpoint = "http://kg2018a.isi.edu:3030/test/sparql"
+# endpoint = "http://localhost:3030/ds/query"
 graph = QueryWrapper(endpoint)
 
 with open('../resources/karma_context.json') as f:
@@ -21,12 +22,13 @@ for filename in os.listdir('../resources/frames'):
     PREFIX dig: <http://schema.dig.isi.edu/ontology/>
     PREFIX eff: <http://effect.isi.edu/data/>
     
-    SELECT ?s ?o
+    SELECT ?s
     WHERE {
       ?s rdf:type dig:%s .
-      Filter (!isLiteral(?s))
-    } LIMIT 1
+    } LIMIT 2
     """ % frame['@type']
-
+    s = time.time()
     res = graph.query(query, frame, context)
+    # print(time.time()-s)
+
     print(json.dumps(res['@graph'], indent=2))
