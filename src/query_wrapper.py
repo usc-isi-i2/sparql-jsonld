@@ -37,11 +37,9 @@ class QueryWrapper(object):
             frame = self.remove_a(frame, context)
 
             # parse and update the query by the frame:
-            print('- parse query\ttime: %s' % time.time())
             q = SPARQLQuery(query)
             updater = Updater(context)
 
-            print('- update query\ttime: %s' % time.time())
             subjects = q.get_limit_subjects(graph=self.graph)
             q.update_query_by_frame(updater, frame, optional=optional, specified_subjects=subjects)
 
@@ -49,13 +47,12 @@ class QueryWrapper(object):
             # q.pprint_tree()
 
             # query with the updated query:
-            print('- send query\ttime: %s' % time.time())
             self.graph.setQuery(q.str_query)
             self.graph.setReturnFormat(JSONLD)
             try:
+                start_query = time.time()
                 res = self.graph.query().convert().serialize(format='json-ld').decode('utf-8')
-
-                print('- frame result\ttime: %s' % time.time())
+                time_query = time.time() - start_query
 
                 frame_with_context = {
                     '@context': updater.context,
@@ -66,13 +63,16 @@ class QueryWrapper(object):
                     return {'@error': 'Empty Result'}
                 # print(res)
 
+                start_frame = time.time()
                 framed = jsonld.frame(json.loads(res),
                                       frame_with_context,
                                       options={
                                           'embed': '@always'
                                       })
 
-                print('- all done . \ttime: %s' % time.time())
+                time_frame = time.time() - start_frame
+                framed['time_query'] = time_query
+                framed['time_frame'] = time_frame
                 return framed
             except jsonld.JsonLdError as e:
                 return {'@error': 'Framing Error: %s' % e}
@@ -91,10 +91,12 @@ class QueryWrapper(object):
 
         # no frame, just send the original query to the endpoint:
         else:
+            start_query = time.time()
             self.graph.setQuery(query)
             self.graph.setReturnFormat(JSON)
             res = self.graph.query().convert()
-            return {'@graph': res}
+            time_query = time.time() - start_query
+            return {'@graph': res, 'time_query': time_query}
 
     def remove_a(self, frame, context):
         target = {}

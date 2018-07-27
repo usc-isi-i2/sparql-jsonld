@@ -16,5 +16,5 @@ where{
   union
   {?b a dig:Vulnerability . ?b scm:startDate ?d}
 
-  bind(xsd:date(xsd:dateTime(?d)) as ?dateAttr)
+  bind(xsd:date(?d) as ?dateAttr)
 } group by ?dateAttr limit 10000

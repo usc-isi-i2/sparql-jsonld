@@ -12,7 +12,7 @@ where {
   ?p dig:dateRecorded ?dr .
   ?p scm:datePublished ?dp .
   ?p scm:mentions ?x .
-  FILTER ( xsd:dateTime(?dr) >= xsd:dateTime("2000-06-27T02:36:31")
-    && xsd:dateTime(?dr) <= xsd:dateTime("2020-06-27T02:36:31")
-    && xsd:dateTime(?dp) >= xsd:dateTime("2000-06-27T02:36:31") )
-} limit 10
+  FILTER ( ?dr >= xsd:dateTime("2000-06-27T02:36:31")
+    && ?dr <= xsd:dateTime("2020-06-27T02:36:31")
+    && ?dp >= xsd:dateTime("2000-06-27T02:36:31") )
+} limit 10000

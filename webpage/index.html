@@ -36,19 +36,34 @@
             <form action="/example/realdata" method="post">
                 real data examples:
                 <select name="realdata" id="realdata">
-                    {{option_elements|safe}}
+                    {{option_real_queries|safe}}
                 </select>
                 <input type="submit" value="Apply Example">
             </form>
             <form action="/query" method="post">
-                <h3>Endpoint</h3>
+
+                <h4>Endpoint</h4>
                 <textarea name="endpoint" cols="50" rows="1">{{ endpoint }}</textarea>
-                <h3>Query</h3>
+
+                <h4>Query</h4>
+                <form action="/prefix" method="post">
+                    <input type="submit" value="Apply Prefix">
+                </form>
                 <textarea name="query" cols="50" rows="15">{{ query_str }}</textarea>
-                <h3>Context</h3>
+
+                <h4>Context</h4>
                 <textarea name="context" cols="50" rows="15">{{ context }}</textarea>
-                <h3>Frame</h3>
+
+                <h4>Frame</h4>
+                <form action="/full_frames" method="post">
+                    real data examples:
+                    <select name="full_frames" id="full_frames">
+                        {{option_full_frames|safe}}
+                    </select>
+                    <input type="submit" value="Apply Frame">
+                </form>
                 <textarea name="frame" cols="50" rows="15">{{ frame }}</textarea>
+
                 <input type="submit" value="Send Query">
             </form>
         </div>

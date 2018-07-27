@@ -14,7 +14,7 @@ where{
   ?x dig:financialTags ?ft .
   ?x scm:datePublished ?dp .
   ?x dig:dateRecorded ?dr .
-  FILTER ( xsd:dateTime(?dr) >= xsd:dateTime("2000-06-27T02:36:31")
-    && xsd:dateTime(?dr) <= xsd:dateTime("2020-06-27T02:36:31") )
-  bind(xsd:date(xsd:dateTime(?dp)) as ?dailyCounts)
+  FILTER ( ?dr >= xsd:dateTime("2000-06-27T02:36:31")
+    && ?dr <= xsd:dateTime("2020-06-27T02:36:31") )
+  bind(xsd:date(?dp) as ?dailyCounts)
 } group by ?dailyCounts ?ft limit 10000
