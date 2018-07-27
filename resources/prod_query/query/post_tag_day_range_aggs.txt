@@ -1,0 +1,20 @@
+prefix sc:    <http://purl.org/science/owl/sciencecommons/>
+prefix dig:   <http://schema.dig.isi.edu/ontology/>
+prefix eff:   <http://effect.isi.edu/data/>
+prefix owl:   <http://www.w3.org/2002/07/owl#>
+prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+prefix scm:   <http://schema.org/>
+prefix dcm:   <http://dcm.com/>
+
+select ?dailyCounts ?ft (count(?x) as ?Tags_dailyCounts)
+where{
+  ?x a dig:Post .
+  ?x dig:financialTags ?ft .
+  ?x scm:datePublished ?dp .
+  ?x dig:dateRecorded ?dr .
+  FILTER ( xsd:dateTime(?dr) >= xsd:dateTime("2000-06-27T02:36:31")
+    && xsd:dateTime(?dr) <= xsd:dateTime("2020-06-27T02:36:31") )
+  bind(xsd:date(xsd:dateTime(?dp)) as ?dailyCounts)
+} group by ?dailyCounts ?ft limit 10000

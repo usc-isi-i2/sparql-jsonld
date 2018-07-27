@@ -1,0 +1,18 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX scm: <http://schema.org/>
+PREFIX dig: <http://schema.dig.isi.edu/ontology/>
+PREFIX eff: <http://effect.isi.edu/data/>
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+select ?p ?dr ?dp ?x
+where {
+  ?p a dig:Post .
+  ?p dig:dateRecorded ?dr .
+  ?p scm:datePublished ?dp .
+  ?p scm:mentions ?x .
+  FILTER ( xsd:dateTime(?dr) >= xsd:dateTime("2000-06-27T02:36:31")
+    && xsd:dateTime(?dr) <= xsd:dateTime("2020-06-27T02:36:31")
+    && xsd:dateTime(?dp) >= xsd:dateTime("2000-06-27T02:36:31") )
+} limit 10

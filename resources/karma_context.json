@@ -3006,101 +3006,129 @@
         },
         "a": "@type",
         "about": {
-            "@id": "http://schema.org/about"
+            "@id": "http://schema.org/about",
+            "@type": "@id"
         },
         "abridged": {
-            "@id": "http://schema.org/abridged"
+            "@id": "http://schema.org/abridged",
+            "@type": "@id"
         },
         "abstract": {
             "@id": "http://schema.dig.isi.edu/ontology/abstract"
         },
         "acceptedAnswer": {
-            "@id": "http://schema.org/acceptedAnswer"
+            "@id": "http://schema.org/acceptedAnswer",
+            "@type": "@id"
         },
         "acceptedOffer": {
-            "@id": "http://schema.org/acceptedOffer"
+            "@id": "http://schema.org/acceptedOffer",
+            "@type": "@id"
         },
         "acceptedPaymentMethod": {
-            "@id": "http://schema.org/acceptedPaymentMethod"
+            "@id": "http://schema.org/acceptedPaymentMethod",
+            "@type": "@id"
         },
         "acceptsReservations": {
-            "@id": "http://schema.org/acceptsReservations"
+            "@id": "http://schema.org/acceptsReservations",
+            "@type": "@id"
         },
         "accessCode": {
-            "@id": "http://schema.org/accessCode"
+            "@id": "http://schema.org/accessCode",
+            "@type": "@id"
         },
         "accessibilityAPI": {
-            "@id": "http://schema.org/accessibilityAPI"
+            "@id": "http://schema.org/accessibilityAPI",
+            "@type": "@id"
         },
         "accessibilityControl": {
-            "@id": "http://schema.org/accessibilityControl"
+            "@id": "http://schema.org/accessibilityControl",
+            "@type": "@id"
         },
         "accessibilityFeature": {
-            "@id": "http://schema.org/accessibilityFeature"
+            "@id": "http://schema.org/accessibilityFeature",
+            "@type": "@id"
         },
         "accessibilityHazard": {
-            "@id": "http://schema.org/accessibilityHazard"
+            "@id": "http://schema.org/accessibilityHazard",
+            "@type": "@id"
         },
         "accountId": {
-            "@id": "http://schema.org/accountId"
+            "@id": "http://schema.org/accountId",
+            "@type": "@id"
         },
         "accountablePerson": {
-            "@id": "http://schema.org/accountablePerson"
+            "@id": "http://schema.org/accountablePerson",
+            "@type": "@id"
         },
         "acquiredFrom": {
-            "@id": "http://schema.org/acquiredFrom"
+            "@id": "http://schema.org/acquiredFrom",
+            "@type": "@id"
         },
         "action": {
-            "@id": "http://schema.org/action"
+            "@id": "http://schema.org/action",
+            "@type": "@id"
         },
         "actionApplication": {
-            "@id": "http://schema.org/actionApplication"
+            "@id": "http://schema.org/actionApplication",
+            "@type": "@id"
         },
         "actionOption": {
-            "@id": "http://schema.org/actionOption"
+            "@id": "http://schema.org/actionOption",
+            "@type": "@id"
         },
         "actionPlatform": {
-            "@id": "http://schema.org/actionPlatform"
+            "@id": "http://schema.org/actionPlatform",
+            "@type": "@id"
         },
         "actionStatus": {
-            "@id": "http://schema.org/actionStatus"
+            "@id": "http://schema.org/actionStatus",
+            "@type": "@id"
         },
         "activeIngredient": {
-            "@id": "http://schema.org/activeIngredient"
+            "@id": "http://schema.org/activeIngredient",
+            "@type": "@id"
         },
         "activityCount": {
             "@id": "http://schema.dig.isi.edu/ontology/activityCount"
         },
         "activityDuration": {
-            "@id": "http://schema.org/activityDuration"
+            "@id": "http://schema.org/activityDuration",
+            "@type": "@id"
         },
         "activityFrequency": {
-            "@id": "http://schema.org/activityFrequency"
+            "@id": "http://schema.org/activityFrequency",
+            "@type": "@id"
         },
         "actor": {
             "@id": "http://schema.org/actor",
             "@type": "@id"
         },
         "actors": {
-            "@id": "http://schema.org/actors"
+            "@id": "http://schema.org/actors",
+            "@type": "@id"
         },
         "addOn": {
-            "@id": "http://schema.org/addOn"
+            "@id": "http://schema.org/addOn",
+            "@type": "@id"
         },
         "additionalName": {
-            "@id": "http://schema.org/additionalName"
+            "@id": "http://schema.org/additionalName",
+            "@type": "@id"
         },
         "additionalNumberOfGuests": {
-            "@id": "http://schema.org/additionalNumberOfGuests"
+            "@id": "http://schema.org/additionalNumberOfGuests",
+            "@type": "@id"
         },
         "additionalProperty": {
-            "@id": "http://schema.org/additionalProperty"
+            "@id": "http://schema.org/additionalProperty",
+            "@type": "@id"
         },
         "additionalType": {
             "@id": "http://schema.org/additionalType"
         },
         "additionalVariable": {
-            "@id": "http://schema.org/additionalVariable"
+            "@id": "http://schema.org/additionalVariable",
+            "@type": "@id"
         },
         "address": {
             "@container": "@set",
@@ -3117,13 +3145,16 @@
             "@id": "http://schema.org/addressRegion"
         },
         "administrationRoute": {
-            "@id": "http://schema.org/administrationRoute"
+            "@id": "http://schema.org/administrationRoute",
+            "@type": "@id"
         },
         "advanceBookingRequirement": {
-            "@id": "http://schema.org/advanceBookingRequirement"
+            "@id": "http://schema.org/advanceBookingRequirement",
+            "@type": "@id"
         },
         "adverseOutcome": {
-            "@id": "http://schema.org/adverseOutcome"
+            "@id": "http://schema.org/adverseOutcome",
+            "@type": "@id"
         },
         "affected": {
             "@container": "@set",
@@ -3131,173 +3162,227 @@
             "@type": "@id"
         },
         "affectedBy": {
-            "@id": "http://schema.org/affectedBy"
+            "@id": "http://schema.org/affectedBy",
+            "@type": "@id"
         },
         "affiliation": {
-            "@id": "http://schema.org/affiliation"
+            "@id": "http://schema.org/affiliation",
+            "@type": "@id"
         },
         "age": {
             "@container": "@set",
             "@id": "http://schema.dig.isi.edu/ontology/age"
         },
         "agent": {
-            "@id": "http://schema.org/agent"
+            "@id": "http://schema.org/agent",
+            "@type": "@id"
         },
         "aggregateRating": {
-            "@id": "http://schema.org/aggregateRating"
+            "@id": "http://schema.org/aggregateRating",
+            "@type": "@id"
         },
         "aircraft": {
-            "@id": "http://schema.org/aircraft"
+            "@id": "http://schema.org/aircraft",
+            "@type": "@id"
         },
         "album": {
-            "@id": "http://schema.org/album"
+            "@id": "http://schema.org/album",
+            "@type": "@id"
         },
         "albumProductionType": {
-            "@id": "http://schema.org/albumProductionType"
+            "@id": "http://schema.org/albumProductionType",
+            "@type": "@id"
         },
         "albumRelease": {
-            "@id": "http://schema.org/albumRelease"
+            "@id": "http://schema.org/albumRelease",
+            "@type": "@id"
         },
         "albumReleaseType": {
-            "@id": "http://schema.org/albumReleaseType"
+            "@id": "http://schema.org/albumReleaseType",
+            "@type": "@id"
         },
         "albums": {
-            "@id": "http://schema.org/albums"
+            "@id": "http://schema.org/albums",
+            "@type": "@id"
         },
         "alcoholWarning": {
-            "@id": "http://schema.org/alcoholWarning"
+            "@id": "http://schema.org/alcoholWarning",
+            "@type": "@id"
         },
         "algorithm": {
-            "@id": "http://schema.org/algorithm"
+            "@id": "http://schema.org/algorithm",
+            "@type": "@id"
         },
         "alignmentType": {
-            "@id": "http://schema.org/alignmentType"
+            "@id": "http://schema.org/alignmentType",
+            "@type": "@id"
         },
         "alternateName": {
             "@id": "http://schema.org/alternateName"
         },
         "alternativeHeadline": {
-            "@id": "http://schema.org/alternativeHeadline"
+            "@id": "http://schema.org/alternativeHeadline",
+            "@type": "@id"
         },
         "alumni": {
-            "@id": "http://schema.org/alumni"
+            "@id": "http://schema.org/alumni",
+            "@type": "@id"
         },
         "alumniOf": {
-            "@id": "http://schema.org/alumniOf"
+            "@id": "http://schema.org/alumniOf",
+            "@type": "@id"
         },
         "amount": {
-            "@id": "http://schema.org/amount"
+            "@id": "http://schema.org/amount",
+            "@type": "@id"
         },
         "amountOfThisGood": {
-            "@id": "http://schema.org/amountOfThisGood"
+            "@id": "http://schema.org/amountOfThisGood",
+            "@type": "@id"
         },
         "answerCount": {
-            "@id": "http://schema.org/answerCount"
+            "@id": "http://schema.org/answerCount",
+            "@type": "@id"
         },
         "antagonist": {
-            "@id": "http://schema.org/antagonist"
+            "@id": "http://schema.org/antagonist",
+            "@type": "@id"
         },
         "applicableLocation": {
-            "@id": "http://schema.org/applicableLocation"
+            "@id": "http://schema.org/applicableLocation",
+            "@type": "@id"
         },
         "applicant": {
-            "@id": "http://schema.dig.isi.edu/ontology/applicant"
+            "@id": "http://schema.dig.isi.edu/ontology/applicant",
+            "@type": "@id"
         },
         "application": {
-            "@id": "http://schema.org/application"
+            "@id": "http://schema.org/application",
+            "@type": "@id"
         },
         "applicationCategory": {
-            "@id": "http://schema.org/applicationCategory"
+            "@id": "http://schema.org/applicationCategory",
+            "@type": "@id"
         },
         "applicationSubCategory": {
-            "@id": "http://schema.org/applicationSubCategory"
+            "@id": "http://schema.org/applicationSubCategory",
+            "@type": "@id"
         },
         "applicationSuite": {
-            "@id": "http://schema.org/applicationSuite"
+            "@id": "http://schema.org/applicationSuite",
+            "@type": "@id"
         },
         "appliesToDeliveryMethod": {
-            "@id": "http://schema.org/appliesToDeliveryMethod"
+            "@id": "http://schema.org/appliesToDeliveryMethod",
+            "@type": "@id"
         },
         "appliesToPaymentMethod": {
-            "@id": "http://schema.org/appliesToPaymentMethod"
+            "@id": "http://schema.org/appliesToPaymentMethod",
+            "@type": "@id"
         },
         "area": {
-            "@id": "http://schema.org/area"
+            "@id": "http://schema.org/area",
+            "@type": "@id"
         },
         "areaServed": {
-            "@id": "http://schema.org/areaServed"
+            "@id": "http://schema.org/areaServed",
+            "@type": "@id"
         },
         "arrivalAirport": {
-            "@id": "http://schema.org/arrivalAirport"
+            "@id": "http://schema.org/arrivalAirport",
+            "@type": "@id"
         },
         "arrivalBusStop": {
-            "@id": "http://schema.org/arrivalBusStop"
+            "@id": "http://schema.org/arrivalBusStop",
+            "@type": "@id"
         },
         "arrivalGate": {
-            "@id": "http://schema.org/arrivalGate"
+            "@id": "http://schema.org/arrivalGate",
+            "@type": "@id"
         },
         "arrivalPlatform": {
-            "@id": "http://schema.org/arrivalPlatform"
+            "@id": "http://schema.org/arrivalPlatform",
+            "@type": "@id"
         },
         "arrivalStation": {
-            "@id": "http://schema.org/arrivalStation"
+            "@id": "http://schema.org/arrivalStation",
+            "@type": "@id"
         },
         "arrivalTerminal": {
-            "@id": "http://schema.org/arrivalTerminal"
+            "@id": "http://schema.org/arrivalTerminal",
+            "@type": "@id"
         },
         "arrivalTime": {
-            "@id": "http://schema.org/arrivalTime"
+            "@id": "http://schema.org/arrivalTime",
+            "@type": "@id"
         },
         "artEdition": {
-            "@id": "http://schema.org/artEdition"
+            "@id": "http://schema.org/artEdition",
+            "@type": "@id"
         },
         "artMedium": {
-            "@id": "http://schema.org/artMedium"
+            "@id": "http://schema.org/artMedium",
+            "@type": "@id"
         },
         "arterialBranch": {
-            "@id": "http://schema.org/arterialBranch"
+            "@id": "http://schema.org/arterialBranch",
+            "@type": "@id"
         },
         "artform": {
-            "@id": "http://schema.org/artform"
+            "@id": "http://schema.org/artform",
+            "@type": "@id"
         },
         "articleBody": {
-            "@id": "http://schema.org/articleBody"
+            "@id": "http://schema.org/articleBody",
+            "@type": "@id"
         },
         "articleSection": {
-            "@id": "http://schema.org/articleSection"
+            "@id": "http://schema.org/articleSection",
+            "@type": "@id"
         },
         "artist": {
-            "@id": "http://schema.org/artist"
+            "@id": "http://schema.org/artist",
+            "@type": "@id"
         },
         "artworkSurface": {
-            "@id": "http://schema.org/artworkSurface"
+            "@id": "http://schema.org/artworkSurface",
+            "@type": "@id"
         },
         "aspect": {
-            "@id": "http://schema.org/aspect"
+            "@id": "http://schema.org/aspect",
+            "@type": "@id"
         },
         "assembly": {
-            "@id": "http://schema.org/assembly"
+            "@id": "http://schema.org/assembly",
+            "@type": "@id"
         },
         "assemblyVersion": {
-            "@id": "http://schema.org/assemblyVersion"
+            "@id": "http://schema.org/assemblyVersion",
+            "@type": "@id"
         },
         "assignee": {
-            "@id": "http://schema.dig.isi.edu/ontology/assignee"
+            "@id": "http://schema.dig.isi.edu/ontology/assignee",
+            "@type": "@id"
         },
         "associatedAnatomy": {
-            "@id": "http://schema.org/associatedAnatomy"
+            "@id": "http://schema.org/associatedAnatomy",
+            "@type": "@id"
         },
         "associatedArticle": {
-            "@id": "http://schema.org/associatedArticle"
+            "@id": "http://schema.org/associatedArticle",
+            "@type": "@id"
         },
         "associatedMedia": {
-            "@id": "http://schema.org/associatedMedia"
+            "@id": "http://schema.org/associatedMedia",
+            "@type": "@id"
         },
         "associatedPathophysiology": {
-            "@id": "http://schema.org/associatedPathophysiology"
+            "@id": "http://schema.org/associatedPathophysiology",
+            "@type": "@id"
         },
         "athlete": {
-            "@id": "http://schema.org/athlete"
+            "@id": "http://schema.org/athlete",
+            "@type": "@id"
         },
         "attackOnSoftwareCluster": {
             "@id": "http://schema.dig.isi.edu/ontology/attackOnSoftwareCluster",
@@ -3305,19 +3390,24 @@
         },
         "attendee": {
             "@container": "@set",
-            "@id": "http://schema.org/attendee"
+            "@id": "http://schema.org/attendee",
+            "@type": "@id"
         },
         "attendees": {
-            "@id": "http://schema.org/attendees"
+            "@id": "http://schema.org/attendees",
+            "@type": "@id"
         },
         "audience": {
-            "@id": "http://schema.org/audience"
+            "@id": "http://schema.org/audience",
+            "@type": "@id"
         },
         "audienceType": {
-            "@id": "http://schema.org/audienceType"
+            "@id": "http://schema.org/audienceType",
+            "@type": "@id"
         },
         "audio": {
-            "@id": "http://schema.org/audio"
+            "@id": "http://schema.org/audio",
+            "@type": "@id"
         },
         "author": {
             "@id": "http://schema.org/author",
@@ -3330,178 +3420,236 @@
             "@id": "http://schema.dig.isi.edu/ontology/autonomousSystemNumber"
         },
         "availability": {
-            "@id": "http://schema.org/availability"
+            "@id": "http://schema.org/availability",
+            "@type": "@id"
         },
         "availabilityEnds": {
-            "@id": "http://schema.org/availabilityEnds"
+            "@id": "http://schema.org/availabilityEnds",
+            "@type": "@id"
         },
         "availabilityStarts": {
-            "@id": "http://schema.org/availabilityStarts"
+            "@id": "http://schema.org/availabilityStarts",
+            "@type": "@id"
         },
         "availableAtOrFrom": {
-            "@id": "http://schema.org/availableAtOrFrom"
+            "@id": "http://schema.org/availableAtOrFrom",
+            "@type": "@id"
         },
         "availableChannel": {
-            "@id": "http://schema.org/availableChannel"
+            "@id": "http://schema.org/availableChannel",
+            "@type": "@id"
         },
         "availableDeliveryMethod": {
-            "@id": "http://schema.org/availableDeliveryMethod"
+            "@id": "http://schema.org/availableDeliveryMethod",
+            "@type": "@id"
         },
         "availableFrom": {
-            "@id": "http://schema.org/availableFrom"
+            "@id": "http://schema.org/availableFrom",
+            "@type": "@id"
         },
         "availableIn": {
-            "@id": "http://schema.org/availableIn"
+            "@id": "http://schema.org/availableIn",
+            "@type": "@id"
         },
         "availableLanguage": {
-            "@id": "http://schema.org/availableLanguage"
+            "@id": "http://schema.org/availableLanguage",
+            "@type": "@id"
         },
         "availableOnDevice": {
-            "@id": "http://schema.org/availableOnDevice"
+            "@id": "http://schema.org/availableOnDevice",
+            "@type": "@id"
         },
         "availableService": {
-            "@id": "http://schema.org/availableService"
+            "@id": "http://schema.org/availableService",
+            "@type": "@id"
         },
         "availableStrength": {
-            "@id": "http://schema.org/availableStrength"
+            "@id": "http://schema.org/availableStrength",
+            "@type": "@id"
         },
         "availableTest": {
-            "@id": "http://schema.org/availableTest"
+            "@id": "http://schema.org/availableTest",
+            "@type": "@id"
         },
         "availableThrough": {
-            "@id": "http://schema.org/availableThrough"
+            "@id": "http://schema.org/availableThrough",
+            "@type": "@id"
         },
         "award": {
-            "@id": "http://schema.org/award"
+            "@id": "http://schema.org/award",
+            "@type": "@id"
         },
         "awards": {
-            "@id": "http://schema.org/awards"
+            "@id": "http://schema.org/awards",
+            "@type": "@id"
         },
         "awayTeam": {
-            "@id": "http://schema.org/awayTeam"
+            "@id": "http://schema.org/awayTeam",
+            "@type": "@id"
         },
         "background": {
-            "@id": "http://schema.org/background"
+            "@id": "http://schema.org/background",
+            "@type": "@id"
         },
         "baseSalary": {
-            "@id": "http://schema.org/baseSalary"
+            "@id": "http://schema.org/baseSalary",
+            "@type": "@id"
         },
         "benefits": {
-            "@id": "http://schema.org/benefits"
+            "@id": "http://schema.org/benefits",
+            "@type": "@id"
         },
         "bestRating": {
-            "@id": "http://schema.org/bestRating"
+            "@id": "http://schema.org/bestRating",
+            "@type": "@id"
         },
         "billingAddress": {
-            "@id": "http://schema.org/billingAddress"
+            "@id": "http://schema.org/billingAddress",
+            "@type": "@id"
         },
         "billingIncrement": {
-            "@id": "http://schema.org/billingIncrement"
+            "@id": "http://schema.org/billingIncrement",
+            "@type": "@id"
         },
         "billingPeriod": {
-            "@id": "http://schema.org/billingPeriod"
+            "@id": "http://schema.org/billingPeriod",
+            "@type": "@id"
         },
         "biomechnicalClass": {
-            "@id": "http://schema.org/biomechnicalClass"
+            "@id": "http://schema.org/biomechnicalClass",
+            "@type": "@id"
         },
         "birthDate": {
-            "@id": "http://schema.org/birthDate"
+            "@id": "http://schema.org/birthDate",
+            "@type": "@id"
         },
         "birthPlace": {
-            "@id": "http://schema.org/birthPlace"
+            "@id": "http://schema.org/birthPlace",
+            "@type": "@id"
         },
         "bitrate": {
-            "@id": "http://schema.org/bitrate"
+            "@id": "http://schema.org/bitrate",
+            "@type": "@id"
         },
         "blogPost": {
-            "@id": "http://schema.org/blogPost"
+            "@id": "http://schema.org/blogPost",
+            "@type": "@id"
         },
         "blogPosts": {
-            "@id": "http://schema.org/blogPosts"
+            "@id": "http://schema.org/blogPosts",
+            "@type": "@id"
         },
         "bloodSupply": {
-            "@id": "http://schema.org/bloodSupply"
+            "@id": "http://schema.org/bloodSupply",
+            "@type": "@id"
         },
         "boardingGroup": {
-            "@id": "http://schema.org/boardingGroup"
+            "@id": "http://schema.org/boardingGroup",
+            "@type": "@id"
         },
         "boardingPolicy": {
-            "@id": "http://schema.org/boardingPolicy"
+            "@id": "http://schema.org/boardingPolicy",
+            "@type": "@id"
         },
         "bodyLocation": {
-            "@id": "http://schema.org/bodyLocation"
+            "@id": "http://schema.org/bodyLocation",
+            "@type": "@id"
         },
         "bookEdition": {
-            "@id": "http://schema.org/bookEdition"
+            "@id": "http://schema.org/bookEdition",
+            "@type": "@id"
         },
         "bookFormat": {
-            "@id": "http://schema.org/bookFormat"
+            "@id": "http://schema.org/bookFormat",
+            "@type": "@id"
         },
         "bookingAgent": {
-            "@id": "http://schema.org/bookingAgent"
+            "@id": "http://schema.org/bookingAgent",
+            "@type": "@id"
         },
         "bookingTime": {
-            "@id": "http://schema.org/bookingTime"
+            "@id": "http://schema.org/bookingTime",
+            "@type": "@id"
         },
         "borrower": {
-            "@id": "http://schema.org/borrower"
+            "@id": "http://schema.org/borrower",
+            "@type": "@id"
         },
         "box": {
-            "@id": "http://schema.org/box"
+            "@id": "http://schema.org/box",
+            "@type": "@id"
         },
         "branch": {
-            "@id": "http://schema.org/branch"
+            "@id": "http://schema.org/branch",
+            "@type": "@id"
         },
         "branchCode": {
-            "@id": "http://schema.org/branchCode"
+            "@id": "http://schema.org/branchCode",
+            "@type": "@id"
         },
         "branchOf": {
-            "@id": "http://schema.org/branchOf"
+            "@id": "http://schema.org/branchOf",
+            "@type": "@id"
         },
         "brand": {
-            "@id": "http://schema.org/brand"
+            "@id": "http://schema.org/brand",
+            "@type": "@id"
         },
         "breadcrumb": {
-            "@id": "http://schema.org/breadcrumb"
+            "@id": "http://schema.org/breadcrumb",
+            "@type": "@id"
         },
         "breastfeedingWarning": {
-            "@id": "http://schema.org/breastfeedingWarning"
+            "@id": "http://schema.org/breastfeedingWarning",
+            "@type": "@id"
         },
         "broadcastAffiliateOf": {
-            "@id": "http://schema.org/broadcastAffiliateOf"
+            "@id": "http://schema.org/broadcastAffiliateOf",
+            "@type": "@id"
         },
         "broadcastChannelId": {
-            "@id": "http://schema.org/broadcastChannelId"
+            "@id": "http://schema.org/broadcastChannelId",
+            "@type": "@id"
         },
         "broadcastDisplayName": {
-            "@id": "http://schema.org/broadcastDisplayName"
+            "@id": "http://schema.org/broadcastDisplayName",
+            "@type": "@id"
         },
         "broadcastOfEvent": {
-            "@id": "http://schema.org/broadcastOfEvent"
+            "@id": "http://schema.org/broadcastOfEvent",
+            "@type": "@id"
         },
         "broadcastServiceTier": {
-            "@id": "http://schema.org/broadcastServiceTier"
+            "@id": "http://schema.org/broadcastServiceTier",
+            "@type": "@id"
         },
         "broadcastTimezone": {
-            "@id": "http://schema.org/broadcastTimezone"
+            "@id": "http://schema.org/broadcastTimezone",
+            "@type": "@id"
         },
         "broadcaster": {
-            "@id": "http://schema.org/broadcaster"
+            "@id": "http://schema.org/broadcaster",
+            "@type": "@id"
         },
         "broker": {
-            "@id": "http://schema.org/broker"
+            "@id": "http://schema.org/broker",
+            "@type": "@id"
         },
         "browserRequirements": {
-            "@id": "http://schema.org/browserRequirements"
+            "@id": "http://schema.org/browserRequirements",
+            "@type": "@id"
         },
         "busName": {
-            "@id": "http://schema.org/busName"
+            "@id": "http://schema.org/busName",
+            "@type": "@id"
         },
         "busNumber": {
-            "@id": "http://schema.org/busNumber"
+            "@id": "http://schema.org/busNumber",
+            "@type": "@id"
         },
         "businessFunction": {
-            "@id": "http://schema.org/businessFunction"
+            "@id": "http://schema.org/businessFunction",
+            "@type": "@id"
         },
         "business_name": {
             "@id": "http://schema.dig.isi.edu/ontology/business_name"
@@ -3510,254 +3658,330 @@
             "@id": "http://schema.dig.isi.edu/ontology/business_type"
         },
         "buyer": {
-            "@id": "http://schema.org/buyer"
+            "@id": "http://schema.org/buyer",
+            "@type": "@id"
         },
         "byArtist": {
-            "@id": "http://schema.org/byArtist"
+            "@id": "http://schema.org/byArtist",
+            "@type": "@id"
         },
         "caliber": {
             "@id": "http://schema.dig.isi.edu/ontology/caliber"
         },
         "calories": {
-            "@id": "http://schema.org/calories"
+            "@id": "http://schema.org/calories",
+            "@type": "@id"
         },
         "candidate": {
-            "@id": "http://schema.org/candidate"
+            "@id": "http://schema.org/candidate",
+            "@type": "@id"
         },
         "caption": {
-            "@id": "http://schema.org/caption"
+            "@id": "http://schema.org/caption",
+            "@type": "@id"
         },
         "carbohydrateContent": {
-            "@id": "http://schema.org/carbohydrateContent"
+            "@id": "http://schema.org/carbohydrateContent",
+            "@type": "@id"
         },
         "cargoVolume": {
-            "@id": "http://schema.org/cargoVolume"
+            "@id": "http://schema.org/cargoVolume",
+            "@type": "@id"
         },
         "carrier": {
-            "@id": "http://schema.org/carrier"
+            "@id": "http://schema.org/carrier",
+            "@type": "@id"
         },
         "carrierRequirements": {
-            "@id": "http://schema.org/carrierRequirements"
+            "@id": "http://schema.org/carrierRequirements",
+            "@type": "@id"
         },
         "catalog": {
-            "@id": "http://schema.org/catalog"
+            "@id": "http://schema.org/catalog",
+            "@type": "@id"
         },
         "catalogNumber": {
-            "@id": "http://schema.org/catalogNumber"
+            "@id": "http://schema.org/catalogNumber",
+            "@type": "@id"
         },
         "category": {
             "@id": "http://schema.org/category"
         },
         "cause": {
-            "@id": "http://schema.org/cause"
+            "@id": "http://schema.org/cause",
+            "@type": "@id"
         },
         "causeOf": {
-            "@id": "http://schema.org/causeOf"
+            "@id": "http://schema.org/causeOf",
+            "@type": "@id"
         },
         "character": {
-            "@id": "http://schema.org/character"
+            "@id": "http://schema.org/character",
+            "@type": "@id"
         },
         "characterAttribute": {
-            "@id": "http://schema.org/characterAttribute"
+            "@id": "http://schema.org/characterAttribute",
+            "@type": "@id"
         },
         "characterName": {
-            "@id": "http://schema.org/characterName"
+            "@id": "http://schema.org/characterName",
+            "@type": "@id"
         },
         "cheatCode": {
-            "@id": "http://schema.org/cheatCode"
+            "@id": "http://schema.org/cheatCode",
+            "@type": "@id"
         },
         "checkinTime": {
-            "@id": "http://schema.org/checkinTime"
+            "@id": "http://schema.org/checkinTime",
+            "@type": "@id"
         },
         "checkoutTime": {
-            "@id": "http://schema.org/checkoutTime"
+            "@id": "http://schema.org/checkoutTime",
+            "@type": "@id"
         },
         "childMaxAge": {
-            "@id": "http://schema.org/childMaxAge"
+            "@id": "http://schema.org/childMaxAge",
+            "@type": "@id"
         },
         "childMinAge": {
-            "@id": "http://schema.org/childMinAge"
+            "@id": "http://schema.org/childMinAge",
+            "@type": "@id"
         },
         "children": {
-            "@id": "http://schema.org/children"
+            "@id": "http://schema.org/children",
+            "@type": "@id"
         },
         "cholesterolContent": {
-            "@id": "http://schema.org/cholesterolContent"
+            "@id": "http://schema.org/cholesterolContent",
+            "@type": "@id"
         },
         "circle": {
-            "@id": "http://schema.org/circle"
+            "@id": "http://schema.org/circle",
+            "@type": "@id"
         },
         "citation": {
-            "@id": "http://schema.org/citation"
+            "@id": "http://schema.org/citation",
+            "@type": "@id"
         },
         "clincalPharmacology": {
-            "@id": "http://schema.org/clincalPharmacology"
+            "@id": "http://schema.org/clincalPharmacology",
+            "@type": "@id"
         },
         "clinicalPharmacology": {
-            "@id": "http://schema.org/clinicalPharmacology"
+            "@id": "http://schema.org/clinicalPharmacology",
+            "@type": "@id"
         },
         "clipNumber": {
-            "@id": "http://schema.org/clipNumber"
+            "@id": "http://schema.org/clipNumber",
+            "@type": "@id"
         },
         "closes": {
-            "@id": "http://schema.org/closes"
+            "@id": "http://schema.org/closes",
+            "@type": "@id"
         },
         "clusterMethod": {
             "@id": "http://schema.dig.isi.edu/ontology/clusterMethod"
         },
         "coach": {
-            "@id": "http://schema.org/coach"
+            "@id": "http://schema.org/coach",
+            "@type": "@id"
         },
         "code": {
-            "@id": "http://schema.org/code"
+            "@id": "http://schema.org/code",
+            "@type": "@id"
         },
         "codeRepository": {
-            "@id": "http://schema.org/codeRepository"
+            "@id": "http://schema.org/codeRepository",
+            "@type": "@id"
         },
         "codeSampleType": {
-            "@id": "http://schema.org/codeSampleType"
+            "@id": "http://schema.org/codeSampleType",
+            "@type": "@id"
         },
         "codeValue": {
-            "@id": "http://schema.org/codeValue"
+            "@id": "http://schema.org/codeValue",
+            "@type": "@id"
         },
         "codingSystem": {
-            "@id": "http://schema.org/codingSystem"
+            "@id": "http://schema.org/codingSystem",
+            "@type": "@id"
         },
         "colleague": {
-            "@id": "http://schema.org/colleague"
+            "@id": "http://schema.org/colleague",
+            "@type": "@id"
         },
         "colleagues": {
-            "@id": "http://schema.org/colleagues"
+            "@id": "http://schema.org/colleagues",
+            "@type": "@id"
         },
         "collection": {
-            "@id": "http://schema.org/collection"
+            "@id": "http://schema.org/collection",
+            "@type": "@id"
         },
         "color": {
-            "@id": "http://schema.org/color"
+            "@id": "http://schema.org/color",
+            "@type": "@id"
         },
         "colorist": {
-            "@id": "http://schema.org/colorist"
+            "@id": "http://schema.org/colorist",
+            "@type": "@id"
         },
         "comment": {
             "@id": "http://schema.org/comment",
             "@type": "@id"
         },
         "commentCount": {
-            "@id": "http://schema.org/commentCount"
+            "@id": "http://schema.org/commentCount",
+            "@type": "@id"
         },
         "commentText": {
-            "@id": "http://schema.org/commentText"
+            "@id": "http://schema.org/commentText",
+            "@type": "@id"
         },
         "commentTime": {
-            "@id": "http://schema.org/commentTime"
+            "@id": "http://schema.org/commentTime",
+            "@type": "@id"
         },
         "community_3rd_div": {
-            "@id": "http://schema.dig.isi.edu/ontology/community_3rd_div"
+            "@id": "http://schema.dig.isi.edu/ontology/community_3rd_div",
+            "@type": "@id"
         },
         "competitor": {
-            "@id": "http://schema.org/competitor"
+            "@id": "http://schema.org/competitor",
+            "@type": "@id"
         },
         "composer": {
-            "@id": "http://schema.org/composer"
+            "@id": "http://schema.org/composer",
+            "@type": "@id"
         },
         "comprisedOf": {
-            "@id": "http://schema.org/comprisedOf"
+            "@id": "http://schema.org/comprisedOf",
+            "@type": "@id"
         },
         "confidence": {
             "@id": "http://schema.dig.isi.edu/ontology/confidence"
         },
         "confirmationNumber": {
-            "@id": "http://schema.org/confirmationNumber"
+            "@id": "http://schema.org/confirmationNumber",
+            "@type": "@id"
         },
         "connectedTo": {
-            "@id": "http://schema.org/connectedTo"
+            "@id": "http://schema.org/connectedTo",
+            "@type": "@id"
         },
         "contactOption": {
-            "@id": "http://schema.org/contactOption"
+            "@id": "http://schema.org/contactOption",
+            "@type": "@id"
         },
         "contactPoint": {
-            "@id": "http://schema.org/contactPoint"
+            "@id": "http://schema.org/contactPoint",
+            "@type": "@id"
         },
         "contactPoints": {
-            "@id": "http://schema.org/contactPoints"
+            "@id": "http://schema.org/contactPoints",
+            "@type": "@id"
         },
         "contactType": {
-            "@id": "http://schema.org/contactType"
+            "@id": "http://schema.org/contactType",
+            "@type": "@id"
         },
         "containedIn": {
-            "@id": "http://schema.org/containedIn"
+            "@id": "http://schema.org/containedIn",
+            "@type": "@id"
         },
         "containedInPlace": {
-            "@id": "http://schema.org/containedInPlace"
+            "@id": "http://schema.org/containedInPlace",
+            "@type": "@id"
         },
         "containsPlace": {
-            "@id": "http://schema.org/containsPlace"
+            "@id": "http://schema.org/containsPlace",
+            "@type": "@id"
         },
         "containsSeason": {
-            "@id": "http://schema.org/containsSeason"
+            "@id": "http://schema.org/containsSeason",
+            "@type": "@id"
         },
         "contentLocation": {
-            "@id": "http://schema.org/contentLocation"
+            "@id": "http://schema.org/contentLocation",
+            "@type": "@id"
         },
         "contentMD5": {
             "@id": "http://schema.dig.isi.edu/ontology/contentMD5"
         },
         "contentRating": {
-            "@id": "http://schema.org/contentRating"
+            "@id": "http://schema.org/contentRating",
+            "@type": "@id"
         },
         "contentSHA256": {
             "@id": "http://schema.dig.isi.edu/ontology/contentSHA256"
         },
         "contentSize": {
-            "@id": "http://schema.org/contentSize"
+            "@id": "http://schema.org/contentSize",
+            "@type": "@id"
         },
         "contentType": {
-            "@id": "http://schema.org/contentType"
+            "@id": "http://schema.org/contentType",
+            "@type": "@id"
         },
         "contentUrl": {
-            "@id": "http://schema.org/contentUrl"
+            "@id": "http://schema.org/contentUrl",
+            "@type": "@id"
         },
         "contraindication": {
-            "@id": "http://schema.org/contraindication"
+            "@id": "http://schema.org/contraindication",
+            "@type": "@id"
         },
         "contributor": {
-            "@id": "http://schema.org/contributor"
+            "@id": "http://schema.org/contributor",
+            "@type": "@id"
         },
         "cookTime": {
-            "@id": "http://schema.org/cookTime"
+            "@id": "http://schema.org/cookTime",
+            "@type": "@id"
         },
         "cookingMethod": {
-            "@id": "http://schema.org/cookingMethod"
+            "@id": "http://schema.org/cookingMethod",
+            "@type": "@id"
         },
         "copyrightHolder": {
-            "@id": "http://schema.org/copyrightHolder"
+            "@id": "http://schema.org/copyrightHolder",
+            "@type": "@id"
         },
         "copyrightYear": {
-            "@id": "http://schema.org/copyrightYear"
+            "@id": "http://schema.org/copyrightYear",
+            "@type": "@id"
         },
         "cost": {
-            "@id": "http://schema.org/cost"
+            "@id": "http://schema.org/cost",
+            "@type": "@id"
         },
         "costCategory": {
-            "@id": "http://schema.org/costCategory"
+            "@id": "http://schema.org/costCategory",
+            "@type": "@id"
         },
         "costCurrency": {
-            "@id": "http://schema.org/costCurrency"
+            "@id": "http://schema.org/costCurrency",
+            "@type": "@id"
         },
         "costOrigin": {
-            "@id": "http://schema.org/costOrigin"
+            "@id": "http://schema.org/costOrigin",
+            "@type": "@id"
         },
         "costPerUnit": {
-            "@id": "http://schema.org/costPerUnit"
+            "@id": "http://schema.org/costPerUnit",
+            "@type": "@id"
         },
         "count": {
-            "@id": "http://schema.dig.isi.edu/ontology/count"
+            "@id": "http://schema.dig.isi.edu/ontology/count",
+            "@type": "@id"
         },
         "countriesNotSupported": {
-            "@id": "http://schema.org/countriesNotSupported"
+            "@id": "http://schema.org/countriesNotSupported",
+            "@type": "@id"
         },
         "countriesSupported": {
-            "@id": "http://schema.org/countriesSupported"
+            "@id": "http://schema.org/countriesSupported",
+            "@type": "@id"
         },
         "countryOfOrigin": {
             "@id": "http://schema.org/countryOfOrigin"
@@ -3766,28 +3990,36 @@
             "@id": "http://schema.dig.isi.edu/ontology/county_2nd_div"
         },
         "course": {
-            "@id": "http://schema.org/course"
+            "@id": "http://schema.org/course",
+            "@type": "@id"
         },
         "coverageEndTime": {
-            "@id": "http://schema.org/coverageEndTime"
+            "@id": "http://schema.org/coverageEndTime",
+            "@type": "@id"
         },
         "coverageStartTime": {
-            "@id": "http://schema.org/coverageStartTime"
+            "@id": "http://schema.org/coverageStartTime",
+            "@type": "@id"
         },
         "creator": {
-            "@id": "http://schema.org/creator"
+            "@id": "http://schema.org/creator",
+            "@type": "@id"
         },
         "creditedTo": {
-            "@id": "http://schema.org/creditedTo"
+            "@id": "http://schema.org/creditedTo",
+            "@type": "@id"
         },
         "currenciesAccepted": {
-            "@id": "http://schema.org/currenciesAccepted"
+            "@id": "http://schema.org/currenciesAccepted",
+            "@type": "@id"
         },
         "currency": {
-            "@id": "http://schema.org/currency"
+            "@id": "http://schema.org/currency",
+            "@type": "@id"
         },
         "customer": {
-            "@id": "http://schema.org/customer"
+            "@id": "http://schema.org/customer",
+            "@type": "@id"
         },
         "cvssAccessVector": {
             "@id": "http://schema.dig.isi.edu/ontology/cvssAccessVector"
@@ -3814,25 +4046,30 @@
             "@id": "http://schema.dig.isi.edu/ontology/cvssScoreOf"
         },
         "dataFeedElement": {
-            "@id": "http://schema.org/dataFeedElement"
+            "@id": "http://schema.org/dataFeedElement",
+            "@type": "@id"
         },
         "dataset": {
-            "@id": "http://schema.org/dataset"
+            "@id": "http://schema.org/dataset",
+            "@type": "@id"
         },
         "datasetTimeInterval": {
-            "@id": "http://schema.org/datasetTimeInterval"
+            "@id": "http://schema.org/datasetTimeInterval",
+            "@type": "@id"
         },
         "dateCreated": {
             "@id": "http://schema.org/dateCreated"
         },
         "dateDeleted": {
-            "@id": "http://schema.org/dateDeleted"
+            "@id": "http://schema.org/dateDeleted",
+            "@type": "@id"
         },
         "dateFragment": {
             "@id": "http://schema.dig.isi.edu/ontology/dateFragment"
         },
         "dateIssued": {
-            "@id": "http://schema.org/dateIssued"
+            "@id": "http://schema.org/dateIssued",
+            "@type": "@id"
         },
         "dateModified": {
             "@id": "http://schema.org/dateModified"
@@ -3850,230 +4087,298 @@
             "@id": "http://schema.dig.isi.edu/ontology/dateRecorded"
         },
         "dateVehicleFirstRegistered": {
-            "@id": "http://schema.org/dateVehicleFirstRegistered"
+            "@id": "http://schema.org/dateVehicleFirstRegistered",
+            "@type": "@id"
         },
         "dateline": {
-            "@id": "http://schema.org/dateline"
+            "@id": "http://schema.org/dateline",
+            "@type": "@id"
         },
         "day": {
             "@id": "http://schema.dig.isi.edu/ontology/day"
         },
         "dayOfWeek": {
-            "@id": "http://schema.org/dayOfWeek"
+            "@id": "http://schema.org/dayOfWeek",
+            "@type": "@id"
         },
         "deathDate": {
-            "@id": "http://schema.org/deathDate"
+            "@id": "http://schema.org/deathDate",
+            "@type": "@id"
         },
         "deathPlace": {
-            "@id": "http://schema.org/deathPlace"
+            "@id": "http://schema.org/deathPlace",
+            "@type": "@id"
         },
         "defaultValue": {
-            "@id": "http://schema.org/defaultValue"
+            "@id": "http://schema.org/defaultValue",
+            "@type": "@id"
         },
         "defendant": {
             "@container": "@set",
-            "@id": "http://schema.dig.isi.edu/ontology/defendant"
+            "@id": "http://schema.dig.isi.edu/ontology/defendant",
+            "@type": "@id"
         },
         "deliveryAddress": {
-            "@id": "http://schema.org/deliveryAddress"
+            "@id": "http://schema.org/deliveryAddress",
+            "@type": "@id"
         },
         "deliveryLeadTime": {
-            "@id": "http://schema.org/deliveryLeadTime"
+            "@id": "http://schema.org/deliveryLeadTime",
+            "@type": "@id"
         },
         "deliveryMethod": {
-            "@id": "http://schema.org/deliveryMethod"
+            "@id": "http://schema.org/deliveryMethod",
+            "@type": "@id"
         },
         "deliveryStatus": {
-            "@id": "http://schema.org/deliveryStatus"
+            "@id": "http://schema.org/deliveryStatus",
+            "@type": "@id"
         },
         "department": {
-            "@id": "http://schema.org/department"
+            "@id": "http://schema.org/department",
+            "@type": "@id"
         },
         "departureAirport": {
-            "@id": "http://schema.org/departureAirport"
+            "@id": "http://schema.org/departureAirport",
+            "@type": "@id"
         },
         "departureBusStop": {
-            "@id": "http://schema.org/departureBusStop"
+            "@id": "http://schema.org/departureBusStop",
+            "@type": "@id"
         },
         "departureGate": {
-            "@id": "http://schema.org/departureGate"
+            "@id": "http://schema.org/departureGate",
+            "@type": "@id"
         },
         "departurePlatform": {
-            "@id": "http://schema.org/departurePlatform"
+            "@id": "http://schema.org/departurePlatform",
+            "@type": "@id"
         },
         "departureStation": {
-            "@id": "http://schema.org/departureStation"
+            "@id": "http://schema.org/departureStation",
+            "@type": "@id"
         },
         "departureTerminal": {
-            "@id": "http://schema.org/departureTerminal"
+            "@id": "http://schema.org/departureTerminal",
+            "@type": "@id"
         },
         "departureTime": {
-            "@id": "http://schema.org/departureTime"
+            "@id": "http://schema.org/departureTime",
+            "@type": "@id"
         },
         "dependencies": {
-            "@id": "http://schema.org/dependencies"
+            "@id": "http://schema.org/dependencies",
+            "@type": "@id"
         },
         "depth": {
-            "@id": "http://schema.org/depth"
+            "@id": "http://schema.org/depth",
+            "@type": "@id"
         },
         "description": {
             "@id": "http://schema.org/description"
         },
         "device": {
-            "@id": "http://schema.org/device"
+            "@id": "http://schema.org/device",
+            "@type": "@id"
         },
         "diagnosis": {
-            "@id": "http://schema.org/diagnosis"
+            "@id": "http://schema.org/diagnosis",
+            "@type": "@id"
         },
         "diagram": {
-            "@id": "http://schema.org/diagram"
+            "@id": "http://schema.org/diagram",
+            "@type": "@id"
         },
         "diet": {
-            "@id": "http://schema.org/diet"
+            "@id": "http://schema.org/diet",
+            "@type": "@id"
         },
         "dietFeatures": {
-            "@id": "http://schema.org/dietFeatures"
+            "@id": "http://schema.org/dietFeatures",
+            "@type": "@id"
         },
         "differentialDiagnosis": {
-            "@id": "http://schema.org/differentialDiagnosis"
+            "@id": "http://schema.org/differentialDiagnosis",
+            "@type": "@id"
         },
         "digitalObjectIdentifier": {
             "@id": "http://schema.dig.isi.edu/ontology/digitalObjectIdentifier"
         },
         "director": {
-            "@id": "http://schema.org/director"
+            "@id": "http://schema.org/director",
+            "@type": "@id"
         },
         "directors": {
-            "@id": "http://schema.org/directors"
+            "@id": "http://schema.org/directors",
+            "@type": "@id"
         },
         "discount": {
-            "@id": "http://schema.org/discount"
+            "@id": "http://schema.org/discount",
+            "@type": "@id"
         },
         "discountCode": {
-            "@id": "http://schema.org/discountCode"
+            "@id": "http://schema.org/discountCode",
+            "@type": "@id"
         },
         "discountCurrency": {
-            "@id": "http://schema.org/discountCurrency"
+            "@id": "http://schema.org/discountCurrency",
+            "@type": "@id"
         },
         "discusses": {
-            "@id": "http://schema.org/discusses"
+            "@id": "http://schema.org/discusses",
+            "@type": "@id"
         },
         "discussionUrl": {
-            "@id": "http://schema.org/discussionUrl"
+            "@id": "http://schema.org/discussionUrl",
+            "@type": "@id"
         },
         "dissolutionDate": {
-            "@id": "http://schema.org/dissolutionDate"
+            "@id": "http://schema.org/dissolutionDate",
+            "@type": "@id"
         },
         "distance": {
-            "@id": "http://schema.org/distance"
+            "@id": "http://schema.org/distance",
+            "@type": "@id"
         },
         "distinguishingSign": {
-            "@id": "http://schema.org/distinguishingSign"
+            "@id": "http://schema.org/distinguishingSign",
+            "@type": "@id"
         },
         "distribution": {
-            "@id": "http://schema.org/distribution"
+            "@id": "http://schema.org/distribution",
+            "@type": "@id"
         },
         "domain": {
             "@id": "http://www.w3.org/2000/01/rdf-schema#domain"
         },
         "domainIncludes": {
-            "@id": "http://schema.org/domainIncludes"
+            "@id": "http://schema.org/domainIncludes",
+            "@type": "@id"
         },
         "domainName": {
             "@id": "http://schema.dig.isi.edu/ontology/domainName"
         },
         "doorTime": {
-            "@id": "http://schema.org/doorTime"
+            "@id": "http://schema.org/doorTime",
+            "@type": "@id"
         },
         "dosageForm": {
-            "@id": "http://schema.org/dosageForm"
+            "@id": "http://schema.org/dosageForm",
+            "@type": "@id"
         },
         "doseSchedule": {
-            "@id": "http://schema.org/doseSchedule"
+            "@id": "http://schema.org/doseSchedule",
+            "@type": "@id"
         },
         "doseUnit": {
-            "@id": "http://schema.org/doseUnit"
+            "@id": "http://schema.org/doseUnit",
+            "@type": "@id"
         },
         "doseValue": {
-            "@id": "http://schema.org/doseValue"
+            "@id": "http://schema.org/doseValue",
+            "@type": "@id"
         },
         "downloadUrl": {
-            "@id": "http://schema.org/downloadUrl"
+            "@id": "http://schema.org/downloadUrl",
+            "@type": "@id"
         },
         "downvoteCount": {
-            "@id": "http://schema.org/downvoteCount"
+            "@id": "http://schema.org/downvoteCount",
+            "@type": "@id"
         },
         "drainsTo": {
-            "@id": "http://schema.org/drainsTo"
+            "@id": "http://schema.org/drainsTo",
+            "@type": "@id"
         },
         "driveWheelConfiguration": {
-            "@id": "http://schema.org/driveWheelConfiguration"
+            "@id": "http://schema.org/driveWheelConfiguration",
+            "@type": "@id"
         },
         "dropoffLocation": {
-            "@id": "http://schema.org/dropoffLocation"
+            "@id": "http://schema.org/dropoffLocation",
+            "@type": "@id"
         },
         "dropoffTime": {
-            "@id": "http://schema.org/dropoffTime"
+            "@id": "http://schema.org/dropoffTime",
+            "@type": "@id"
         },
         "drug": {
-            "@id": "http://schema.org/drug"
+            "@id": "http://schema.org/drug",
+            "@type": "@id"
         },
         "drugClass": {
-            "@id": "http://schema.org/drugClass"
+            "@id": "http://schema.org/drugClass",
+            "@type": "@id"
         },
         "drugUnit": {
-            "@id": "http://schema.org/drugUnit"
+            "@id": "http://schema.org/drugUnit",
+            "@type": "@id"
         },
         "drug_use": {
             "@id": "http://schema.dig.isi.edu/ontology/drug_use"
         },
         "duns": {
-            "@id": "http://schema.org/duns"
+            "@id": "http://schema.org/duns",
+            "@type": "@id"
         },
         "duplicateTherapy": {
-            "@id": "http://schema.org/duplicateTherapy"
+            "@id": "http://schema.org/duplicateTherapy",
+            "@type": "@id"
         },
         "duration": {
             "@id": "http://schema.org/duration"
         },
         "durationOfWarranty": {
-            "@id": "http://schema.org/durationOfWarranty"
+            "@id": "http://schema.org/durationOfWarranty",
+            "@type": "@id"
         },
         "editor": {
-            "@id": "http://schema.org/editor"
+            "@id": "http://schema.org/editor",
+            "@type": "@id"
         },
         "educationRequirements": {
-            "@id": "http://schema.org/educationRequirements"
+            "@id": "http://schema.org/educationRequirements",
+            "@type": "@id"
         },
         "educationalAlignment": {
-            "@id": "http://schema.org/educationalAlignment"
+            "@id": "http://schema.org/educationalAlignment",
+            "@type": "@id"
         },
         "educationalFramework": {
-            "@id": "http://schema.org/educationalFramework"
+            "@id": "http://schema.org/educationalFramework",
+            "@type": "@id"
         },
         "educationalRole": {
-            "@id": "http://schema.org/educationalRole"
+            "@id": "http://schema.org/educationalRole",
+            "@type": "@id"
         },
         "educationalUse": {
-            "@id": "http://schema.org/educationalUse"
+            "@id": "http://schema.org/educationalUse",
+            "@type": "@id"
         },
         "elevation": {
-            "@id": "http://schema.org/elevation"
+            "@id": "http://schema.org/elevation",
+            "@type": "@id"
         },
         "eligibleCustomerType": {
-            "@id": "http://schema.org/eligibleCustomerType"
+            "@id": "http://schema.org/eligibleCustomerType",
+            "@type": "@id"
         },
         "eligibleDuration": {
-            "@id": "http://schema.org/eligibleDuration"
+            "@id": "http://schema.org/eligibleDuration",
+            "@type": "@id"
         },
         "eligibleQuantity": {
-            "@id": "http://schema.org/eligibleQuantity"
+            "@id": "http://schema.org/eligibleQuantity",
+            "@type": "@id"
         },
         "eligibleRegion": {
-            "@id": "http://schema.org/eligibleRegion"
+            "@id": "http://schema.org/eligibleRegion",
+            "@type": "@id"
         },
         "eligibleTransactionVolume": {
-            "@id": "http://schema.org/eligibleTransactionVolume"
+            "@id": "http://schema.org/eligibleTransactionVolume",
+            "@type": "@id"
         },
         "email": {
             "@container": "@set",
@@ -4081,134 +4386,174 @@
             "@type": "@id"
         },
         "embedUrl": {
-            "@id": "http://schema.org/embedUrl"
+            "@id": "http://schema.org/embedUrl",
+            "@type": "@id"
         },
         "employee": {
-            "@id": "http://schema.org/employee"
+            "@id": "http://schema.org/employee",
+            "@type": "@id"
         },
         "employees": {
-            "@id": "http://schema.org/employees"
+            "@id": "http://schema.org/employees",
+            "@type": "@id"
         },
         "employmentType": {
-            "@id": "http://schema.org/employmentType"
+            "@id": "http://schema.org/employmentType",
+            "@type": "@id"
         },
         "encodesCreativeWork": {
-            "@id": "http://schema.org/encodesCreativeWork"
+            "@id": "http://schema.org/encodesCreativeWork",
+            "@type": "@id"
         },
         "encoding": {
-            "@id": "http://schema.org/encoding"
+            "@id": "http://schema.org/encoding",
+            "@type": "@id"
         },
         "encodingFormat": {
-            "@id": "http://schema.org/encodingFormat"
+            "@id": "http://schema.org/encodingFormat",
+            "@type": "@id"
         },
         "encodingType": {
-            "@id": "http://schema.org/encodingType"
+            "@id": "http://schema.org/encodingType",
+            "@type": "@id"
         },
         "encodings": {
-            "@id": "http://schema.org/encodings"
+            "@id": "http://schema.org/encodings",
+            "@type": "@id"
         },
         "endDate": {
             "@id": "http://schema.org/endDate"
         },
         "endTime": {
-            "@id": "http://schema.org/endTime"
+            "@id": "http://schema.org/endTime",
+            "@type": "@id"
         },
         "endorsee": {
-            "@id": "http://schema.org/endorsee"
+            "@id": "http://schema.org/endorsee",
+            "@type": "@id"
         },
         "endorsers": {
-            "@id": "http://schema.org/endorsers"
+            "@id": "http://schema.org/endorsers",
+            "@type": "@id"
         },
         "entertainmentBusiness": {
-            "@id": "http://schema.org/entertainmentBusiness"
+            "@id": "http://schema.org/entertainmentBusiness",
+            "@type": "@id"
         },
         "epidemiology": {
-            "@id": "http://schema.org/epidemiology"
+            "@id": "http://schema.org/epidemiology",
+            "@type": "@id"
         },
         "episode": {
-            "@id": "http://schema.org/episode"
+            "@id": "http://schema.org/episode",
+            "@type": "@id"
         },
         "episodeNumber": {
-            "@id": "http://schema.org/episodeNumber"
+            "@id": "http://schema.org/episodeNumber",
+            "@type": "@id"
         },
         "episodes": {
-            "@id": "http://schema.org/episodes"
+            "@id": "http://schema.org/episodes",
+            "@type": "@id"
         },
         "equal": {
-            "@id": "http://schema.org/equal"
+            "@id": "http://schema.org/equal",
+            "@type": "@id"
         },
         "error": {
-            "@id": "http://schema.org/error"
+            "@id": "http://schema.org/error",
+            "@type": "@id"
         },
         "es_directive": {
             "@id": "http://schema.dig.isi.edu/ontology/es_directive"
         },
         "estimatedFlightDuration": {
-            "@id": "http://schema.org/estimatedFlightDuration"
+            "@id": "http://schema.org/estimatedFlightDuration",
+            "@type": "@id"
         },
         "estimatesRiskOf": {
-            "@id": "http://schema.org/estimatesRiskOf"
+            "@id": "http://schema.org/estimatesRiskOf",
+            "@type": "@id"
         },
         "ethnicity": {
             "@container": "@set",
             "@id": "http://schema.dig.isi.edu/ontology/ethnicity"
         },
         "event": {
-            "@id": "http://schema.org/event"
+            "@id": "http://schema.org/event",
+            "@type": "@id"
         },
         "eventStatus": {
-            "@id": "http://schema.org/eventStatus"
+            "@id": "http://schema.org/eventStatus",
+            "@type": "@id"
         },
         "events": {
-            "@id": "http://schema.org/events"
+            "@id": "http://schema.org/events",
+            "@type": "@id"
         },
         "evidenceLevel": {
-            "@id": "http://schema.org/evidenceLevel"
+            "@id": "http://schema.org/evidenceLevel",
+            "@type": "@id"
         },
         "evidenceOrigin": {
-            "@id": "http://schema.org/evidenceOrigin"
+            "@id": "http://schema.org/evidenceOrigin",
+            "@type": "@id"
         },
         "exampleOfWork": {
-            "@id": "http://schema.org/exampleOfWork"
+            "@id": "http://schema.org/exampleOfWork",
+            "@type": "@id"
         },
         "executableLibraryName": {
-            "@id": "http://schema.org/executableLibraryName"
+            "@id": "http://schema.org/executableLibraryName",
+            "@type": "@id"
         },
         "exerciseCourse": {
-            "@id": "http://schema.org/exerciseCourse"
+            "@id": "http://schema.org/exerciseCourse",
+            "@type": "@id"
         },
         "exercisePlan": {
-            "@id": "http://schema.org/exercisePlan"
+            "@id": "http://schema.org/exercisePlan",
+            "@type": "@id"
         },
         "exerciseRelatedDiet": {
-            "@id": "http://schema.org/exerciseRelatedDiet"
+            "@id": "http://schema.org/exerciseRelatedDiet",
+            "@type": "@id"
         },
         "exerciseType": {
-            "@id": "http://schema.org/exerciseType"
+            "@id": "http://schema.org/exerciseType",
+            "@type": "@id"
         },
         "exifData": {
-            "@id": "http://schema.org/exifData"
+            "@id": "http://schema.org/exifData",
+            "@type": "@id"
         },
         "expectedArrivalFrom": {
-            "@id": "http://schema.org/expectedArrivalFrom"
+            "@id": "http://schema.org/expectedArrivalFrom",
+            "@type": "@id"
         },
         "expectedArrivalUntil": {
-            "@id": "http://schema.org/expectedArrivalUntil"
+            "@id": "http://schema.org/expectedArrivalUntil",
+            "@type": "@id"
         },
         "expectedPrognosis": {
-            "@id": "http://schema.org/expectedPrognosis"
+            "@id": "http://schema.org/expectedPrognosis",
+            "@type": "@id"
         },
         "expectsAcceptanceOf": {
-            "@id": "http://schema.org/expectsAcceptanceOf"
+            "@id": "http://schema.org/expectsAcceptanceOf",
+            "@type": "@id"
         },
         "experienceRequirements": {
-            "@id": "http://schema.org/experienceRequirements"
+            "@id": "http://schema.org/experienceRequirements",
+            "@type": "@id"
         },
         "expertConsiderations": {
-            "@id": "http://schema.org/expertConsiderations"
+            "@id": "http://schema.org/expertConsiderations",
+            "@type": "@id"
         },
         "expires": {
-            "@id": "http://schema.org/expires"
+            "@id": "http://schema.org/expires",
+            "@type": "@id"
         },
         "exploitsVulnerability": {
             "@id": "http://schema.dig.isi.edu/ontology/exploitsVulnerability",
@@ -4225,31 +4570,38 @@
             "@id": "http://schema.dig.isi.edu/ontology/eyeColor"
         },
         "familyName": {
-            "@id": "http://schema.org/familyName"
+            "@id": "http://schema.org/familyName",
+            "@type": "@id"
         },
         "fatContent": {
-            "@id": "http://schema.org/fatContent"
+            "@id": "http://schema.org/fatContent",
+            "@type": "@id"
         },
         "favoriteCount": {
             "@id": "http://schema.dig.isi.edu/ontology/favoriteCount"
         },
         "faxNumber": {
-            "@id": "http://schema.org/faxNumber"
+            "@id": "http://schema.org/faxNumber",
+            "@type": "@id"
         },
         "featureList": {
-            "@id": "http://schema.org/featureList"
+            "@id": "http://schema.org/featureList",
+            "@type": "@id"
         },
         "fiberContent": {
-            "@id": "http://schema.org/fiberContent"
+            "@id": "http://schema.org/fiberContent",
+            "@type": "@id"
         },
         "fileFormat": {
-            "@id": "http://schema.org/fileFormat"
+            "@id": "http://schema.org/fileFormat",
+            "@type": "@id"
         },
         "fileName": {
             "@id": "http://schema.dig.isi.edu/ontology/fileName"
         },
         "fileSize": {
-            "@id": "http://schema.org/fileSize"
+            "@id": "http://schema.org/fileSize",
+            "@type": "@id"
         },
         "financialTags": {
             "@id": "http://schema.dig.isi.edu/ontology/financialTags"
@@ -4258,143 +4610,185 @@
             "@id": "http://schema.dig.isi.edu/ontology/firearmAction"
         },
         "firstPerformance": {
-            "@id": "http://schema.org/firstPerformance"
+            "@id": "http://schema.org/firstPerformance",
+            "@type": "@id"
         },
         "fixesVulnerability": {
             "@id": "http://schema.dig.isi.edu/ontology/fixesVulnerability",
             "@type": "@id"
         },
         "flightDistance": {
-            "@id": "http://schema.org/flightDistance"
+            "@id": "http://schema.org/flightDistance",
+            "@type": "@id"
         },
         "flightNumber": {
-            "@id": "http://schema.org/flightNumber"
+            "@id": "http://schema.org/flightNumber",
+            "@type": "@id"
         },
         "followee": {
-            "@id": "http://schema.org/followee"
+            "@id": "http://schema.org/followee",
+            "@type": "@id"
         },
         "follows": {
-            "@id": "http://schema.org/follows"
+            "@id": "http://schema.org/follows",
+            "@type": "@id"
         },
         "followup": {
-            "@id": "http://schema.org/followup"
+            "@id": "http://schema.org/followup",
+            "@type": "@id"
         },
         "foodEstablishment": {
-            "@id": "http://schema.org/foodEstablishment"
+            "@id": "http://schema.org/foodEstablishment",
+            "@type": "@id"
         },
         "foodEvent": {
-            "@id": "http://schema.org/foodEvent"
+            "@id": "http://schema.org/foodEvent",
+            "@type": "@id"
         },
         "foodWarning": {
-            "@id": "http://schema.org/foodWarning"
+            "@id": "http://schema.org/foodWarning",
+            "@type": "@id"
         },
         "founder": {
-            "@id": "http://schema.org/founder"
+            "@id": "http://schema.org/founder",
+            "@type": "@id"
         },
         "founders": {
-            "@id": "http://schema.org/founders"
+            "@id": "http://schema.org/founders",
+            "@type": "@id"
         },
         "foundingDate": {
-            "@id": "http://schema.org/foundingDate"
+            "@id": "http://schema.org/foundingDate",
+            "@type": "@id"
         },
         "foundingLocation": {
-            "@id": "http://schema.org/foundingLocation"
+            "@id": "http://schema.org/foundingLocation",
+            "@type": "@id"
         },
         "free": {
-            "@id": "http://schema.org/free"
+            "@id": "http://schema.org/free",
+            "@type": "@id"
         },
         "frequency": {
-            "@id": "http://schema.org/frequency"
+            "@id": "http://schema.org/frequency",
+            "@type": "@id"
         },
         "fromLocation": {
             "@id": "http://schema.org/fromLocation",
             "@type": "@id"
         },
         "fuelConsumption": {
-            "@id": "http://schema.org/fuelConsumption"
+            "@id": "http://schema.org/fuelConsumption",
+            "@type": "@id"
         },
         "fuelEfficiency": {
-            "@id": "http://schema.org/fuelEfficiency"
+            "@id": "http://schema.org/fuelEfficiency",
+            "@type": "@id"
         },
         "fuelType": {
-            "@id": "http://schema.org/fuelType"
+            "@id": "http://schema.org/fuelType",
+            "@type": "@id"
         },
         "function": {
-            "@id": "http://schema.org/function"
+            "@id": "http://schema.org/function",
+            "@type": "@id"
         },
         "functionalClass": {
-            "@id": "http://schema.org/functionalClass"
+            "@id": "http://schema.org/functionalClass",
+            "@type": "@id"
         },
         "game": {
-            "@id": "http://schema.org/game"
+            "@id": "http://schema.org/game",
+            "@type": "@id"
         },
         "gameItem": {
-            "@id": "http://schema.org/gameItem"
+            "@id": "http://schema.org/gameItem",
+            "@type": "@id"
         },
         "gameLocation": {
-            "@id": "http://schema.org/gameLocation"
+            "@id": "http://schema.org/gameLocation",
+            "@type": "@id"
         },
         "gamePlatform": {
-            "@id": "http://schema.org/gamePlatform"
+            "@id": "http://schema.org/gamePlatform",
+            "@type": "@id"
         },
         "gameServer": {
-            "@id": "http://schema.org/gameServer"
+            "@id": "http://schema.org/gameServer",
+            "@type": "@id"
         },
         "gameTip": {
-            "@id": "http://schema.org/gameTip"
+            "@id": "http://schema.org/gameTip",
+            "@type": "@id"
         },
         "gender": {
             "@container": "@set",
-            "@id": "http://schema.org/gender"
+            "@id": "http://schema.org/gender",
+            "@type": "@id"
         },
         "genre": {
-            "@id": "http://schema.org/genre"
+            "@id": "http://schema.org/genre",
+            "@type": "@id"
         },
         "geo": {
             "@id": "http://schema.org/geo",
             "@type": "@id"
         },
         "geoMidpoint": {
-            "@id": "http://schema.org/geoMidpoint"
+            "@id": "http://schema.org/geoMidpoint",
+            "@type": "@id"
         },
         "geoRadius": {
-            "@id": "http://schema.org/geoRadius"
+            "@id": "http://schema.org/geoRadius",
+            "@type": "@id"
         },
         "geographicArea": {
-            "@id": "http://schema.org/geographicArea"
+            "@id": "http://schema.org/geographicArea",
+            "@type": "@id"
         },
         "givenName": {
-            "@id": "http://schema.org/givenName"
+            "@id": "http://schema.org/givenName",
+            "@type": "@id"
         },
         "globalLocationNumber": {
-            "@id": "http://schema.org/globalLocationNumber"
+            "@id": "http://schema.org/globalLocationNumber",
+            "@type": "@id"
         },
         "greater": {
-            "@id": "http://schema.org/greater"
+            "@id": "http://schema.org/greater",
+            "@type": "@id"
         },
         "greaterOrEqual": {
-            "@id": "http://schema.org/greaterOrEqual"
+            "@id": "http://schema.org/greaterOrEqual",
+            "@type": "@id"
         },
         "gtin12": {
-            "@id": "http://schema.org/gtin12"
+            "@id": "http://schema.org/gtin12",
+            "@type": "@id"
         },
         "gtin13": {
-            "@id": "http://schema.org/gtin13"
+            "@id": "http://schema.org/gtin13",
+            "@type": "@id"
         },
         "gtin14": {
-            "@id": "http://schema.org/gtin14"
+            "@id": "http://schema.org/gtin14",
+            "@type": "@id"
         },
         "gtin8": {
-            "@id": "http://schema.org/gtin8"
+            "@id": "http://schema.org/gtin8",
+            "@type": "@id"
         },
         "guideline": {
-            "@id": "http://schema.org/guideline"
+            "@id": "http://schema.org/guideline",
+            "@type": "@id"
         },
         "guidelineDate": {
-            "@id": "http://schema.org/guidelineDate"
+            "@id": "http://schema.org/guidelineDate",
+            "@type": "@id"
         },
         "guidelineSubject": {
-            "@id": "http://schema.org/guidelineSubject"
+            "@id": "http://schema.org/guidelineSubject",
+            "@type": "@id"
         },
         "hairColor": {
             "@container": "@set",
@@ -4405,37 +4799,45 @@
             "@type": "@id"
         },
         "hasDeliveryMethod": {
-            "@id": "http://schema.org/hasDeliveryMethod"
+            "@id": "http://schema.org/hasDeliveryMethod",
+            "@type": "@id"
         },
         "hasExploit": {
-            "@id": "http://schema.dig.isi.edu/ontology/hasExploit"
+            "@id": "http://schema.dig.isi.edu/ontology/hasExploit",
+            "@type": "@id"
         },
         "hasExtraction": {
             "@id": "http://schema.dig.isi.edu/ontology/hasExtraction",
             "@type": "@id"
         },
         "hasImagePart": {
-            "@id": "http://schema.dig.isi.edu/ontology/hasImagePart"
+            "@id": "http://schema.dig.isi.edu/ontology/hasImagePart",
+            "@type": "@id"
         },
         "hasLoginCredentials": {
             "@id": "http://schema.dig.isi.edu/ontology/hasLoginCredentials",
             "@type": "@id"
         },
         "hasMap": {
-            "@id": "http://schema.org/hasMap"
+            "@id": "http://schema.org/hasMap",
+            "@type": "@id"
         },
         "hasOfferCatalog": {
-            "@id": "http://schema.org/hasOfferCatalog"
+            "@id": "http://schema.org/hasOfferCatalog",
+            "@type": "@id"
         },
         "hasPOS": {
-            "@id": "http://schema.org/hasPOS"
+            "@id": "http://schema.org/hasPOS",
+            "@type": "@id"
         },
         "hasPart": {
-            "@id": "http://schema.org/hasPart"
+            "@id": "http://schema.org/hasPart",
+            "@type": "@id"
         },
         "hasPhrase": {
             "@container": "@set",
-            "@id": "http://schema.dig.isi.edu/ontology/hasPhrase"
+            "@id": "http://schema.dig.isi.edu/ontology/hasPhrase",
+            "@type": "@id"
         },
         "hasPost": {
             "@container": "@set",
@@ -4443,13 +4845,15 @@
             "@type": "@id"
         },
         "hasSentence": {
-            "@id": "http://schema.dig.isi.edu/ontology/hasSentence"
+            "@id": "http://schema.dig.isi.edu/ontology/hasSentence",
+            "@type": "@id"
         },
         "hasSoftwareClass": {
             "@id": "http://schema.dig.isi.edu/ontology/hasSoftwareClass"
         },
         "hasSourceCode": {
-            "@id": "http://schema.dig.isi.edu/ontology/hasSourceCode"
+            "@id": "http://schema.dig.isi.edu/ontology/hasSourceCode",
+            "@type": "@id"
         },
         "hasTextExtraction": {
             "@container": "@set",
@@ -4469,19 +4873,24 @@
             "@id": "http://schema.dig.isi.edu/ontology/hasType"
         },
         "hasVulnerability": {
-            "@id": "http://schema.dig.isi.edu/ontology/hasVulnerability"
+            "@id": "http://schema.dig.isi.edu/ontology/hasVulnerability",
+            "@type": "@id"
         },
         "headline": {
-            "@id": "http://schema.org/headline"
+            "@id": "http://schema.org/headline",
+            "@type": "@id"
         },
         "healthCondition": {
-            "@id": "http://schema.org/healthCondition"
+            "@id": "http://schema.org/healthCondition",
+            "@type": "@id"
         },
         "height": {
-            "@id": "http://schema.org/height"
+            "@id": "http://schema.org/height",
+            "@type": "@id"
         },
         "highPrice": {
-            "@id": "http://schema.org/highPrice"
+            "@id": "http://schema.org/highPrice",
+            "@type": "@id"
         },
         "high_recall_readability_date": {
             "@id": "http://schema.dig.isi.edu/ontology/high_recall_readability_date"
@@ -4490,65 +4899,82 @@
             "@id": "http://schema.dig.isi.edu/ontology/high_recall_readability_text"
         },
         "hiringOrganization": {
-            "@id": "http://schema.org/hiringOrganization"
+            "@id": "http://schema.org/hiringOrganization",
+            "@type": "@id"
         },
         "homeLocation": {
-            "@id": "http://schema.org/homeLocation"
+            "@id": "http://schema.org/homeLocation",
+            "@type": "@id"
         },
         "homeTeam": {
-            "@id": "http://schema.org/homeTeam"
+            "@id": "http://schema.org/homeTeam",
+            "@type": "@id"
         },
         "honorificPrefix": {
-            "@id": "http://schema.org/honorificPrefix"
+            "@id": "http://schema.org/honorificPrefix",
+            "@type": "@id"
         },
         "honorificSuffix": {
-            "@id": "http://schema.org/honorificSuffix"
+            "@id": "http://schema.org/honorificSuffix",
+            "@type": "@id"
         },
         "hospitalAffiliation": {
-            "@id": "http://schema.org/hospitalAffiliation"
+            "@id": "http://schema.org/hospitalAffiliation",
+            "@type": "@id"
         },
         "hostedAt": {
             "@id": "http://schema.dig.isi.edu/ontology/hostedAt",
             "@type": "@id"
         },
         "hostingOrganization": {
-            "@id": "http://schema.org/hostingOrganization"
+            "@id": "http://schema.org/hostingOrganization",
+            "@type": "@id"
         },
         "hostname": {
             "@id": "http://schema.dig.isi.edu/ontology/hostname"
         },
         "hoursAvailable": {
-            "@id": "http://schema.org/hoursAvailable"
+            "@id": "http://schema.org/hoursAvailable",
+            "@type": "@id"
         },
         "howPerformed": {
-            "@id": "http://schema.org/howPerformed"
+            "@id": "http://schema.org/howPerformed",
+            "@type": "@id"
         },
         "htmlMarkupFragment": {
             "@id": "http://schema.dig.isi.edu/ontology/htmlMarkupFragment"
         },
         "httpMethod": {
-            "@id": "http://schema.org/httpMethod"
+            "@id": "http://schema.org/httpMethod",
+            "@type": "@id"
         },
         "iataCode": {
-            "@id": "http://schema.org/iataCode"
+            "@id": "http://schema.org/iataCode",
+            "@type": "@id"
         },
         "icaoCode": {
-            "@id": "http://schema.org/icaoCode"
+            "@id": "http://schema.org/icaoCode",
+            "@type": "@id"
         },
         "identifier": {
-            "@id": "http://schema.dig.isi.edu/ontology/identifier"
+            "@id": "http://schema.dig.isi.edu/ontology/identifier",
+            "@type": "@id"
         },
         "identifyingExam": {
-            "@id": "http://schema.org/identifyingExam"
+            "@id": "http://schema.org/identifyingExam",
+            "@type": "@id"
         },
         "identifyingTest": {
-            "@id": "http://schema.org/identifyingTest"
+            "@id": "http://schema.org/identifyingTest",
+            "@type": "@id"
         },
         "illustrator": {
-            "@id": "http://schema.org/illustrator"
+            "@id": "http://schema.org/illustrator",
+            "@type": "@id"
         },
         "image": {
-            "@id": "http://schema.org/image"
+            "@id": "http://schema.org/image",
+            "@type": "@id"
         },
         "image_in_hotel_motel_room": {
             "@id": "http://schema.dig.isi.edu/ontology/image_in_hotel_motel_room"
@@ -4569,62 +4995,79 @@
             "@id": "http://schema.dig.isi.edu/ontology/image_without_professional_lighting"
         },
         "imagingTechnique": {
-            "@id": "http://schema.org/imagingTechnique"
+            "@id": "http://schema.org/imagingTechnique",
+            "@type": "@id"
         },
         "inAlbum": {
-            "@id": "http://schema.org/inAlbum"
+            "@id": "http://schema.org/inAlbum",
+            "@type": "@id"
         },
         "inBroadcastLineup": {
-            "@id": "http://schema.org/inBroadcastLineup"
+            "@id": "http://schema.org/inBroadcastLineup",
+            "@type": "@id"
         },
         "inLanguage": {
             "@id": "http://schema.org/inLanguage"
         },
         "inPlaylist": {
-            "@id": "http://schema.org/inPlaylist"
+            "@id": "http://schema.org/inPlaylist",
+            "@type": "@id"
         },
         "inSupportOf": {
-            "@id": "http://schema.org/inSupportOf"
+            "@id": "http://schema.org/inSupportOf",
+            "@type": "@id"
         },
         "incentiveCompensation": {
-            "@id": "http://schema.org/incentiveCompensation"
+            "@id": "http://schema.org/incentiveCompensation",
+            "@type": "@id"
         },
         "incentives": {
-            "@id": "http://schema.org/incentives"
+            "@id": "http://schema.org/incentives",
+            "@type": "@id"
         },
         "includedComposition": {
-            "@id": "http://schema.org/includedComposition"
+            "@id": "http://schema.org/includedComposition",
+            "@type": "@id"
         },
         "includedDataCatalog": {
-            "@id": "http://schema.org/includedDataCatalog"
+            "@id": "http://schema.org/includedDataCatalog",
+            "@type": "@id"
         },
         "includedRiskFactor": {
-            "@id": "http://schema.org/includedRiskFactor"
+            "@id": "http://schema.org/includedRiskFactor",
+            "@type": "@id"
         },
         "includesObject": {
-            "@id": "http://schema.org/includesObject"
+            "@id": "http://schema.org/includesObject",
+            "@type": "@id"
         },
         "includesSoftwares": {
             "@id": "http://schema.dig.isi.edu/ontology/includesSoftwares",
             "@type": "@id"
         },
         "increasesRiskOf": {
-            "@id": "http://schema.org/increasesRiskOf"
+            "@id": "http://schema.org/increasesRiskOf",
+            "@type": "@id"
         },
         "indication": {
-            "@id": "http://schema.org/indication"
+            "@id": "http://schema.org/indication",
+            "@type": "@id"
         },
         "industry": {
-            "@id": "http://schema.org/industry"
+            "@id": "http://schema.org/industry",
+            "@type": "@id"
         },
         "ineligibleRegion": {
-            "@id": "http://schema.org/ineligibleRegion"
+            "@id": "http://schema.org/ineligibleRegion",
+            "@type": "@id"
         },
         "infectiousAgent": {
-            "@id": "http://schema.org/infectiousAgent"
+            "@id": "http://schema.org/infectiousAgent",
+            "@type": "@id"
         },
         "infectiousAgentClass": {
-            "@id": "http://schema.org/infectiousAgentClass"
+            "@id": "http://schema.org/infectiousAgentClass",
+            "@type": "@id"
         },
         "inferlink": {
             "@id": "http://schema.dig.isi.edu/ontology/inferlink"
@@ -4636,74 +5079,96 @@
             "@id": "http://schema.dig.isi.edu/ontology/inferlink_text"
         },
         "ingredients": {
-            "@id": "http://schema.org/ingredients"
+            "@id": "http://schema.org/ingredients",
+            "@type": "@id"
         },
         "inker": {
-            "@id": "http://schema.org/inker"
+            "@id": "http://schema.org/inker",
+            "@type": "@id"
         },
         "insertion": {
-            "@id": "http://schema.org/insertion"
+            "@id": "http://schema.org/insertion",
+            "@type": "@id"
         },
         "installUrl": {
-            "@id": "http://schema.org/installUrl"
+            "@id": "http://schema.org/installUrl",
+            "@type": "@id"
         },
         "instrument": {
-            "@id": "http://schema.org/instrument"
+            "@id": "http://schema.org/instrument",
+            "@type": "@id"
         },
         "intensity": {
-            "@id": "http://schema.org/intensity"
+            "@id": "http://schema.org/intensity",
+            "@type": "@id"
         },
         "interactingDrug": {
-            "@id": "http://schema.org/interactingDrug"
+            "@id": "http://schema.org/interactingDrug",
+            "@type": "@id"
         },
         "interactionCount": {
-            "@id": "http://schema.org/interactionCount"
+            "@id": "http://schema.org/interactionCount",
+            "@type": "@id"
         },
         "interactionService": {
-            "@id": "http://schema.org/interactionService"
+            "@id": "http://schema.org/interactionService",
+            "@type": "@id"
         },
         "interactionStatistic": {
-            "@id": "http://schema.org/interactionStatistic"
+            "@id": "http://schema.org/interactionStatistic",
+            "@type": "@id"
         },
         "interactionType": {
-            "@id": "http://schema.org/interactionType"
+            "@id": "http://schema.org/interactionType",
+            "@type": "@id"
         },
         "interactivityType": {
-            "@id": "http://schema.org/interactivityType"
+            "@id": "http://schema.org/interactivityType",
+            "@type": "@id"
         },
         "interest": {
             "@container": "@set",
             "@id": "http://schema.dig.isi.edu/ontology/interest"
         },
         "inventoryLevel": {
-            "@id": "http://schema.org/inventoryLevel"
+            "@id": "http://schema.org/inventoryLevel",
+            "@type": "@id"
         },
         "inverseOf": {
-            "@id": "http://schema.org/inverseOf"
+            "@id": "http://schema.org/inverseOf",
+            "@type": "@id"
         },
         "isAbstractPartOf": {
-            "@id": "http://schema.dig.isi.edu/ontology/isAbstractPartOf"
+            "@id": "http://schema.dig.isi.edu/ontology/isAbstractPartOf",
+            "@type": "@id"
         },
         "isAccessibleForFree": {
-            "@id": "http://schema.org/isAccessibleForFree"
+            "@id": "http://schema.org/isAccessibleForFree",
+            "@type": "@id"
         },
         "isAccessoryOrSparePartFor": {
-            "@id": "http://schema.org/isAccessoryOrSparePartFor"
+            "@id": "http://schema.org/isAccessoryOrSparePartFor",
+            "@type": "@id"
         },
         "isAuthorOf": {
-            "@id": "http://schema.dig.isi.edu/ontology/isAuthorOf"
+            "@id": "http://schema.dig.isi.edu/ontology/isAuthorOf",
+            "@type": "@id"
         },
         "isAvailableGenerically": {
-            "@id": "http://schema.org/isAvailableGenerically"
+            "@id": "http://schema.org/isAvailableGenerically",
+            "@type": "@id"
         },
         "isBasedOnUrl": {
-            "@id": "http://schema.org/isBasedOnUrl"
+            "@id": "http://schema.org/isBasedOnUrl",
+            "@type": "@id"
         },
         "isCitationOf": {
-            "@id": "http://schema.dig.isi.edu/ontology/isCitationOf"
+            "@id": "http://schema.dig.isi.edu/ontology/isCitationOf",
+            "@type": "@id"
         },
         "isConsumableFor": {
-            "@id": "http://schema.org/isConsumableFor"
+            "@id": "http://schema.org/isConsumableFor",
+            "@type": "@id"
         },
         "isDefinedBy": {
             "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
@@ -4712,20 +5177,24 @@
             "@id": "http://schema.dig.isi.edu/ontology/isExtractedFrom"
         },
         "isFamilyFriendly": {
-            "@id": "http://schema.org/isFamilyFriendly"
+            "@id": "http://schema.org/isFamilyFriendly",
+            "@type": "@id"
         },
         "isFixedBy": {
             "@id": "http://schema.dig.isi.edu/ontology/isFixedBy",
             "@type": "@id"
         },
         "isGift": {
-            "@id": "http://schema.org/isGift"
+            "@id": "http://schema.org/isGift",
+            "@type": "@id"
         },
         "isImagePartOf": {
-            "@id": "http://schema.dig.isi.edu/ontology/isImagePartOf"
+            "@id": "http://schema.dig.isi.edu/ontology/isImagePartOf",
+            "@type": "@id"
         },
         "isLiveBroadcast": {
-            "@id": "http://schema.org/isLiveBroadcast"
+            "@id": "http://schema.org/isLiveBroadcast",
+            "@type": "@id"
         },
         "isLoginCredentialFor": {
             "@id": "http://schema.dig.isi.edu/ontology/isLoginCredentialFor",
@@ -4739,25 +5208,32 @@
             "@id": "http://schema.dig.isi.edu/ontology/isObfuscated"
         },
         "isPartOf": {
-            "@id": "http://schema.org/isPartOf"
+            "@id": "http://schema.org/isPartOf",
+            "@type": "@id"
         },
         "isPhraseOf": {
-            "@id": "http://schema.dig.isi.edu/ontology/isPhraseOf"
+            "@id": "http://schema.dig.isi.edu/ontology/isPhraseOf",
+            "@type": "@id"
         },
         "isPostOf": {
-            "@id": "http://schema.dig.isi.edu/ontology/isPostOf"
+            "@id": "http://schema.dig.isi.edu/ontology/isPostOf",
+            "@type": "@id"
         },
         "isProprietary": {
-            "@id": "http://schema.org/isProprietary"
+            "@id": "http://schema.org/isProprietary",
+            "@type": "@id"
         },
         "isRelatedTo": {
-            "@id": "http://schema.org/isRelatedTo"
+            "@id": "http://schema.org/isRelatedTo",
+            "@type": "@id"
         },
         "isSentenceOf": {
-            "@id": "http://schema.dig.isi.edu/ontology/isSentenceOf"
+            "@id": "http://schema.dig.isi.edu/ontology/isSentenceOf",
+            "@type": "@id"
         },
         "isSimilarTo": {
-            "@id": "http://schema.org/isSimilarTo"
+            "@id": "http://schema.org/isSimilarTo",
+            "@type": "@id"
         },
         "isThreadOf": {
             "@id": "http://schema.dig.isi.edu/ontology/isThreadOf"
@@ -4767,68 +5243,88 @@
             "@type": "@id"
         },
         "isVariantOf": {
-            "@id": "http://schema.org/isVariantOf"
+            "@id": "http://schema.org/isVariantOf",
+            "@type": "@id"
         },
         "isbn": {
-            "@id": "http://schema.org/isbn"
+            "@id": "http://schema.org/isbn",
+            "@type": "@id"
         },
         "isicV4": {
-            "@id": "http://schema.org/isicV4"
+            "@id": "http://schema.org/isicV4",
+            "@type": "@id"
         },
         "isrcCode": {
-            "@id": "http://schema.org/isrcCode"
+            "@id": "http://schema.org/isrcCode",
+            "@type": "@id"
         },
         "issn": {
-            "@id": "http://schema.org/issn"
+            "@id": "http://schema.org/issn",
+            "@type": "@id"
         },
         "issueNumber": {
-            "@id": "http://schema.org/issueNumber"
+            "@id": "http://schema.org/issueNumber",
+            "@type": "@id"
         },
         "issuedBy": {
-            "@id": "http://schema.org/issuedBy"
+            "@id": "http://schema.org/issuedBy",
+            "@type": "@id"
         },
         "issuedThrough": {
-            "@id": "http://schema.org/issuedThrough"
+            "@id": "http://schema.org/issuedThrough",
+            "@type": "@id"
         },
         "iswcCode": {
-            "@id": "http://schema.org/iswcCode"
+            "@id": "http://schema.org/iswcCode",
+            "@type": "@id"
         },
         "item": {
-            "@id": "http://schema.org/item"
+            "@id": "http://schema.org/item",
+            "@type": "@id"
         },
         "itemCondition": {
-            "@id": "http://schema.org/itemCondition"
+            "@id": "http://schema.org/itemCondition",
+            "@type": "@id"
         },
         "itemListElement": {
-            "@id": "http://schema.org/itemListElement"
+            "@id": "http://schema.org/itemListElement",
+            "@type": "@id"
         },
         "itemListOrder": {
-            "@id": "http://schema.org/itemListOrder"
+            "@id": "http://schema.org/itemListOrder",
+            "@type": "@id"
         },
         "itemOffered": {
-            "@id": "http://schema.org/itemOffered"
+            "@id": "http://schema.org/itemOffered",
+            "@type": "@id"
         },
         "itemReviewed": {
-            "@id": "http://schema.org/itemReviewed"
+            "@id": "http://schema.org/itemReviewed",
+            "@type": "@id"
         },
         "itemShipped": {
-            "@id": "http://schema.org/itemShipped"
+            "@id": "http://schema.org/itemShipped",
+            "@type": "@id"
         },
         "itemStolen": {
             "@id": "http://schema.dig.isi.edu/ontology/itemStolen",
             "@type": "@id"
         },
         "jobBenefits": {
-            "@id": "http://schema.org/jobBenefits"
+            "@id": "http://schema.org/jobBenefits",
+            "@type": "@id"
         },
         "jobLocation": {
-            "@id": "http://schema.org/jobLocation"
+            "@id": "http://schema.org/jobLocation",
+            "@type": "@id"
         },
         "jobTitle": {
-            "@id": "http://schema.org/jobTitle"
+            "@id": "http://schema.org/jobTitle",
+            "@type": "@id"
         },
         "jsonLD_container": {
-            "@id": "http://schema.dig.isi.edu/ontology/jsonLD_container"
+            "@id": "http://schema.dig.isi.edu/ontology/jsonLD_container",
+            "@type": "@id"
         },
         "key": {
             "@id": "http://schema.dig.isi.edu/ontology/key"
@@ -4837,62 +5333,78 @@
             "@id": "http://schema.org/keywords"
         },
         "knownVehicleDamages": {
-            "@id": "http://schema.org/knownVehicleDamages"
+            "@id": "http://schema.org/knownVehicleDamages",
+            "@type": "@id"
         },
         "knows": {
-            "@id": "http://schema.org/knows"
+            "@id": "http://schema.org/knows",
+            "@type": "@id"
         },
         "label": {
             "@id": "http://www.w3.org/2000/01/rdf-schema#label"
         },
         "labelDetails": {
-            "@id": "http://schema.org/labelDetails"
+            "@id": "http://schema.org/labelDetails",
+            "@type": "@id"
         },
         "landlord": {
-            "@id": "http://schema.org/landlord"
+            "@id": "http://schema.org/landlord",
+            "@type": "@id"
         },
         "language": {
             "@id": "http://schema.org/language"
         },
         "lastReviewed": {
-            "@id": "http://schema.org/lastReviewed"
+            "@id": "http://schema.org/lastReviewed",
+            "@type": "@id"
         },
         "latitude": {
             "@id": "http://schema.org/latitude"
         },
         "learningResourceType": {
-            "@id": "http://schema.org/learningResourceType"
+            "@id": "http://schema.org/learningResourceType",
+            "@type": "@id"
         },
         "legalAction": {
             "@container": "@set",
-            "@id": "http://schema.dig.isi.edu/ontology/legalAction"
+            "@id": "http://schema.dig.isi.edu/ontology/legalAction",
+            "@type": "@id"
         },
         "legalName": {
-            "@id": "http://schema.org/legalName"
+            "@id": "http://schema.org/legalName",
+            "@type": "@id"
         },
         "legalStatus": {
-            "@id": "http://schema.org/legalStatus"
+            "@id": "http://schema.org/legalStatus",
+            "@type": "@id"
         },
         "lender": {
-            "@id": "http://schema.org/lender"
+            "@id": "http://schema.org/lender",
+            "@type": "@id"
         },
         "lesser": {
-            "@id": "http://schema.org/lesser"
+            "@id": "http://schema.org/lesser",
+            "@type": "@id"
         },
         "lesserOrEqual": {
-            "@id": "http://schema.org/lesserOrEqual"
+            "@id": "http://schema.org/lesserOrEqual",
+            "@type": "@id"
         },
         "letterer": {
-            "@id": "http://schema.org/letterer"
+            "@id": "http://schema.org/letterer",
+            "@type": "@id"
         },
         "license": {
-            "@id": "http://schema.org/license"
+            "@id": "http://schema.org/license",
+            "@type": "@id"
         },
         "line": {
-            "@id": "http://schema.org/line"
+            "@id": "http://schema.org/line",
+            "@type": "@id"
         },
         "liveBlogUpdate": {
-            "@id": "http://schema.org/liveBlogUpdate"
+            "@id": "http://schema.org/liveBlogUpdate",
+            "@type": "@id"
         },
         "location": {
             "@container": "@set",
@@ -4900,96 +5412,125 @@
             "@type": "@id"
         },
         "locationCreated": {
-            "@id": "http://schema.org/locationCreated"
+            "@id": "http://schema.org/locationCreated",
+            "@type": "@id"
         },
         "lodgingUnitDescription": {
-            "@id": "http://schema.org/lodgingUnitDescription"
+            "@id": "http://schema.org/lodgingUnitDescription",
+            "@type": "@id"
         },
         "lodgingUnitType": {
-            "@id": "http://schema.org/lodgingUnitType"
+            "@id": "http://schema.org/lodgingUnitType",
+            "@type": "@id"
         },
         "logo": {
-            "@id": "http://schema.org/logo"
+            "@id": "http://schema.org/logo",
+            "@type": "@id"
         },
         "longitude": {
             "@id": "http://schema.org/longitude"
         },
         "loser": {
-            "@id": "http://schema.org/loser"
+            "@id": "http://schema.org/loser",
+            "@type": "@id"
         },
         "lowPrice": {
-            "@id": "http://schema.org/lowPrice"
+            "@id": "http://schema.org/lowPrice",
+            "@type": "@id"
         },
         "lyricist": {
-            "@id": "http://schema.org/lyricist"
+            "@id": "http://schema.org/lyricist",
+            "@type": "@id"
         },
         "lyrics": {
-            "@id": "http://schema.org/lyrics"
+            "@id": "http://schema.org/lyrics",
+            "@type": "@id"
         },
         "mainContentOfPage": {
-            "@id": "http://schema.org/mainContentOfPage"
+            "@id": "http://schema.org/mainContentOfPage",
+            "@type": "@id"
         },
         "mainEntity": {
-            "@id": "http://schema.org/mainEntity"
+            "@id": "http://schema.org/mainEntity",
+            "@type": "@id"
         },
         "mainEntityOfPage": {
-            "@id": "http://schema.org/mainEntityOfPage"
+            "@id": "http://schema.org/mainEntityOfPage",
+            "@type": "@id"
         },
         "makesOffer": {
             "@container": "@set",
-            "@id": "http://schema.org/makesOffer"
+            "@id": "http://schema.org/makesOffer",
+            "@type": "@id"
         },
         "manufacturer": {
-            "@id": "http://schema.org/manufacturer"
+            "@id": "http://schema.org/manufacturer",
+            "@type": "@id"
         },
         "map": {
-            "@id": "http://schema.org/map"
+            "@id": "http://schema.org/map",
+            "@type": "@id"
         },
         "mapType": {
-            "@id": "http://schema.org/mapType"
+            "@id": "http://schema.org/mapType",
+            "@type": "@id"
         },
         "maps": {
-            "@id": "http://schema.org/maps"
+            "@id": "http://schema.org/maps",
+            "@type": "@id"
         },
         "material": {
-            "@id": "http://schema.org/material"
+            "@id": "http://schema.org/material",
+            "@type": "@id"
         },
         "maxPrice": {
-            "@id": "http://schema.org/maxPrice"
+            "@id": "http://schema.org/maxPrice",
+            "@type": "@id"
         },
         "maxValue": {
-            "@id": "http://schema.org/maxValue"
+            "@id": "http://schema.org/maxValue",
+            "@type": "@id"
         },
         "maximumIntake": {
-            "@id": "http://schema.org/maximumIntake"
+            "@id": "http://schema.org/maximumIntake",
+            "@type": "@id"
         },
         "mealService": {
-            "@id": "http://schema.org/mealService"
+            "@id": "http://schema.org/mealService",
+            "@type": "@id"
         },
         "mechanismOfAction": {
-            "@id": "http://schema.org/mechanismOfAction"
+            "@id": "http://schema.org/mechanismOfAction",
+            "@type": "@id"
         },
         "medicalSpecialty": {
-            "@id": "http://schema.org/medicalSpecialty"
+            "@id": "http://schema.org/medicalSpecialty",
+            "@type": "@id"
         },
         "medicineSystem": {
-            "@id": "http://schema.org/medicineSystem"
+            "@id": "http://schema.org/medicineSystem",
+            "@type": "@id"
         },
         "member": {
             "@container": "@set",
-            "@id": "http://schema.org/member"
+            "@id": "http://schema.org/member",
+            "@type": "@id"
         },
         "memberOf": {
-            "@id": "http://schema.org/memberOf"
+            "@id": "http://schema.org/memberOf",
+            "@type": "@id"
         },
         "members": {
-            "@id": "http://schema.org/members"
+            "@id": "http://schema.org/members",
+            "@type": "@id"
         },
         "membershipNumber": {
-            "@id": "http://schema.org/membershipNumber"
+            "@id": "http://schema.org/membershipNumber",
+            "@type": "@id"
         },
         "memoryRequirements": {
-            "@id": "http://schema.org/memoryRequirements"
+            "@id": "http://schema.org/memoryRequirements",
+            "@type": "@id"
         },
         "mentions": {
             "@container": "@set",
@@ -5019,61 +5560,79 @@
             "@type": "@id"
         },
         "menu": {
-            "@id": "http://schema.org/menu"
+            "@id": "http://schema.org/menu",
+            "@type": "@id"
         },
         "merchant": {
-            "@id": "http://schema.org/merchant"
+            "@id": "http://schema.org/merchant",
+            "@type": "@id"
         },
         "mileageFromOdometer": {
-            "@id": "http://schema.org/mileageFromOdometer"
+            "@id": "http://schema.org/mileageFromOdometer",
+            "@type": "@id"
         },
         "minPrice": {
-            "@id": "http://schema.org/minPrice"
+            "@id": "http://schema.org/minPrice",
+            "@type": "@id"
         },
         "minValue": {
-            "@id": "http://schema.org/minValue"
+            "@id": "http://schema.org/minValue",
+            "@type": "@id"
         },
         "minimumPaymentDue": {
-            "@id": "http://schema.org/minimumPaymentDue"
+            "@id": "http://schema.org/minimumPaymentDue",
+            "@type": "@id"
         },
         "model": {
-            "@id": "http://schema.org/model"
+            "@id": "http://schema.org/model",
+            "@type": "@id"
         },
         "modifiedTime": {
-            "@id": "http://schema.org/modifiedTime"
+            "@id": "http://schema.org/modifiedTime",
+            "@type": "@id"
         },
         "month": {
             "@id": "http://schema.dig.isi.edu/ontology/month"
         },
         "mpn": {
-            "@id": "http://schema.org/mpn"
+            "@id": "http://schema.org/mpn",
+            "@type": "@id"
         },
         "multipleValues": {
-            "@id": "http://schema.org/multipleValues"
+            "@id": "http://schema.org/multipleValues",
+            "@type": "@id"
         },
         "muscleAction": {
-            "@id": "http://schema.org/muscleAction"
+            "@id": "http://schema.org/muscleAction",
+            "@type": "@id"
         },
         "musicArrangement": {
-            "@id": "http://schema.org/musicArrangement"
+            "@id": "http://schema.org/musicArrangement",
+            "@type": "@id"
         },
         "musicBy": {
-            "@id": "http://schema.org/musicBy"
+            "@id": "http://schema.org/musicBy",
+            "@type": "@id"
         },
         "musicCompositionForm": {
-            "@id": "http://schema.org/musicCompositionForm"
+            "@id": "http://schema.org/musicCompositionForm",
+            "@type": "@id"
         },
         "musicGroupMember": {
-            "@id": "http://schema.org/musicGroupMember"
+            "@id": "http://schema.org/musicGroupMember",
+            "@type": "@id"
         },
         "musicReleaseFormat": {
-            "@id": "http://schema.org/musicReleaseFormat"
+            "@id": "http://schema.org/musicReleaseFormat",
+            "@type": "@id"
         },
         "musicalKey": {
-            "@id": "http://schema.org/musicalKey"
+            "@id": "http://schema.org/musicalKey",
+            "@type": "@id"
         },
         "naics": {
-            "@id": "http://schema.org/naics"
+            "@id": "http://schema.org/naics",
+            "@type": "@id"
         },
         "name": {
             "@container": "@set",
@@ -5086,290 +5645,381 @@
             "@id": "http://schema.dig.isi.edu/ontology/nameSHA1"
         },
         "namedPosition": {
-            "@id": "http://schema.org/namedPosition"
+            "@id": "http://schema.org/namedPosition",
+            "@type": "@id"
         },
         "nationality": {
-            "@id": "http://schema.org/nationality"
+            "@id": "http://schema.org/nationality",
+            "@type": "@id"
         },
         "naturalProgression": {
-            "@id": "http://schema.org/naturalProgression"
+            "@id": "http://schema.org/naturalProgression",
+            "@type": "@id"
         },
         "nerve": {
-            "@id": "http://schema.org/nerve"
+            "@id": "http://schema.org/nerve",
+            "@type": "@id"
         },
         "nerveMotor": {
-            "@id": "http://schema.org/nerveMotor"
+            "@id": "http://schema.org/nerveMotor",
+            "@type": "@id"
         },
         "netWorth": {
-            "@id": "http://schema.org/netWorth"
+            "@id": "http://schema.org/netWorth",
+            "@type": "@id"
         },
         "nextItem": {
-            "@id": "http://schema.org/nextItem"
+            "@id": "http://schema.org/nextItem",
+            "@type": "@id"
         },
         "nonEqual": {
-            "@id": "http://schema.org/nonEqual"
+            "@id": "http://schema.org/nonEqual",
+            "@type": "@id"
         },
         "nonProprietaryName": {
-            "@id": "http://schema.org/nonProprietaryName"
+            "@id": "http://schema.org/nonProprietaryName",
+            "@type": "@id"
         },
         "normalRange": {
-            "@id": "http://schema.org/normalRange"
+            "@id": "http://schema.org/normalRange",
+            "@type": "@id"
         },
         "numAdults": {
-            "@id": "http://schema.org/numAdults"
+            "@id": "http://schema.org/numAdults",
+            "@type": "@id"
         },
         "numChildren": {
-            "@id": "http://schema.org/numChildren"
+            "@id": "http://schema.org/numChildren",
+            "@type": "@id"
         },
         "numTracks": {
-            "@id": "http://schema.org/numTracks"
+            "@id": "http://schema.org/numTracks",
+            "@type": "@id"
         },
         "numberOfAirbags": {
-            "@id": "http://schema.org/numberOfAirbags"
+            "@id": "http://schema.org/numberOfAirbags",
+            "@type": "@id"
         },
         "numberOfAttacks": {
             "@id": "http://schema.dig.isi.edu/ontology/numberOfAttacks"
         },
         "numberOfAxles": {
-            "@id": "http://schema.org/numberOfAxles"
+            "@id": "http://schema.org/numberOfAxles",
+            "@type": "@id"
         },
         "numberOfDoors": {
-            "@id": "http://schema.org/numberOfDoors"
+            "@id": "http://schema.org/numberOfDoors",
+            "@type": "@id"
         },
         "numberOfEmployees": {
-            "@id": "http://schema.org/numberOfEmployees"
+            "@id": "http://schema.org/numberOfEmployees",
+            "@type": "@id"
         },
         "numberOfEpisodes": {
-            "@id": "http://schema.org/numberOfEpisodes"
+            "@id": "http://schema.org/numberOfEpisodes",
+            "@type": "@id"
         },
         "numberOfForwardGears": {
-            "@id": "http://schema.org/numberOfForwardGears"
+            "@id": "http://schema.org/numberOfForwardGears",
+            "@type": "@id"
         },
         "numberOfItems": {
-            "@id": "http://schema.org/numberOfItems"
+            "@id": "http://schema.org/numberOfItems",
+            "@type": "@id"
         },
         "numberOfPages": {
-            "@id": "http://schema.org/numberOfPages"
+            "@id": "http://schema.org/numberOfPages",
+            "@type": "@id"
         },
         "numberOfPlayers": {
-            "@id": "http://schema.org/numberOfPlayers"
+            "@id": "http://schema.org/numberOfPlayers",
+            "@type": "@id"
         },
         "numberOfPreviousOwners": {
-            "@id": "http://schema.org/numberOfPreviousOwners"
+            "@id": "http://schema.org/numberOfPreviousOwners",
+            "@type": "@id"
         },
         "numberOfSeasons": {
-            "@id": "http://schema.org/numberOfSeasons"
+            "@id": "http://schema.org/numberOfSeasons",
+            "@type": "@id"
         },
         "numberedPosition": {
-            "@id": "http://schema.org/numberedPosition"
+            "@id": "http://schema.org/numberedPosition",
+            "@type": "@id"
         },
         "nutrition": {
-            "@id": "http://schema.org/nutrition"
+            "@id": "http://schema.org/nutrition",
+            "@type": "@id"
         },
         "object": {
-            "@id": "http://schema.org/object"
+            "@id": "http://schema.org/object",
+            "@type": "@id"
         },
         "observedDate": {
             "@id": "http://schema.dig.isi.edu/ontology/observedDate"
         },
         "occupationalCategory": {
-            "@id": "http://schema.org/occupationalCategory"
+            "@id": "http://schema.org/occupationalCategory",
+            "@type": "@id"
         },
         "offerCount": {
-            "@id": "http://schema.org/offerCount"
+            "@id": "http://schema.org/offerCount",
+            "@type": "@id"
         },
         "offeredBy": {
-            "@id": "http://schema.org/offeredBy"
+            "@id": "http://schema.org/offeredBy",
+            "@type": "@id"
         },
         "offers": {
             "@container": "@set",
-            "@id": "http://schema.org/offers"
+            "@id": "http://schema.org/offers",
+            "@type": "@id"
         },
         "openingHours": {
-            "@id": "http://schema.org/openingHours"
+            "@id": "http://schema.org/openingHours",
+            "@type": "@id"
         },
         "openingHoursSpecification": {
-            "@id": "http://schema.org/openingHoursSpecification"
+            "@id": "http://schema.org/openingHoursSpecification",
+            "@type": "@id"
         },
         "opens": {
-            "@id": "http://schema.org/opens"
+            "@id": "http://schema.org/opens",
+            "@type": "@id"
         },
         "operatingPermit": {
-            "@id": "http://schema.dig.isi.edu/ontology/operatingPermit"
+            "@id": "http://schema.dig.isi.edu/ontology/operatingPermit",
+            "@type": "@id"
         },
         "operatingSystem": {
-            "@id": "http://schema.org/operatingSystem"
+            "@id": "http://schema.org/operatingSystem",
+            "@type": "@id"
         },
         "opponent": {
-            "@id": "http://schema.org/opponent"
+            "@id": "http://schema.org/opponent",
+            "@type": "@id"
         },
         "option": {
-            "@id": "http://schema.org/option"
+            "@id": "http://schema.org/option",
+            "@type": "@id"
         },
         "orderDate": {
-            "@id": "http://schema.org/orderDate"
+            "@id": "http://schema.org/orderDate",
+            "@type": "@id"
         },
         "orderDelivery": {
-            "@id": "http://schema.org/orderDelivery"
+            "@id": "http://schema.org/orderDelivery",
+            "@type": "@id"
         },
         "orderItemNumber": {
-            "@id": "http://schema.org/orderItemNumber"
+            "@id": "http://schema.org/orderItemNumber",
+            "@type": "@id"
         },
         "orderItemStatus": {
-            "@id": "http://schema.org/orderItemStatus"
+            "@id": "http://schema.org/orderItemStatus",
+            "@type": "@id"
         },
         "orderNumber": {
-            "@id": "http://schema.org/orderNumber"
+            "@id": "http://schema.org/orderNumber",
+            "@type": "@id"
         },
         "orderQuantity": {
-            "@id": "http://schema.org/orderQuantity"
+            "@id": "http://schema.org/orderQuantity",
+            "@type": "@id"
         },
         "orderStatus": {
-            "@id": "http://schema.org/orderStatus"
+            "@id": "http://schema.org/orderStatus",
+            "@type": "@id"
         },
         "orderedItem": {
-            "@id": "http://schema.org/orderedItem"
+            "@id": "http://schema.org/orderedItem",
+            "@type": "@id"
         },
         "organizer": {
-            "@id": "http://schema.org/organizer"
+            "@id": "http://schema.org/organizer",
+            "@type": "@id"
         },
         "origin": {
-            "@id": "http://schema.org/origin"
+            "@id": "http://schema.org/origin",
+            "@type": "@id"
         },
         "originAddress": {
-            "@id": "http://schema.org/originAddress"
+            "@id": "http://schema.org/originAddress",
+            "@type": "@id"
         },
         "originatesFrom": {
-            "@id": "http://schema.org/originatesFrom"
+            "@id": "http://schema.org/originatesFrom",
+            "@type": "@id"
         },
         "outcome": {
-            "@id": "http://schema.org/outcome"
+            "@id": "http://schema.org/outcome",
+            "@type": "@id"
         },
         "overdosage": {
-            "@id": "http://schema.org/overdosage"
+            "@id": "http://schema.org/overdosage",
+            "@type": "@id"
         },
         "overview": {
-            "@id": "http://schema.org/overview"
+            "@id": "http://schema.org/overview",
+            "@type": "@id"
         },
         "ownedFrom": {
-            "@id": "http://schema.org/ownedFrom"
+            "@id": "http://schema.org/ownedFrom",
+            "@type": "@id"
         },
         "ownedThrough": {
-            "@id": "http://schema.org/ownedThrough"
+            "@id": "http://schema.org/ownedThrough",
+            "@type": "@id"
         },
         "owner": {
             "@container": "@set",
-            "@id": "http://schema.dig.isi.edu/ontology/owner"
+            "@id": "http://schema.dig.isi.edu/ontology/owner",
+            "@type": "@id"
         },
         "owns": {
-            "@id": "http://schema.org/owns"
+            "@id": "http://schema.org/owns",
+            "@type": "@id"
         },
         "pageEnd": {
-            "@id": "http://schema.org/pageEnd"
+            "@id": "http://schema.org/pageEnd",
+            "@type": "@id"
         },
         "pageStart": {
-            "@id": "http://schema.org/pageStart"
+            "@id": "http://schema.org/pageStart",
+            "@type": "@id"
         },
         "pagination": {
-            "@id": "http://schema.org/pagination"
+            "@id": "http://schema.org/pagination",
+            "@type": "@id"
         },
         "parent": {
-            "@id": "http://schema.org/parent"
+            "@id": "http://schema.org/parent",
+            "@type": "@id"
         },
         "parentItem": {
-            "@id": "http://schema.org/parentItem"
+            "@id": "http://schema.org/parentItem",
+            "@type": "@id"
         },
         "parentOrganization": {
-            "@id": "http://schema.org/parentOrganization"
+            "@id": "http://schema.org/parentOrganization",
+            "@type": "@id"
         },
         "parentService": {
-            "@id": "http://schema.org/parentService"
+            "@id": "http://schema.org/parentService",
+            "@type": "@id"
         },
         "parents": {
-            "@id": "http://schema.org/parents"
+            "@id": "http://schema.org/parents",
+            "@type": "@id"
         },
         "partOfEpisode": {
-            "@id": "http://schema.org/partOfEpisode"
+            "@id": "http://schema.org/partOfEpisode",
+            "@type": "@id"
         },
         "partOfInvoice": {
-            "@id": "http://schema.org/partOfInvoice"
+            "@id": "http://schema.org/partOfInvoice",
+            "@type": "@id"
         },
         "partOfOrder": {
-            "@id": "http://schema.org/partOfOrder"
+            "@id": "http://schema.org/partOfOrder",
+            "@type": "@id"
         },
         "partOfSeason": {
-            "@id": "http://schema.org/partOfSeason"
+            "@id": "http://schema.org/partOfSeason",
+            "@type": "@id"
         },
         "partOfSeries": {
-            "@id": "http://schema.org/partOfSeries"
+            "@id": "http://schema.org/partOfSeries",
+            "@type": "@id"
         },
         "partOfSystem": {
-            "@id": "http://schema.org/partOfSystem"
+            "@id": "http://schema.org/partOfSystem",
+            "@type": "@id"
         },
         "partOfTVSeries": {
-            "@id": "http://schema.org/partOfTVSeries"
+            "@id": "http://schema.org/partOfTVSeries",
+            "@type": "@id"
         },
         "participant": {
-            "@id": "http://schema.org/participant"
+            "@id": "http://schema.org/participant",
+            "@type": "@id"
         },
         "partySize": {
-            "@id": "http://schema.org/partySize"
+            "@id": "http://schema.org/partySize",
+            "@type": "@id"
         },
         "passengerPriorityStatus": {
-            "@id": "http://schema.org/passengerPriorityStatus"
+            "@id": "http://schema.org/passengerPriorityStatus",
+            "@type": "@id"
         },
         "passengerSequenceNumber": {
-            "@id": "http://schema.org/passengerSequenceNumber"
+            "@id": "http://schema.org/passengerSequenceNumber",
+            "@type": "@id"
         },
         "password": {
             "@id": "http://schema.dig.isi.edu/ontology/password",
             "@type": "@id"
         },
         "pathophysiology": {
-            "@id": "http://schema.org/pathophysiology"
+            "@id": "http://schema.org/pathophysiology",
+            "@type": "@id"
         },
         "paymentAccepted": {
-            "@id": "http://schema.org/paymentAccepted"
+            "@id": "http://schema.org/paymentAccepted",
+            "@type": "@id"
         },
         "paymentDue": {
-            "@id": "http://schema.org/paymentDue"
+            "@id": "http://schema.org/paymentDue",
+            "@type": "@id"
         },
         "paymentDueDate": {
-            "@id": "http://schema.org/paymentDueDate"
+            "@id": "http://schema.org/paymentDueDate",
+            "@type": "@id"
         },
         "paymentMethod": {
-            "@id": "http://schema.org/paymentMethod"
+            "@id": "http://schema.org/paymentMethod",
+            "@type": "@id"
         },
         "paymentMethodId": {
-            "@id": "http://schema.org/paymentMethodId"
+            "@id": "http://schema.org/paymentMethodId",
+            "@type": "@id"
         },
         "paymentStatus": {
-            "@id": "http://schema.org/paymentStatus"
+            "@id": "http://schema.org/paymentStatus",
+            "@type": "@id"
         },
         "paymentUrl": {
-            "@id": "http://schema.org/paymentUrl"
+            "@id": "http://schema.org/paymentUrl",
+            "@type": "@id"
         },
         "penciler": {
-            "@id": "http://schema.org/penciler"
+            "@id": "http://schema.org/penciler",
+            "@type": "@id"
         },
         "performer": {
             "@container": "@set",
-            "@id": "http://schema.org/performer"
+            "@id": "http://schema.org/performer",
+            "@type": "@id"
         },
         "performerIn": {
-            "@id": "http://schema.org/performerIn"
+            "@id": "http://schema.org/performerIn",
+            "@type": "@id"
         },
         "performers": {
-            "@id": "http://schema.org/performers"
+            "@id": "http://schema.org/performers",
+            "@type": "@id"
         },
         "permissions": {
-            "@id": "http://schema.org/permissions"
+            "@id": "http://schema.org/permissions",
+            "@type": "@id"
         },
         "permitAudience": {
-            "@id": "http://schema.org/permitAudience"
+            "@id": "http://schema.org/permitAudience",
+            "@type": "@id"
         },
         "phase": {
-            "@id": "http://schema.org/phase"
+            "@id": "http://schema.org/phase",
+            "@type": "@id"
         },
         "phoneAreaCode": {
             "@id": "http://schema.dig.isi.edu/ontology/phoneAreaCode"
@@ -5384,78 +6034,98 @@
             "@id": "http://schema.dig.isi.edu/ontology/phoneSubscriberNumber"
         },
         "photo": {
-            "@id": "http://schema.org/photo"
+            "@id": "http://schema.org/photo",
+            "@type": "@id"
         },
         "photos": {
-            "@id": "http://schema.org/photos"
+            "@id": "http://schema.org/photos",
+            "@type": "@id"
         },
         "physiologicalBenefits": {
-            "@id": "http://schema.org/physiologicalBenefits"
+            "@id": "http://schema.org/physiologicalBenefits",
+            "@type": "@id"
         },
         "pickupLocation": {
-            "@id": "http://schema.org/pickupLocation"
+            "@id": "http://schema.org/pickupLocation",
+            "@type": "@id"
         },
         "pickupTime": {
-            "@id": "http://schema.org/pickupTime"
+            "@id": "http://schema.org/pickupTime",
+            "@type": "@id"
         },
         "plaintiff": {
             "@container": "@set",
-            "@id": "http://schema.dig.isi.edu/ontology/plaintiff"
+            "@id": "http://schema.dig.isi.edu/ontology/plaintiff",
+            "@type": "@id"
         },
         "platform": {
             "@id": "http://schema.dig.isi.edu/ontology/platform",
             "@type": "@id"
         },
         "playMode": {
-            "@id": "http://schema.org/playMode"
+            "@id": "http://schema.org/playMode",
+            "@type": "@id"
         },
         "playerType": {
-            "@id": "http://schema.org/playerType"
+            "@id": "http://schema.org/playerType",
+            "@type": "@id"
         },
         "playersOnline": {
-            "@id": "http://schema.org/playersOnline"
+            "@id": "http://schema.org/playersOnline",
+            "@type": "@id"
         },
         "polarityValue": {
             "@id": "http://schema.dig.isi.edu/ontology/polarityValue"
         },
         "polygon": {
-            "@id": "http://schema.org/polygon"
+            "@id": "http://schema.org/polygon",
+            "@type": "@id"
         },
         "population": {
-            "@id": "http://schema.org/population"
+            "@id": "http://schema.org/population",
+            "@type": "@id"
         },
         "populationOfArea": {
             "@id": "http://schema.dig.isi.edu/ontology/populationOfArea"
         },
         "position": {
-            "@id": "http://schema.org/position"
+            "@id": "http://schema.org/position",
+            "@type": "@id"
         },
         "possibleComplication": {
-            "@id": "http://schema.org/possibleComplication"
+            "@id": "http://schema.org/possibleComplication",
+            "@type": "@id"
         },
         "possibleTreatment": {
-            "@id": "http://schema.org/possibleTreatment"
+            "@id": "http://schema.org/possibleTreatment",
+            "@type": "@id"
         },
         "possiblyHostedAt": {
             "@id": "http://schema.dig.isi.edu/ontology/possiblyHostedAt"
         },
         "postOfficeBoxNumber": {
-            "@id": "http://schema.org/postOfficeBoxNumber"
+            "@id": "http://schema.org/postOfficeBoxNumber",
+            "@type": "@id"
         },
         "postOp": {
-            "@id": "http://schema.org/postOp"
+            "@id": "http://schema.org/postOp",
+            "@type": "@id"
         },
         "postalCode": {
-            "@id": "http://schema.org/postalCode"
+            "@id": "http://schema.org/postalCode",
+            "@type": "@id"
         },
         "potentialAction": {
-            "@id": "http://schema.org/potentialAction"
+            "@id": "http://schema.org/potentialAction",
+            "@type": "@id"
         },
         "preOp": {
-            "@id": "http://schema.org/preOp"
+            "@id": "http://schema.org/preOp",
+            "@type": "@id"
         },
         "predecessorOf": {
-            "@id": "http://schema.org/predecessorOf"
+            "@id": "http://schema.org/predecessorOf",
+            "@type": "@id"
         },
         "preferenceQualifier": {
             "@id": "http://schema.dig.isi.edu/ontology/preferenceQualifier"
@@ -5464,28 +6134,36 @@
             "@id": "http://schema.dig.isi.edu/ontology/preferenceSubject"
         },
         "pregnancyCategory": {
-            "@id": "http://schema.org/pregnancyCategory"
+            "@id": "http://schema.org/pregnancyCategory",
+            "@type": "@id"
         },
         "pregnancyWarning": {
-            "@id": "http://schema.org/pregnancyWarning"
+            "@id": "http://schema.org/pregnancyWarning",
+            "@type": "@id"
         },
         "prepTime": {
-            "@id": "http://schema.org/prepTime"
+            "@id": "http://schema.org/prepTime",
+            "@type": "@id"
         },
         "preparation": {
-            "@id": "http://schema.org/preparation"
+            "@id": "http://schema.org/preparation",
+            "@type": "@id"
         },
         "prescribingInfo": {
-            "@id": "http://schema.org/prescribingInfo"
+            "@id": "http://schema.org/prescribingInfo",
+            "@type": "@id"
         },
         "prescriptionStatus": {
-            "@id": "http://schema.org/prescriptionStatus"
+            "@id": "http://schema.org/prescriptionStatus",
+            "@type": "@id"
         },
         "previousItem": {
-            "@id": "http://schema.org/previousItem"
+            "@id": "http://schema.org/previousItem",
+            "@type": "@id"
         },
         "previousStartDate": {
-            "@id": "http://schema.org/previousStartDate"
+            "@id": "http://schema.org/previousStartDate",
+            "@type": "@id"
         },
         "price": {
             "@id": "http://schema.org/price"
@@ -5494,7 +6172,8 @@
             "@id": "http://schema.org/priceCurrency"
         },
         "priceRange": {
-            "@id": "http://schema.org/priceRange"
+            "@id": "http://schema.org/priceRange",
+            "@type": "@id"
         },
         "priceSpecification": {
             "@container": "@set",
@@ -5502,157 +6181,200 @@
             "@type": "@id"
         },
         "priceType": {
-            "@id": "http://schema.org/priceType"
+            "@id": "http://schema.org/priceType",
+            "@type": "@id"
         },
         "priceValidUntil": {
-            "@id": "http://schema.org/priceValidUntil"
+            "@id": "http://schema.org/priceValidUntil",
+            "@type": "@id"
         },
         "price_per_hour": {
             "@id": "http://schema.dig.isi.edu/ontology/price_per_hour"
         },
         "primaryImageOfPage": {
-            "@id": "http://schema.org/primaryImageOfPage"
+            "@id": "http://schema.org/primaryImageOfPage",
+            "@type": "@id"
         },
         "primaryLocation": {
-            "@id": "http://schema.dig.isi.edu/ontology/primaryLocation"
+            "@id": "http://schema.dig.isi.edu/ontology/primaryLocation",
+            "@type": "@id"
         },
         "primaryPrevention": {
-            "@id": "http://schema.org/primaryPrevention"
+            "@id": "http://schema.org/primaryPrevention",
+            "@type": "@id"
         },
         "printColumn": {
-            "@id": "http://schema.org/printColumn"
+            "@id": "http://schema.org/printColumn",
+            "@type": "@id"
         },
         "printEdition": {
-            "@id": "http://schema.org/printEdition"
+            "@id": "http://schema.org/printEdition",
+            "@type": "@id"
         },
         "printPage": {
-            "@id": "http://schema.org/printPage"
+            "@id": "http://schema.org/printPage",
+            "@type": "@id"
         },
         "printSection": {
-            "@id": "http://schema.org/printSection"
+            "@id": "http://schema.org/printSection",
+            "@type": "@id"
         },
         "probabilityOfOccurance": {
             "@id": "http://schema.dig.isi.edu/ontology/probabilityOfOccurance"
         },
         "procedure": {
-            "@id": "http://schema.org/procedure"
+            "@id": "http://schema.org/procedure",
+            "@type": "@id"
         },
         "procedureType": {
-            "@id": "http://schema.org/procedureType"
+            "@id": "http://schema.org/procedureType",
+            "@type": "@id"
         },
         "processingTime": {
-            "@id": "http://schema.org/processingTime"
+            "@id": "http://schema.org/processingTime",
+            "@type": "@id"
         },
         "processorRequirements": {
-            "@id": "http://schema.org/processorRequirements"
+            "@id": "http://schema.org/processorRequirements",
+            "@type": "@id"
         },
         "producer": {
             "@id": "http://schema.org/producer"
         },
         "produces": {
-            "@id": "http://schema.org/produces"
+            "@id": "http://schema.org/produces",
+            "@type": "@id"
         },
         "productID": {
             "@id": "http://schema.org/productID"
         },
         "productSupported": {
-            "@id": "http://schema.org/productSupported"
+            "@id": "http://schema.org/productSupported",
+            "@type": "@id"
         },
         "productionCompany": {
-            "@id": "http://schema.org/productionCompany"
+            "@id": "http://schema.org/productionCompany",
+            "@type": "@id"
         },
         "productionDate": {
-            "@id": "http://schema.org/productionDate"
+            "@id": "http://schema.org/productionDate",
+            "@type": "@id"
         },
         "proficiencyLevel": {
-            "@id": "http://schema.org/proficiencyLevel"
+            "@id": "http://schema.org/proficiencyLevel",
+            "@type": "@id"
         },
         "programMembershipUsed": {
-            "@id": "http://schema.org/programMembershipUsed"
+            "@id": "http://schema.org/programMembershipUsed",
+            "@type": "@id"
         },
         "programName": {
-            "@id": "http://schema.org/programName"
+            "@id": "http://schema.org/programName",
+            "@type": "@id"
         },
         "programmingLanguage": {
             "@id": "http://schema.org/programmingLanguage"
         },
         "programmingModel": {
-            "@id": "http://schema.org/programmingModel"
+            "@id": "http://schema.org/programmingModel",
+            "@type": "@id"
         },
         "propertyID": {
-            "@id": "http://schema.org/propertyID"
+            "@id": "http://schema.org/propertyID",
+            "@type": "@id"
         },
         "proprietaryName": {
-            "@id": "http://schema.org/proprietaryName"
+            "@id": "http://schema.org/proprietaryName",
+            "@type": "@id"
         },
         "proteinContent": {
-            "@id": "http://schema.org/proteinContent"
+            "@id": "http://schema.org/proteinContent",
+            "@type": "@id"
         },
         "provider": {
-            "@id": "http://schema.org/provider"
+            "@id": "http://schema.org/provider",
+            "@type": "@id"
         },
         "providerMobility": {
-            "@id": "http://schema.org/providerMobility"
+            "@id": "http://schema.org/providerMobility",
+            "@type": "@id"
         },
         "providesBroadcastService": {
-            "@id": "http://schema.org/providesBroadcastService"
+            "@id": "http://schema.org/providesBroadcastService",
+            "@type": "@id"
         },
         "providesService": {
-            "@id": "http://schema.org/providesService"
+            "@id": "http://schema.org/providesService",
+            "@type": "@id"
         },
         "publication": {
-            "@id": "http://schema.org/publication"
+            "@id": "http://schema.org/publication",
+            "@type": "@id"
         },
         "publicationType": {
-            "@id": "http://schema.org/publicationType"
+            "@id": "http://schema.org/publicationType",
+            "@type": "@id"
         },
         "publishedBy": {
-            "@id": "http://schema.org/publishedBy"
+            "@id": "http://schema.org/publishedBy",
+            "@type": "@id"
         },
         "publishedOn": {
-            "@id": "http://schema.org/publishedOn"
+            "@id": "http://schema.org/publishedOn",
+            "@type": "@id"
         },
         "publisher": {
             "@id": "http://schema.org/publisher"
         },
         "publisherImprint": {
-            "@id": "http://schema.org/publisherImprint"
+            "@id": "http://schema.org/publisherImprint",
+            "@type": "@id"
         },
         "publishingPrinciples": {
-            "@id": "http://schema.org/publishingPrinciples"
+            "@id": "http://schema.org/publishingPrinciples",
+            "@type": "@id"
         },
         "purchaseDate": {
-            "@id": "http://schema.org/purchaseDate"
+            "@id": "http://schema.org/purchaseDate",
+            "@type": "@id"
         },
         "purpose": {
-            "@id": "http://schema.org/purpose"
+            "@id": "http://schema.org/purpose",
+            "@type": "@id"
         },
         "qualifications": {
-            "@id": "http://schema.org/qualifications"
+            "@id": "http://schema.org/qualifications",
+            "@type": "@id"
         },
         "query": {
-            "@id": "http://schema.org/query"
+            "@id": "http://schema.org/query",
+            "@type": "@id"
         },
         "quest": {
-            "@id": "http://schema.org/quest"
+            "@id": "http://schema.org/quest",
+            "@type": "@id"
         },
         "question": {
-            "@id": "http://schema.org/question"
+            "@id": "http://schema.org/question",
+            "@type": "@id"
         },
         "range": {
             "@id": "http://www.w3.org/2000/01/rdf-schema#range"
         },
         "rangeIncludes": {
-            "@id": "http://schema.org/rangeIncludes"
+            "@id": "http://schema.org/rangeIncludes",
+            "@type": "@id"
         },
         "ratingCount": {
-            "@id": "http://schema.org/ratingCount"
+            "@id": "http://schema.org/ratingCount",
+            "@type": "@id"
         },
         "ratingValue": {
             "@id": "http://schema.org/ratingValue"
         },
         "readBy": {
-            "@id": "http://schema.org/readBy"
+            "@id": "http://schema.org/readBy",
+            "@type": "@id"
         },
         "readability": {
             "@id": "http://schema.dig.isi.edu/ontology/readability"
@@ -5664,119 +6386,155 @@
             "@id": "http://schema.dig.isi.edu/ontology/readability_text"
         },
         "readonlyValue": {
-            "@id": "http://schema.org/readonlyValue"
+            "@id": "http://schema.org/readonlyValue",
+            "@type": "@id"
         },
         "realEstateAgent": {
-            "@id": "http://schema.org/realEstateAgent"
+            "@id": "http://schema.org/realEstateAgent",
+            "@type": "@id"
         },
         "recipe": {
-            "@id": "http://schema.org/recipe"
+            "@id": "http://schema.org/recipe",
+            "@type": "@id"
         },
         "recipeCategory": {
-            "@id": "http://schema.org/recipeCategory"
+            "@id": "http://schema.org/recipeCategory",
+            "@type": "@id"
         },
         "recipeCuisine": {
-            "@id": "http://schema.org/recipeCuisine"
+            "@id": "http://schema.org/recipeCuisine",
+            "@type": "@id"
         },
         "recipeIngredient": {
-            "@id": "http://schema.org/recipeIngredient"
+            "@id": "http://schema.org/recipeIngredient",
+            "@type": "@id"
         },
         "recipeInstructions": {
-            "@id": "http://schema.org/recipeInstructions"
+            "@id": "http://schema.org/recipeInstructions",
+            "@type": "@id"
         },
         "recipeYield": {
-            "@id": "http://schema.org/recipeYield"
+            "@id": "http://schema.org/recipeYield",
+            "@type": "@id"
         },
         "recipient": {
-            "@id": "http://schema.org/recipient"
+            "@id": "http://schema.org/recipient",
+            "@type": "@id"
         },
         "recognizingAuthority": {
-            "@id": "http://schema.org/recognizingAuthority"
+            "@id": "http://schema.org/recognizingAuthority",
+            "@type": "@id"
         },
         "recommendationStrength": {
-            "@id": "http://schema.org/recommendationStrength"
+            "@id": "http://schema.org/recommendationStrength",
+            "@type": "@id"
         },
         "recommendedIntake": {
-            "@id": "http://schema.org/recommendedIntake"
+            "@id": "http://schema.org/recommendedIntake",
+            "@type": "@id"
         },
         "recordLabel": {
-            "@id": "http://schema.org/recordLabel"
+            "@id": "http://schema.org/recordLabel",
+            "@type": "@id"
         },
         "recordedAs": {
-            "@id": "http://schema.org/recordedAs"
+            "@id": "http://schema.org/recordedAs",
+            "@type": "@id"
         },
         "recordedAt": {
-            "@id": "http://schema.org/recordedAt"
+            "@id": "http://schema.org/recordedAt",
+            "@type": "@id"
         },
         "recordedIn": {
             "@id": "http://schema.org/recordedIn",
             "@type": "@id"
         },
         "recordingOf": {
-            "@id": "http://schema.org/recordingOf"
+            "@id": "http://schema.org/recordingOf",
+            "@type": "@id"
         },
         "referencesOrder": {
-            "@id": "http://schema.org/referencesOrder"
+            "@id": "http://schema.org/referencesOrder",
+            "@type": "@id"
         },
         "regionDrained": {
-            "@id": "http://schema.org/regionDrained"
+            "@id": "http://schema.org/regionDrained",
+            "@type": "@id"
         },
         "regionsAllowed": {
-            "@id": "http://schema.org/regionsAllowed"
+            "@id": "http://schema.org/regionsAllowed",
+            "@type": "@id"
         },
         "registrar": {
             "@id": "http://schema.dig.isi.edu/ontology/registrar"
         },
         "relatedAnatomy": {
-            "@id": "http://schema.org/relatedAnatomy"
+            "@id": "http://schema.org/relatedAnatomy",
+            "@type": "@id"
         },
         "relatedCondition": {
-            "@id": "http://schema.org/relatedCondition"
+            "@id": "http://schema.org/relatedCondition",
+            "@type": "@id"
         },
         "relatedDrug": {
-            "@id": "http://schema.org/relatedDrug"
+            "@id": "http://schema.org/relatedDrug",
+            "@type": "@id"
         },
         "relatedLink": {
-            "@id": "http://schema.org/relatedLink"
+            "@id": "http://schema.org/relatedLink",
+            "@type": "@id"
         },
         "relatedStructure": {
-            "@id": "http://schema.org/relatedStructure"
+            "@id": "http://schema.org/relatedStructure",
+            "@type": "@id"
         },
         "relatedTherapy": {
-            "@id": "http://schema.org/relatedTherapy"
+            "@id": "http://schema.org/relatedTherapy",
+            "@type": "@id"
         },
         "relatedTo": {
-            "@id": "http://schema.org/relatedTo"
+            "@id": "http://schema.org/relatedTo",
+            "@type": "@id"
         },
         "releaseDate": {
-            "@id": "http://schema.org/releaseDate"
+            "@id": "http://schema.org/releaseDate",
+            "@type": "@id"
         },
         "releaseNotes": {
-            "@id": "http://schema.org/releaseNotes"
+            "@id": "http://schema.org/releaseNotes",
+            "@type": "@id"
         },
         "releaseOf": {
-            "@id": "http://schema.org/releaseOf"
+            "@id": "http://schema.org/releaseOf",
+            "@type": "@id"
         },
         "releasedEvent": {
-            "@id": "http://schema.org/releasedEvent"
+            "@id": "http://schema.org/releasedEvent",
+            "@type": "@id"
         },
         "relevantSpecialty": {
-            "@id": "http://schema.org/relevantSpecialty"
+            "@id": "http://schema.org/relevantSpecialty",
+            "@type": "@id"
         },
         "repetitions": {
-            "@id": "http://schema.org/repetitions"
+            "@id": "http://schema.org/repetitions",
+            "@type": "@id"
         },
         "replacee": {
-            "@id": "http://schema.org/replacee"
+            "@id": "http://schema.org/replacee",
+            "@type": "@id"
         },
         "replacer": {
-            "@id": "http://schema.org/replacer"
+            "@id": "http://schema.org/replacer",
+            "@type": "@id"
         },
         "replyToUrl": {
-            "@id": "http://schema.org/replyToUrl"
+            "@id": "http://schema.org/replyToUrl",
+            "@type": "@id"
         },
         "reportNumber": {
-            "@id": "http://schema.org/reportNumber"
+            "@id": "http://schema.org/reportNumber",
+            "@type": "@id"
         },
         "reportedBy": {
             "@id": "http://schema.dig.isi.edu/ontology/reportedBy",
@@ -5786,61 +6544,80 @@
             "@id": "http://schema.dig.isi.edu/ontology/repostCount"
         },
         "representativeOfPage": {
-            "@id": "http://schema.org/representativeOfPage"
+            "@id": "http://schema.org/representativeOfPage",
+            "@type": "@id"
         },
         "requiredGender": {
-            "@id": "http://schema.org/requiredGender"
+            "@id": "http://schema.org/requiredGender",
+            "@type": "@id"
         },
         "requiredMaxAge": {
-            "@id": "http://schema.org/requiredMaxAge"
+            "@id": "http://schema.org/requiredMaxAge",
+            "@type": "@id"
         },
         "requiredMinAge": {
-            "@id": "http://schema.org/requiredMinAge"
+            "@id": "http://schema.org/requiredMinAge",
+            "@type": "@id"
         },
         "requirements": {
-            "@id": "http://schema.org/requirements"
+            "@id": "http://schema.org/requirements",
+            "@type": "@id"
         },
         "requiresSubscription": {
-            "@id": "http://schema.org/requiresSubscription"
+            "@id": "http://schema.org/requiresSubscription",
+            "@type": "@id"
         },
         "reservationFor": {
-            "@id": "http://schema.org/reservationFor"
+            "@id": "http://schema.org/reservationFor",
+            "@type": "@id"
         },
         "reservationId": {
-            "@id": "http://schema.org/reservationId"
+            "@id": "http://schema.org/reservationId",
+            "@type": "@id"
         },
         "reservationStatus": {
-            "@id": "http://schema.org/reservationStatus"
+            "@id": "http://schema.org/reservationStatus",
+            "@type": "@id"
         },
         "reservedTicket": {
-            "@id": "http://schema.org/reservedTicket"
+            "@id": "http://schema.org/reservedTicket",
+            "@type": "@id"
         },
         "responsibilities": {
-            "@id": "http://schema.org/responsibilities"
+            "@id": "http://schema.org/responsibilities",
+            "@type": "@id"
         },
         "restPeriods": {
-            "@id": "http://schema.org/restPeriods"
+            "@id": "http://schema.org/restPeriods",
+            "@type": "@id"
         },
         "result": {
-            "@id": "http://schema.org/result"
+            "@id": "http://schema.org/result",
+            "@type": "@id"
         },
         "resultComment": {
-            "@id": "http://schema.org/resultComment"
+            "@id": "http://schema.org/resultComment",
+            "@type": "@id"
         },
         "resultReview": {
-            "@id": "http://schema.org/resultReview"
+            "@id": "http://schema.org/resultReview",
+            "@type": "@id"
         },
         "review": {
-            "@id": "http://schema.org/review"
+            "@id": "http://schema.org/review",
+            "@type": "@id"
         },
         "reviewBody": {
-            "@id": "http://schema.org/reviewBody"
+            "@id": "http://schema.org/reviewBody",
+            "@type": "@id"
         },
         "reviewCount": {
-            "@id": "http://schema.org/reviewCount"
+            "@id": "http://schema.org/reviewCount",
+            "@type": "@id"
         },
         "reviewRating": {
-            "@id": "http://schema.org/reviewRating"
+            "@id": "http://schema.org/reviewRating",
+            "@type": "@id"
         },
         "review_id": {
             "@id": "http://schema.dig.isi.edu/ontology/review_id"
@@ -5849,180 +6626,235 @@
             "@id": "http://schema.dig.isi.edu/ontology/review_site"
         },
         "reviewedBy": {
-            "@id": "http://schema.org/reviewedBy"
+            "@id": "http://schema.org/reviewedBy",
+            "@type": "@id"
         },
         "reviews": {
-            "@id": "http://schema.org/reviews"
+            "@id": "http://schema.org/reviews",
+            "@type": "@id"
         },
         "riskFactor": {
-            "@id": "http://schema.org/riskFactor"
+            "@id": "http://schema.org/riskFactor",
+            "@type": "@id"
         },
         "risks": {
-            "@id": "http://schema.org/risks"
+            "@id": "http://schema.org/risks",
+            "@type": "@id"
         },
         "roleName": {
-            "@id": "http://schema.org/roleName"
+            "@id": "http://schema.org/roleName",
+            "@type": "@id"
         },
         "rsvpResponse": {
-            "@id": "http://schema.org/rsvpResponse"
+            "@id": "http://schema.org/rsvpResponse",
+            "@type": "@id"
         },
         "runsTo": {
-            "@id": "http://schema.org/runsTo"
+            "@id": "http://schema.org/runsTo",
+            "@type": "@id"
         },
         "runtime": {
-            "@id": "http://schema.org/runtime"
+            "@id": "http://schema.org/runtime",
+            "@type": "@id"
         },
         "runtimePlatform": {
-            "@id": "http://schema.org/runtimePlatform"
+            "@id": "http://schema.org/runtimePlatform",
+            "@type": "@id"
         },
         "safetyConsideration": {
-            "@id": "http://schema.org/safetyConsideration"
+            "@id": "http://schema.org/safetyConsideration",
+            "@type": "@id"
         },
         "salaryCurrency": {
-            "@id": "http://schema.org/salaryCurrency"
+            "@id": "http://schema.org/salaryCurrency",
+            "@type": "@id"
         },
         "sameAs": {
-            "@id": "http://schema.org/sameAs"
+            "@id": "http://schema.org/sameAs",
+            "@type": "@id"
         },
         "sampleType": {
-            "@id": "http://schema.org/sampleType"
+            "@id": "http://schema.org/sampleType",
+            "@type": "@id"
         },
         "saturatedFatContent": {
-            "@id": "http://schema.org/saturatedFatContent"
+            "@id": "http://schema.org/saturatedFatContent",
+            "@type": "@id"
         },
         "scheduledPaymentDate": {
-            "@id": "http://schema.org/scheduledPaymentDate"
+            "@id": "http://schema.org/scheduledPaymentDate",
+            "@type": "@id"
         },
         "scheduledTime": {
-            "@id": "http://schema.org/scheduledTime"
+            "@id": "http://schema.org/scheduledTime",
+            "@type": "@id"
         },
         "schemaVersion": {
-            "@id": "http://schema.org/schemaVersion"
+            "@id": "http://schema.org/schemaVersion",
+            "@type": "@id"
         },
         "screenCount": {
-            "@id": "http://schema.org/screenCount"
+            "@id": "http://schema.org/screenCount",
+            "@type": "@id"
         },
         "screenshot": {
-            "@id": "http://schema.org/screenshot"
+            "@id": "http://schema.org/screenshot",
+            "@type": "@id"
         },
         "season": {
-            "@id": "http://schema.org/season"
+            "@id": "http://schema.org/season",
+            "@type": "@id"
         },
         "seasonNumber": {
-            "@id": "http://schema.org/seasonNumber"
+            "@id": "http://schema.org/seasonNumber",
+            "@type": "@id"
         },
         "seasons": {
-            "@id": "http://schema.org/seasons"
+            "@id": "http://schema.org/seasons",
+            "@type": "@id"
         },
         "seatNumber": {
-            "@id": "http://schema.org/seatNumber"
+            "@id": "http://schema.org/seatNumber",
+            "@type": "@id"
         },
         "seatRow": {
-            "@id": "http://schema.org/seatRow"
+            "@id": "http://schema.org/seatRow",
+            "@type": "@id"
         },
         "seatSection": {
-            "@id": "http://schema.org/seatSection"
+            "@id": "http://schema.org/seatSection",
+            "@type": "@id"
         },
         "seatingType": {
-            "@id": "http://schema.org/seatingType"
+            "@id": "http://schema.org/seatingType",
+            "@type": "@id"
         },
         "secondaryPrevention": {
-            "@id": "http://schema.org/secondaryPrevention"
+            "@id": "http://schema.org/secondaryPrevention",
+            "@type": "@id"
         },
         "securityScreening": {
-            "@id": "http://schema.org/securityScreening"
+            "@id": "http://schema.org/securityScreening",
+            "@type": "@id"
         },
         "seeAlso": {
             "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
         },
         "seeks": {
-            "@id": "http://schema.org/seeks"
+            "@id": "http://schema.org/seeks",
+            "@type": "@id"
         },
         "seller": {
             "@id": "http://schema.org/seller",
             "@type": "@id"
         },
         "sender": {
-            "@id": "http://schema.org/sender"
+            "@id": "http://schema.org/sender",
+            "@type": "@id"
         },
         "sensoryUnit": {
-            "@id": "http://schema.org/sensoryUnit"
+            "@id": "http://schema.org/sensoryUnit",
+            "@type": "@id"
         },
         "sentiment": {
             "@container": "@set",
-            "@id": "http://schema.dig.isi.edu/ontology/sentiment"
+            "@id": "http://schema.dig.isi.edu/ontology/sentiment",
+            "@type": "@id"
         },
         "serialNumber": {
-            "@id": "http://schema.org/serialNumber"
+            "@id": "http://schema.org/serialNumber",
+            "@type": "@id"
         },
         "seriousAdverseOutcome": {
-            "@id": "http://schema.org/seriousAdverseOutcome"
+            "@id": "http://schema.org/seriousAdverseOutcome",
+            "@type": "@id"
         },
         "serverStatus": {
-            "@id": "http://schema.org/serverStatus"
+            "@id": "http://schema.org/serverStatus",
+            "@type": "@id"
         },
         "servesCuisine": {
-            "@id": "http://schema.org/servesCuisine"
+            "@id": "http://schema.org/servesCuisine",
+            "@type": "@id"
         },
         "serviceArea": {
-            "@id": "http://schema.org/serviceArea"
+            "@id": "http://schema.org/serviceArea",
+            "@type": "@id"
         },
         "serviceAudience": {
-            "@id": "http://schema.org/serviceAudience"
+            "@id": "http://schema.org/serviceAudience",
+            "@type": "@id"
         },
         "serviceLocation": {
-            "@id": "http://schema.org/serviceLocation"
+            "@id": "http://schema.org/serviceLocation",
+            "@type": "@id"
         },
         "serviceOperator": {
-            "@id": "http://schema.org/serviceOperator"
+            "@id": "http://schema.org/serviceOperator",
+            "@type": "@id"
         },
         "serviceOutput": {
-            "@id": "http://schema.org/serviceOutput"
+            "@id": "http://schema.org/serviceOutput",
+            "@type": "@id"
         },
         "servicePhone": {
-            "@id": "http://schema.org/servicePhone"
+            "@id": "http://schema.org/servicePhone",
+            "@type": "@id"
         },
         "servicePostalAddress": {
-            "@id": "http://schema.org/servicePostalAddress"
+            "@id": "http://schema.org/servicePostalAddress",
+            "@type": "@id"
         },
         "serviceSmsNumber": {
-            "@id": "http://schema.org/serviceSmsNumber"
+            "@id": "http://schema.org/serviceSmsNumber",
+            "@type": "@id"
         },
         "serviceType": {
-            "@id": "http://schema.org/serviceType"
+            "@id": "http://schema.org/serviceType",
+            "@type": "@id"
         },
         "serviceUrl": {
-            "@id": "http://schema.org/serviceUrl"
+            "@id": "http://schema.org/serviceUrl",
+            "@type": "@id"
         },
         "servingSize": {
-            "@id": "http://schema.org/servingSize"
+            "@id": "http://schema.org/servingSize",
+            "@type": "@id"
         },
         "sharedContent": {
-            "@id": "http://schema.org/sharedContent"
+            "@id": "http://schema.org/sharedContent",
+            "@type": "@id"
         },
         "sibling": {
-            "@id": "http://schema.org/sibling"
+            "@id": "http://schema.org/sibling",
+            "@type": "@id"
         },
         "siblings": {
-            "@id": "http://schema.org/siblings"
+            "@id": "http://schema.org/siblings",
+            "@type": "@id"
         },
         "signDetected": {
-            "@id": "http://schema.org/signDetected"
+            "@id": "http://schema.org/signDetected",
+            "@type": "@id"
         },
         "signOrSymptom": {
-            "@id": "http://schema.org/signOrSymptom"
+            "@id": "http://schema.org/signOrSymptom",
+            "@type": "@id"
         },
         "signature": {
             "@id": "http://schema.dig.isi.edu/ontology/signature"
         },
         "significance": {
-            "@id": "http://schema.org/significance"
+            "@id": "http://schema.org/significance",
+            "@type": "@id"
         },
         "significantLink": {
-            "@id": "http://schema.org/significantLink"
+            "@id": "http://schema.org/significantLink",
+            "@type": "@id"
         },
         "significantLinks": {
-            "@id": "http://schema.org/significantLinks"
+            "@id": "http://schema.org/significantLinks",
+            "@type": "@id"
         },
         "similarImageId": {
             "@container": "@set",
@@ -6039,196 +6871,252 @@
             "@id": "http://schema.dig.isi.edu/ontology/similarityScore"
         },
         "skills": {
-            "@id": "http://schema.org/skills"
+            "@id": "http://schema.org/skills",
+            "@type": "@id"
         },
         "sku": {
-            "@id": "http://schema.org/sku"
+            "@id": "http://schema.org/sku",
+            "@type": "@id"
         },
         "sodiumContent": {
-            "@id": "http://schema.org/sodiumContent"
+            "@id": "http://schema.org/sodiumContent",
+            "@type": "@id"
         },
         "softwareAddOn": {
-            "@id": "http://schema.org/softwareAddOn"
+            "@id": "http://schema.org/softwareAddOn",
+            "@type": "@id"
         },
         "softwareHelp": {
-            "@id": "http://schema.org/softwareHelp"
+            "@id": "http://schema.org/softwareHelp",
+            "@type": "@id"
         },
         "softwareIsUsedIn": {
             "@id": "http://schema.dig.isi.edu/ontology/softwareIsUsedIn"
         },
         "softwareRequirements": {
-            "@id": "http://schema.org/softwareRequirements"
+            "@id": "http://schema.org/softwareRequirements",
+            "@type": "@id"
         },
         "softwareSystem": {
-            "@id": "http://schema.dig.isi.edu/ontology/softwareSystem"
+            "@id": "http://schema.dig.isi.edu/ontology/softwareSystem",
+            "@type": "@id"
         },
         "softwareTags": {
             "@id": "http://schema.dig.isi.edu/ontology/softwareTags"
         },
         "softwareVersion": {
-            "@id": "http://schema.org/softwareVersion"
+            "@id": "http://schema.org/softwareVersion",
+            "@type": "@id"
         },
         "source": {
             "@id": "http://schema.org/source"
         },
         "sourceOrganization": {
-            "@id": "http://schema.org/sourceOrganization"
+            "@id": "http://schema.org/sourceOrganization",
+            "@type": "@id"
         },
         "sourcedFrom": {
             "@id": "http://schema.org/sourcedFrom"
         },
         "spatial": {
-            "@id": "http://schema.org/spatial"
+            "@id": "http://schema.org/spatial",
+            "@type": "@id"
         },
         "specialCommitments": {
-            "@id": "http://schema.org/specialCommitments"
+            "@id": "http://schema.org/specialCommitments",
+            "@type": "@id"
         },
         "specialty": {
-            "@id": "http://schema.org/specialty"
+            "@id": "http://schema.org/specialty",
+            "@type": "@id"
         },
         "sponsor": {
-            "@id": "http://schema.org/sponsor"
+            "@id": "http://schema.org/sponsor",
+            "@type": "@id"
         },
         "sport": {
-            "@id": "http://schema.org/sport"
+            "@id": "http://schema.org/sport",
+            "@type": "@id"
         },
         "sportsActivityLocation": {
-            "@id": "http://schema.org/sportsActivityLocation"
+            "@id": "http://schema.org/sportsActivityLocation",
+            "@type": "@id"
         },
         "sportsEvent": {
-            "@id": "http://schema.org/sportsEvent"
+            "@id": "http://schema.org/sportsEvent",
+            "@type": "@id"
         },
         "sportsTeam": {
-            "@id": "http://schema.org/sportsTeam"
+            "@id": "http://schema.org/sportsTeam",
+            "@type": "@id"
         },
         "spouse": {
-            "@id": "http://schema.org/spouse"
+            "@id": "http://schema.org/spouse",
+            "@type": "@id"
         },
         "stage": {
-            "@id": "http://schema.org/stage"
+            "@id": "http://schema.org/stage",
+            "@type": "@id"
         },
         "stageAsNumber": {
-            "@id": "http://schema.org/stageAsNumber"
+            "@id": "http://schema.org/stageAsNumber",
+            "@type": "@id"
         },
         "startDate": {
             "@id": "http://schema.org/startDate"
         },
         "startTime": {
-            "@id": "http://schema.org/startTime"
+            "@id": "http://schema.org/startTime",
+            "@type": "@id"
         },
         "status": {
-            "@id": "http://schema.org/status"
+            "@id": "http://schema.org/status",
+            "@type": "@id"
         },
         "steeringPosition": {
-            "@id": "http://schema.org/steeringPosition"
+            "@id": "http://schema.org/steeringPosition",
+            "@type": "@id"
         },
         "stepValue": {
-            "@id": "http://schema.org/stepValue"
+            "@id": "http://schema.org/stepValue",
+            "@type": "@id"
         },
         "storageRequirements": {
-            "@id": "http://schema.org/storageRequirements"
+            "@id": "http://schema.org/storageRequirements",
+            "@type": "@id"
         },
         "streetAddress": {
-            "@id": "http://schema.org/streetAddress"
+            "@id": "http://schema.org/streetAddress",
+            "@type": "@id"
         },
         "strengthUnit": {
-            "@id": "http://schema.org/strengthUnit"
+            "@id": "http://schema.org/strengthUnit",
+            "@type": "@id"
         },
         "strengthValue": {
-            "@id": "http://schema.org/strengthValue"
+            "@id": "http://schema.org/strengthValue",
+            "@type": "@id"
         },
         "structuralClass": {
-            "@id": "http://schema.org/structuralClass"
+            "@id": "http://schema.org/structuralClass",
+            "@type": "@id"
         },
         "study": {
-            "@id": "http://schema.org/study"
+            "@id": "http://schema.org/study",
+            "@type": "@id"
         },
         "studyDesign": {
-            "@id": "http://schema.org/studyDesign"
+            "@id": "http://schema.org/studyDesign",
+            "@type": "@id"
         },
         "studyLocation": {
-            "@id": "http://schema.org/studyLocation"
+            "@id": "http://schema.org/studyLocation",
+            "@type": "@id"
         },
         "studySubject": {
-            "@id": "http://schema.org/studySubject"
+            "@id": "http://schema.org/studySubject",
+            "@type": "@id"
         },
         "subClassOf": {
             "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
         },
         "subEvent": {
-            "@id": "http://schema.org/subEvent"
+            "@id": "http://schema.org/subEvent",
+            "@type": "@id"
         },
         "subEvents": {
-            "@id": "http://schema.org/subEvents"
+            "@id": "http://schema.org/subEvents",
+            "@type": "@id"
         },
         "subOrganization": {
-            "@id": "http://schema.org/subOrganization"
+            "@id": "http://schema.org/subOrganization",
+            "@type": "@id"
         },
         "subPropertyOf": {
             "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
         },
         "subReservation": {
-            "@id": "http://schema.org/subReservation"
+            "@id": "http://schema.org/subReservation",
+            "@type": "@id"
         },
         "subStageSuffix": {
-            "@id": "http://schema.org/subStageSuffix"
+            "@id": "http://schema.org/subStageSuffix",
+            "@type": "@id"
         },
         "subStructure": {
-            "@id": "http://schema.org/subStructure"
+            "@id": "http://schema.org/subStructure",
+            "@type": "@id"
         },
         "subTest": {
-            "@id": "http://schema.org/subTest"
+            "@id": "http://schema.org/subTest",
+            "@type": "@id"
         },
         "subcommunity_4th_div": {
-            "@id": "http://schema.dig.isi.edu/ontology/subcommunity_4th_div"
+            "@id": "http://schema.dig.isi.edu/ontology/subcommunity_4th_div",
+            "@type": "@id"
         },
         "subtitleLanguage": {
-            "@id": "http://schema.org/subtitleLanguage"
+            "@id": "http://schema.org/subtitleLanguage",
+            "@type": "@id"
         },
         "subtype": {
             "@id": "http://schema.org/subtype"
         },
         "successorOf": {
-            "@id": "http://schema.org/successorOf"
+            "@id": "http://schema.org/successorOf",
+            "@type": "@id"
         },
         "sugarContent": {
-            "@id": "http://schema.org/sugarContent"
+            "@id": "http://schema.org/sugarContent",
+            "@type": "@id"
         },
         "suggestedAnswer": {
-            "@id": "http://schema.org/suggestedAnswer"
+            "@id": "http://schema.org/suggestedAnswer",
+            "@type": "@id"
         },
         "suggestedGender": {
-            "@id": "http://schema.org/suggestedGender"
+            "@id": "http://schema.org/suggestedGender",
+            "@type": "@id"
         },
         "suggestedMaxAge": {
-            "@id": "http://schema.org/suggestedMaxAge"
+            "@id": "http://schema.org/suggestedMaxAge",
+            "@type": "@id"
         },
         "suggestedMinAge": {
-            "@id": "http://schema.org/suggestedMinAge"
+            "@id": "http://schema.org/suggestedMinAge",
+            "@type": "@id"
         },
         "superEvent": {
-            "@id": "http://schema.org/superEvent"
+            "@id": "http://schema.org/superEvent",
+            "@type": "@id"
         },
         "supersededBy": {
-            "@id": "http://schema.org/supersededBy"
+            "@id": "http://schema.org/supersededBy",
+            "@type": "@id"
         },
         "supplyTo": {
-            "@id": "http://schema.org/supplyTo"
+            "@id": "http://schema.org/supplyTo",
+            "@type": "@id"
         },
         "supportingData": {
-            "@id": "http://schema.org/supportingData"
+            "@id": "http://schema.org/supportingData",
+            "@type": "@id"
         },
         "surface": {
-            "@id": "http://schema.org/surface"
+            "@id": "http://schema.org/surface",
+            "@type": "@id"
         },
         "target": {
-            "@id": "http://schema.org/target"
+            "@id": "http://schema.org/target",
+            "@type": "@id"
         },
         "targetCollection": {
-            "@id": "http://schema.org/targetCollection"
+            "@id": "http://schema.org/targetCollection",
+            "@type": "@id"
         },
         "targetDescription": {
-            "@id": "http://schema.org/targetDescription"
+            "@id": "http://schema.org/targetDescription",
+            "@type": "@id"
         },
         "targetName": {
             "@id": "http://schema.org/targetName"
@@ -6237,20 +7125,24 @@
             "@id": "http://schema.org/targetPlatform"
         },
         "targetPopulation": {
-            "@id": "http://schema.org/targetPopulation"
+            "@id": "http://schema.org/targetPopulation",
+            "@type": "@id"
         },
         "targetProduct": {
-            "@id": "http://schema.org/targetProduct"
+            "@id": "http://schema.org/targetProduct",
+            "@type": "@id"
         },
         "targetSoftware": {
             "@id": "http://schema.dig.isi.edu/ontology/targetSoftware",
             "@type": "@id"
         },
         "targetUrl": {
-            "@id": "http://schema.org/targetUrl"
+            "@id": "http://schema.org/targetUrl",
+            "@type": "@id"
         },
         "taxID": {
-            "@id": "http://schema.org/taxID"
+            "@id": "http://schema.org/taxID",
+            "@type": "@id"
         },
         "telephone": {
             "@container": "@set",
@@ -6258,7 +7150,8 @@
             "@type": "@id"
         },
         "temporal": {
-            "@id": "http://schema.org/temporal"
+            "@id": "http://schema.org/temporal",
+            "@type": "@id"
         },
         "text": {
             "@id": "http://schema.org/text"
@@ -6267,28 +7160,36 @@
             "@id": "http://schema.dig.isi.edu/ontology/textFragment"
         },
         "thumbnail": {
-            "@id": "http://schema.org/thumbnail"
+            "@id": "http://schema.org/thumbnail",
+            "@type": "@id"
         },
         "thumbnailUrl": {
-            "@id": "http://schema.org/thumbnailUrl"
+            "@id": "http://schema.org/thumbnailUrl",
+            "@type": "@id"
         },
         "tickerSymbol": {
-            "@id": "http://schema.org/tickerSymbol"
+            "@id": "http://schema.org/tickerSymbol",
+            "@type": "@id"
         },
         "ticketNumber": {
-            "@id": "http://schema.org/ticketNumber"
+            "@id": "http://schema.org/ticketNumber",
+            "@type": "@id"
         },
         "ticketToken": {
-            "@id": "http://schema.org/ticketToken"
+            "@id": "http://schema.org/ticketToken",
+            "@type": "@id"
         },
         "ticketedSeat": {
-            "@id": "http://schema.org/ticketedSeat"
+            "@id": "http://schema.org/ticketedSeat",
+            "@type": "@id"
         },
         "timeRequired": {
-            "@id": "http://schema.org/timeRequired"
+            "@id": "http://schema.org/timeRequired",
+            "@type": "@id"
         },
         "tissueSample": {
-            "@id": "http://schema.org/tissueSample"
+            "@id": "http://schema.org/tissueSample",
+            "@type": "@id"
         },
         "title": {
             "@container": "@set",
@@ -6302,67 +7203,87 @@
             "@id": "http://schema.dig.isi.edu/ontology/top_level_domain"
         },
         "totalPaymentDue": {
-            "@id": "http://schema.org/totalPaymentDue"
+            "@id": "http://schema.org/totalPaymentDue",
+            "@type": "@id"
         },
         "totalPrice": {
-            "@id": "http://schema.org/totalPrice"
+            "@id": "http://schema.org/totalPrice",
+            "@type": "@id"
         },
         "totalTime": {
-            "@id": "http://schema.org/totalTime"
+            "@id": "http://schema.org/totalTime",
+            "@type": "@id"
         },
         "track": {
-            "@id": "http://schema.org/track"
+            "@id": "http://schema.org/track",
+            "@type": "@id"
         },
         "trackingNumber": {
-            "@id": "http://schema.org/trackingNumber"
+            "@id": "http://schema.org/trackingNumber",
+            "@type": "@id"
         },
         "trackingUrl": {
-            "@id": "http://schema.org/trackingUrl"
+            "@id": "http://schema.org/trackingUrl",
+            "@type": "@id"
         },
         "tracks": {
-            "@id": "http://schema.org/tracks"
+            "@id": "http://schema.org/tracks",
+            "@type": "@id"
         },
         "trailer": {
-            "@id": "http://schema.org/trailer"
+            "@id": "http://schema.org/trailer",
+            "@type": "@id"
         },
         "trainName": {
-            "@id": "http://schema.org/trainName"
+            "@id": "http://schema.org/trainName",
+            "@type": "@id"
         },
         "trainNumber": {
-            "@id": "http://schema.org/trainNumber"
+            "@id": "http://schema.org/trainNumber",
+            "@type": "@id"
         },
         "transFatContent": {
-            "@id": "http://schema.org/transFatContent"
+            "@id": "http://schema.org/transFatContent",
+            "@type": "@id"
         },
         "transcript": {
-            "@id": "http://schema.org/transcript"
+            "@id": "http://schema.org/transcript",
+            "@type": "@id"
         },
         "translationOfWork": {
             "@id": "http://schema.org/translationOfWork"
         },
         "translator": {
-            "@id": "http://schema.org/translator"
+            "@id": "http://schema.org/translator",
+            "@type": "@id"
         },
         "transmissionMethod": {
-            "@id": "http://schema.org/transmissionMethod"
+            "@id": "http://schema.org/transmissionMethod",
+            "@type": "@id"
         },
         "trialDesign": {
-            "@id": "http://schema.org/trialDesign"
+            "@id": "http://schema.org/trialDesign",
+            "@type": "@id"
         },
         "tributary": {
-            "@id": "http://schema.org/tributary"
+            "@id": "http://schema.org/tributary",
+            "@type": "@id"
         },
         "typeOfGood": {
-            "@id": "http://schema.org/typeOfGood"
+            "@id": "http://schema.org/typeOfGood",
+            "@type": "@id"
         },
         "typicalAgeRange": {
-            "@id": "http://schema.org/typicalAgeRange"
+            "@id": "http://schema.org/typicalAgeRange",
+            "@type": "@id"
         },
         "typicalTest": {
-            "@id": "http://schema.org/typicalTest"
+            "@id": "http://schema.org/typicalTest",
+            "@type": "@id"
         },
         "underName": {
-            "@id": "http://schema.org/underName"
+            "@id": "http://schema.org/underName",
+            "@type": "@id"
         },
         "unidentifiedDate": {
             "@id": "http://schema.dig.isi.edu/ontology/unidentifiedDate"
@@ -6371,19 +7292,24 @@
             "@id": "http://schema.dig.isi.edu/ontology/unidentifiedNumber"
         },
         "unitCode": {
-            "@id": "http://schema.org/unitCode"
+            "@id": "http://schema.org/unitCode",
+            "@type": "@id"
         },
         "unitText": {
-            "@id": "http://schema.org/unitText"
+            "@id": "http://schema.org/unitText",
+            "@type": "@id"
         },
         "unsaturatedFatContent": {
-            "@id": "http://schema.org/unsaturatedFatContent"
+            "@id": "http://schema.org/unsaturatedFatContent",
+            "@type": "@id"
         },
         "uploadDate": {
-            "@id": "http://schema.org/uploadDate"
+            "@id": "http://schema.org/uploadDate",
+            "@type": "@id"
         },
         "upvoteCount": {
-            "@id": "http://schema.org/upvoteCount"
+            "@id": "http://schema.org/upvoteCount",
+            "@type": "@id"
         },
         "uri": "@id",
         "url": {
@@ -6393,96 +7319,123 @@
             "@id": "http://schema.dig.isi.edu/ontology/urlFragment"
         },
         "urlTemplate": {
-            "@id": "http://schema.org/urlTemplate"
-        },
-        "usedToDiagnose": {
-            "@id": "http://schema.org/usedToDiagnose"
-        },
-        "userInteractionCount": {
-            "@id": "http://schema.org/userInteractionCount"
-        },
-        "username": {
-            "@id": "http://schema.dig.isi.edu/ontology/username",
+            "@id": "http://schema.org/urlTemplate",
             "@type": "@id"
         },
+        "usedToDiagnose": {
+            "@id": "http://schema.org/usedToDiagnose",
+            "@type": "@id"
+        },
+        "userInteractionCount": {
+            "@id": "http://schema.org/userInteractionCount",
+            "@type": "@id"
+        },
+        "username": {
+            "@id": "http://schema.dig.isi.edu/ontology/username"
+        },
         "usesDevice": {
-            "@id": "http://schema.org/usesDevice"
+            "@id": "http://schema.org/usesDevice",
+            "@type": "@id"
         },
         "usesSoftware": {
             "@id": "http://schema.dig.isi.edu/ontology/usesSoftware",
             "@type": "@id"
         },
         "validFor": {
-            "@id": "http://schema.org/validFor"
+            "@id": "http://schema.org/validFor",
+            "@type": "@id"
         },
         "validFrom": {
-            "@id": "http://schema.org/validFrom"
+            "@id": "http://schema.org/validFrom",
+            "@type": "@id"
         },
         "validIn": {
-            "@id": "http://schema.org/validIn"
+            "@id": "http://schema.org/validIn",
+            "@type": "@id"
         },
         "validThrough": {
-            "@id": "http://schema.org/validThrough"
+            "@id": "http://schema.org/validThrough",
+            "@type": "@id"
         },
         "validUntil": {
-            "@id": "http://schema.org/validUntil"
+            "@id": "http://schema.org/validUntil",
+            "@type": "@id"
         },
         "value": {
-            "@id": "http://schema.org/value"
+            "@id": "http://schema.org/value",
+            "@type": "@id"
         },
         "valueAddedTaxIncluded": {
-            "@id": "http://schema.org/valueAddedTaxIncluded"
+            "@id": "http://schema.org/valueAddedTaxIncluded",
+            "@type": "@id"
         },
         "valueMaxLength": {
-            "@id": "http://schema.org/valueMaxLength"
+            "@id": "http://schema.org/valueMaxLength",
+            "@type": "@id"
         },
         "valueMinLength": {
-            "@id": "http://schema.org/valueMinLength"
+            "@id": "http://schema.org/valueMinLength",
+            "@type": "@id"
         },
         "valueName": {
-            "@id": "http://schema.org/valueName"
+            "@id": "http://schema.org/valueName",
+            "@type": "@id"
         },
         "valuePattern": {
-            "@id": "http://schema.org/valuePattern"
+            "@id": "http://schema.org/valuePattern",
+            "@type": "@id"
         },
         "valueReference": {
-            "@id": "http://schema.org/valueReference"
+            "@id": "http://schema.org/valueReference",
+            "@type": "@id"
         },
         "valueRequired": {
-            "@id": "http://schema.org/valueRequired"
+            "@id": "http://schema.org/valueRequired",
+            "@type": "@id"
         },
         "variantCover": {
-            "@id": "http://schema.org/variantCover"
+            "@id": "http://schema.org/variantCover",
+            "@type": "@id"
         },
         "vatID": {
-            "@id": "http://schema.org/vatID"
+            "@id": "http://schema.org/vatID",
+            "@type": "@id"
         },
         "vehicleConfiguration": {
-            "@id": "http://schema.org/vehicleConfiguration"
+            "@id": "http://schema.org/vehicleConfiguration",
+            "@type": "@id"
         },
         "vehicleEngine": {
-            "@id": "http://schema.org/vehicleEngine"
+            "@id": "http://schema.org/vehicleEngine",
+            "@type": "@id"
         },
         "vehicleIdentificationNumber": {
-            "@id": "http://schema.org/vehicleIdentificationNumber"
+            "@id": "http://schema.org/vehicleIdentificationNumber",
+            "@type": "@id"
         },
         "vehicleInteriorColor": {
-            "@id": "http://schema.org/vehicleInteriorColor"
+            "@id": "http://schema.org/vehicleInteriorColor",
+            "@type": "@id"
         },
         "vehicleInteriorType": {
-            "@id": "http://schema.org/vehicleInteriorType"
+            "@id": "http://schema.org/vehicleInteriorType",
+            "@type": "@id"
         },
         "vehicleModelDate": {
-            "@id": "http://schema.org/vehicleModelDate"
+            "@id": "http://schema.org/vehicleModelDate",
+            "@type": "@id"
         },
         "vehicleSeatingCapacity": {
-            "@id": "http://schema.org/vehicleSeatingCapacity"
+            "@id": "http://schema.org/vehicleSeatingCapacity",
+            "@type": "@id"
         },
         "vehicleSpecialUsage": {
-            "@id": "http://schema.org/vehicleSpecialUsage"
+            "@id": "http://schema.org/vehicleSpecialUsage",
+            "@type": "@id"
         },
         "vehicleTransmission": {
-            "@id": "http://schema.org/vehicleTransmission"
+            "@id": "http://schema.org/vehicleTransmission",
+            "@type": "@id"
         },
         "vendor": {
             "@id": "http://schema.org/vendor",
@@ -6492,19 +7445,24 @@
             "@id": "http://schema.org/version"
         },
         "video": {
-            "@id": "http://schema.org/video"
+            "@id": "http://schema.org/video",
+            "@type": "@id"
         },
         "videoFormat": {
-            "@id": "http://schema.org/videoFormat"
+            "@id": "http://schema.org/videoFormat",
+            "@type": "@id"
         },
         "videoFrameSize": {
-            "@id": "http://schema.org/videoFrameSize"
+            "@id": "http://schema.org/videoFrameSize",
+            "@type": "@id"
         },
         "videoQuality": {
-            "@id": "http://schema.org/videoQuality"
+            "@id": "http://schema.org/videoQuality",
+            "@type": "@id"
         },
         "volumeNumber": {
-            "@id": "http://schema.org/volumeNumber"
+            "@id": "http://schema.org/volumeNumber",
+            "@type": "@id"
         },
         "vulnerabilityOf": {
             "@id": "http://schema.dig.isi.edu/ontology/vulnerabilityOf",
@@ -6515,73 +7473,94 @@
             "@type": "@id"
         },
         "warning": {
-            "@id": "http://schema.org/warning"
+            "@id": "http://schema.org/warning",
+            "@type": "@id"
         },
         "warranty": {
-            "@id": "http://schema.org/warranty"
+            "@id": "http://schema.org/warranty",
+            "@type": "@id"
         },
         "warrantyPromise": {
-            "@id": "http://schema.org/warrantyPromise"
+            "@id": "http://schema.org/warrantyPromise",
+            "@type": "@id"
         },
         "warrantyScope": {
-            "@id": "http://schema.org/warrantyScope"
+            "@id": "http://schema.org/warrantyScope",
+            "@type": "@id"
         },
         "weaknessEnumeration": {
             "@id": "http://schema.dig.isi.edu/ontology/weaknessEnumeration"
         },
         "webCheckinTime": {
-            "@id": "http://schema.org/webCheckinTime"
+            "@id": "http://schema.org/webCheckinTime",
+            "@type": "@id"
         },
         "weight": {
-            "@id": "http://schema.org/weight"
+            "@id": "http://schema.org/weight",
+            "@type": "@id"
         },
         "width": {
-            "@id": "http://schema.org/width"
+            "@id": "http://schema.org/width",
+            "@type": "@id"
         },
         "winner": {
-            "@id": "http://schema.org/winner"
+            "@id": "http://schema.org/winner",
+            "@type": "@id"
         },
         "wordCount": {
-            "@id": "http://schema.org/wordCount"
+            "@id": "http://schema.org/wordCount",
+            "@type": "@id"
         },
         "workExample": {
-            "@id": "http://schema.org/workExample"
+            "@id": "http://schema.org/workExample",
+            "@type": "@id"
         },
         "workFeatured": {
-            "@id": "http://schema.org/workFeatured"
+            "@id": "http://schema.org/workFeatured",
+            "@type": "@id"
         },
         "workHours": {
-            "@id": "http://schema.org/workHours"
+            "@id": "http://schema.org/workHours",
+            "@type": "@id"
         },
         "workLocation": {
-            "@id": "http://schema.org/workLocation"
+            "@id": "http://schema.org/workLocation",
+            "@type": "@id"
         },
         "workPerformed": {
-            "@id": "http://schema.org/workPerformed"
+            "@id": "http://schema.org/workPerformed",
+            "@type": "@id"
         },
         "workPresented": {
-            "@id": "http://schema.org/workPresented"
+            "@id": "http://schema.org/workPresented",
+            "@type": "@id"
         },
         "workTranslation": {
-            "@id": "http://schema.org/workTranslation"
+            "@id": "http://schema.org/workTranslation",
+            "@type": "@id"
         },
         "workload": {
-            "@id": "http://schema.org/workload"
+            "@id": "http://schema.org/workload",
+            "@type": "@id"
         },
         "worksFor": {
-            "@id": "http://schema.org/worksFor"
+            "@id": "http://schema.org/worksFor",
+            "@type": "@id"
         },
         "worstRating": {
-            "@id": "http://schema.org/worstRating"
+            "@id": "http://schema.org/worstRating",
+            "@type": "@id"
         },
         "year": {
             "@id": "http://schema.dig.isi.edu/ontology/year"
         },
         "yearlyRevenue": {
-            "@id": "http://schema.org/yearlyRevenue"
+            "@id": "http://schema.org/yearlyRevenue",
+            "@type": "@id"
         },
         "yearsInOperation": {
-            "@id": "http://schema.org/yearsInOperation"
+            "@id": "http://schema.org/yearsInOperation",
+            "@type": "@id"
         }
     }
 }

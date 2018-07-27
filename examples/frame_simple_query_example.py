@@ -1,14 +1,17 @@
 from src.query_wrapper import QueryWrapper
 import json, os, time
 
-endpoint = "http://kg2018a.isi.edu:3030/test/sparql"
-# endpoint = "http://localhost:3030/ds/query"
+# endpoint = "http://kg2018a.isi.edu:3030/test/sparql"
+endpoint = "http://localhost:3030/ds/query"
+# endpoint = "http://kg2018a.isi.edu:3030/whole/sparql"
 graph = QueryWrapper(endpoint)
 
 with open('../resources/karma_context.json') as f:
     context = json.load(f)
 
 for filename in os.listdir('../resources/frames'):
+    # if filename != 'organization.json':
+    #     continue
     print('\n------ try %s -------' % filename)
     with open('../resources/frames/%s' % filename) as f:
         frame = json.load(f)
@@ -24,11 +27,13 @@ for filename in os.listdir('../resources/frames'):
     
     SELECT ?s
     WHERE {
-      ?s rdf:type dig:%s .
-    } LIMIT 2
-    """ % frame['@type']
+      ?s rdf:type %s:%s .
+    } limit 10
+    """ % ('dig' if 'dig' in context['@context'][frame['@type']]['@id'] else 'scm', frame['@type'])
     s = time.time()
-    res = graph.query(query, frame, context)
-    # print(time.time()-s)
+    res = graph.query(query, frame, context).get('@graph', {})
+    print(time.time()-s)
+    print(len(res))
 
-    print(json.dumps(res['@graph'], indent=2))
+
+    # print(json.dumps(res, indent=2))

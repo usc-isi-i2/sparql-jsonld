@@ -56,7 +56,7 @@ WHERE {
 ?person dbo:birthPlace :Berlin .
 ?person foaf:name ?name .
 
-FILTER ( LANG(?description) = 'en' ) .
+FILTER ( LANG(?description) = "en" ) .
 
 }
  ORDER BY ?name"""

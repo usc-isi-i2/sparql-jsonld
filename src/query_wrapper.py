@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSONLD, JSON, SPARQLExceptions
 from pyld import jsonld
-import json
+import json, time
 
 from .sparql_query import SPARQLQuery
 from .updater import Updater
@@ -37,19 +37,25 @@ class QueryWrapper(object):
             frame = self.remove_a(frame, context)
 
             # parse and update the query by the frame:
+            print('- parse query\ttime: %s' % time.time())
             q = SPARQLQuery(query)
             updater = Updater(context)
 
+            print('- update query\ttime: %s' % time.time())
             subjects = q.get_limit_subjects(graph=self.graph)
             q.update_query_by_frame(updater, frame, optional=optional, specified_subjects=subjects)
 
             # print(q.str_query)
+            # q.pprint_tree()
 
             # query with the updated query:
+            print('- send query\ttime: %s' % time.time())
             self.graph.setQuery(q.str_query)
             self.graph.setReturnFormat(JSONLD)
             try:
                 res = self.graph.query().convert().serialize(format='json-ld').decode('utf-8')
+
+                print('- frame result\ttime: %s' % time.time())
 
                 frame_with_context = {
                     '@context': updater.context,
@@ -57,7 +63,7 @@ class QueryWrapper(object):
                 }
 
                 if res == '[]':
-                    return {'@graph': 'Empty Result'}
+                    return {'@error': 'Empty Result'}
                 # print(res)
 
                 framed = jsonld.frame(json.loads(res),
@@ -65,28 +71,30 @@ class QueryWrapper(object):
                                       options={
                                           'embed': '@always'
                                       })
+
+                print('- all done . \ttime: %s' % time.time())
                 return framed
             except jsonld.JsonLdError as e:
-                return {'@graph': 'Framing Error: %s' % e}
+                return {'@error': 'Framing Error: %s' % e}
             except SPARQLExceptions.EndPointInternalError as e:
-                return {'@graph': 'Query Error: %s' % e}
+                return {'@error': 'Query Error: %s' % e}
             except SPARQLExceptions.EndPointNotFound as e:
-                return {'@graph': 'Query Error: %s' % e}
+                return {'@error': 'Query Error: %s' % e}
             except SPARQLExceptions.QueryBadFormed as e:
-                return {'@graph': 'Bad Query: %s' % e}
+                return {'@error': 'Bad Query: %s' % e}
             except KeyError as e:
-                return {'@graph': 'KeyError: %s' % e}
+                return {'@error': 'KeyError: %s' % e}
             except IndexError as e:
-                return {'@graph': 'IndexError: %s' % e}
+                return {'@error': 'IndexError: %s' % e}
             except Exception as e:
-                return {'@graph': 'Exception: %s' % e}
+                return {'@error': 'Exception: %s' % e}
 
         # no frame, just send the original query to the endpoint:
         else:
             self.graph.setQuery(query)
             self.graph.setReturnFormat(JSON)
             res = self.graph.query().convert()
-            return res
+            return {'@graph': res}
 
     def remove_a(self, frame, context):
         target = {}

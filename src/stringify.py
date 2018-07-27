@@ -1,4 +1,4 @@
-from rdflib.plugins.sparql.parserutils import prettify_parsetree, CompValue
+from rdflib.plugins.sparql.parserutils import CompValue
 from rdflib.term import URIRef, Literal, BNode, Variable
 from pyparsing import ParseResults
 
@@ -18,7 +18,7 @@ def ele2str(ele: object) -> str:
             val = int(ele)
             return str(val)
         except ValueError:
-            return '"%s"' % str(ele)
+            return '"%s"' % ele
     elif isinstance(ele, BNode):
         ret = str(ele.toPython())
         return ret if ret[0] == '_' else '[]'
@@ -34,7 +34,7 @@ def ele2str(ele: object) -> str:
             if len(ele) == 1 and 'expr' in ele:
                 return ele2str(ele['expr'])
             elif ele.name == 'ConditionalAndExpression':
-                return list2str(list(ele.values()), ele2str, joiner=' && ')
+                return list2str([ele['expr']] + ele.get('other', []), ele2str, joiner=' && ')
             elif ele.name == 'AdditiveExpression':
                 return '(%s)' % list2str(list(ele.values()), ele2str, joiner=' ')
             else:
@@ -54,7 +54,9 @@ def ele2str(ele: object) -> str:
             elif 'text' and 'pattern' in ele:
                 return '%s(%s, %s)' % (ele.name[8:], ele2str(ele['text']), ele2str(ele['pattern']))
         elif ele.name == 'literal':
-            return "'%s'" % (list2str(list(ele.values()), ele2str))
+            return '"%s"' % (list2str(list(ele.values()), ele2str)).strip("'").strip('"')
+        elif ele.name == 'Function' and 'iri' in ele and 'expr' in ele:
+            return '%s(%s)' % (ele2str(ele['iri']), ele2str(ele['expr']))
 
     elif isinstance(ele, list):
         return list2str(ele, ele2str)
@@ -153,6 +155,5 @@ def stringify(query_tree: ParseResults) -> str:
         return tree2str(query_tree)
 
 
-def pretty_print(query_tree: ParseResults):
-    print(prettify_parsetree(query_tree))
+
 

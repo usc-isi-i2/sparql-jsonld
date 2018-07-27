@@ -16,19 +16,27 @@
         }
     </style>
         <head>
-        <title>{{ author }}'s app</title>
+        <title>sparql-jsonld playground</title>
     </head>
 
 
     <body>
         <div id="left">
-            <form action="/example" method="post">
-                <select name="example">
+            <form action="/example/dbpedia" method="post">
+                dbpedia examples:
+                <select name="dbpedia">
                   <option value="1">Example 1</option>
                   <option value="2">Example 2</option>
                   <option value="3">Example 3</option>
                   <option value="4">Example 4</option>
                   <option value="5">Example 5</option>
+                </select>
+                <input type="submit" value="Apply Example">
+            </form>
+            <form action="/example/realdata" method="post">
+                real data examples:
+                <select name="realdata" id="realdata">
+                    {{option_elements|safe}}
                 </select>
                 <input type="submit" value="Apply Example">
             </form>

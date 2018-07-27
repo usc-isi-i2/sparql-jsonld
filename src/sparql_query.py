@@ -1,4 +1,5 @@
 from rdflib.plugins.sparql.parser import parseQuery
+from rdflib.plugins.sparql.parserutils import prettify_parsetree
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 from .updater import Updater
@@ -54,4 +55,7 @@ class SPARQLQuery(object):
                         ret.append(v['value'])
             return ret
         return []
+
+    def pprint_tree(self):
+        print(prettify_parsetree(self.parsed_query))
 

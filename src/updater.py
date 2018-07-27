@@ -87,7 +87,15 @@ class Updater(object):
                 o = self.to_node(v)
             else:
                 if (parent.toPython(), k) in self.exist_triples:
-                    o = Variable(self.exist_triples[(parent.n3(), k)])
+                    o_str = self.exist_triples[(parent.n3(), k)]
+                    if o_str[0] in ['$', '?']:
+                        o = Variable(o_str)
+                    elif o_str[0] in ['"', "'"]:
+                        o = Literal(o_str.strip('"').strip("'"))
+                    elif o_str[0] in ['<']:
+                        o = URIRef(o_str)
+                    else:
+                        o = Literal(o_str.strip('"').strip("'"))
                 else:
                     o = Variable('var%d' % self.current_naming)
                     self.current_naming += 1

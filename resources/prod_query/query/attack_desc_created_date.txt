@@ -1,0 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX scm: <http://schema.org/>
+PREFIX dig: <http://schema.dig.isi.edu/ontology/>
+PREFIX eff: <http://effect.isi.edu/data/>
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+PREFIX dcm: <http://dcm.com/>
+select ?p ?d
+where {
+  ?p a dig:AttackEvent .
+  ?p scm:publisher "asu-dark-mention-rules" .
+  ?p scm:dateCreated ?d
+} order by desc(?d) limit 10000
