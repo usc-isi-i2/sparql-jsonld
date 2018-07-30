@@ -19,15 +19,15 @@ with open('../resources/karma_context.json') as f:
     PROD_CONTEXT = f.read()
 with open('../examples/info.log') as f:
     loginfo = f.readlines()[-6:]
-    head = ['Query Name', '#Results', '#Buckets', 'Query Time(sec)', 'Framing Time(sec)']
-    results = ['<tr><th style="text-align: left">%s</th></tr>' % '</th><th>'.join(head)]
+    head = ['QueryName', '#Results', '#Buckets', 'QueryTime/s', 'FramingTime/s']
+    results = ['<tr><th>%s</th></tr>' % '</th><th>'.join(head)]
     for line in loginfo:
         cells = []
         start = 0
         for l in [35, 8, 8, 8, 8]:
             cells.append('<td>%s</td>' % line[start: start + l])
             start += l
-        results.append('<tr style="border: 1px solid #e0e0e0">%s</tr>' % ''.join(cells))
+        results.append('<tr>%s</tr>' % ''.join(cells))
     report = '\n'.join(results)
 PREFIX = {
     'default': """

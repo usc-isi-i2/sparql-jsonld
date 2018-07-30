@@ -15,11 +15,18 @@
             width: 95%;
         }
         h4 {
-            margin-bottom: 5px;
+            margin: 5px;
         }
         #send_query {
             border: 1px solid #2500ff;
             padding: 5px 20px;
+        }
+        .inlineblock {
+            display: inline-block;
+        }
+        table {
+            border: 1px solid #e0e0e0;
+            text-align: center;
         }
     </style>
         <head>
@@ -52,29 +59,30 @@
 
             <form>
 
-                <h4>Endpoint</h4>
-                <textarea name="endpoint" cols="50" rows="1">{{ endpoint }}</textarea>
+                <div style="width: 100%">
+                    <h4 class="inlineblock">Endpoint</h4>
+                    <textarea name="endpoint" cols="50" rows="1" class="inlineblock" style="width:60%;vertical-align: text-top;">{{ endpoint }}</textarea>
 
-                <input type="submit" value="Send Query" formaction="/query" formmethod="post" id="send_query">
-
-                <h4>Query</h4>
-                prefix:
-                <select name="prefix" id="prefix">
+                    <input class="inlineblock" type="submit" value="Send Query" formaction="/query" formmethod="post" id="send_query">
+                </div>
+                <h4 class="inlineblock">Query</h4>
+                <span class="inlineblock"> prefix:</span>
+                <select name="prefix" id="prefix" class="inlineblock">
                     {{option_prefix|safe}}
                 </select>
-                <input type="submit" value="Apply Prefix" formaction="/prefix" formmethod="post" >
+                <input class="inlineblock" type="submit" value="Apply Prefix" formaction="/prefix" formmethod="post" >
                 <textarea name="query" cols="50" rows="15">{{ query_str }}</textarea>
+
+                <h4 class="inlineblock">Frame</h4>
+                <span class="inlineblock"> full frames:</span>
+                <select class="inlineblock" name="full_frames" id="full_frames">
+                    {{option_full_frames|safe}}
+                </select>
+                <input class="inlineblock" type="submit" value="Apply Frame" formaction="/full_frames" formmethod="post">
+                <textarea name="frame" cols="50" rows="15">{{ frame }}</textarea>
 
                 <h4>Context</h4>
                 <textarea name="context" cols="50" rows="15">{{ context }}</textarea>
-
-                <h4>Frame</h4>
-                full frames:
-                <select name="full_frames" id="full_frames">
-                    {{option_full_frames|safe}}
-                </select>
-                <input type="submit" value="Apply Frame" formaction="/full_frames" formmethod="post">
-                <textarea name="frame" cols="50" rows="15">{{ frame }}</textarea>
 
             </form>
         </div>
