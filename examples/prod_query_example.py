@@ -13,9 +13,9 @@ with open('../resources/karma_context.json') as f:
 frame_files = set(os.listdir('../resources/prod_query/frame'))
 
 for filename in os.listdir('../resources/prod_query/query'):
-    print('\n------ try %s -------' % filename)
-    # if filename != 'attack_desc_created_date.txt':
+    # if filename != 'three_entity_date_aggs.txt':
     #     continue
+    print('\n------ try %s -------' % filename)
     if filename.replace('.txt', '.json') in frame_files:
         with open('../resources/prod_query/frame/%s' % filename.replace('.txt', '.json')) as frame_f:
             frame = json.load(frame_f)
@@ -25,16 +25,11 @@ for filename in os.listdir('../resources/prod_query/query'):
     with open('../resources/prod_query/query/%s' % filename) as query_f:
         query = query_f.read()
 
-    start = time.time()
     res = graph.query(query, frame, context)
 
-    time_query = res.get('time_query', -1)
-    time_frame = res.get('time_frame', -1)
-    res = res.get('@graph', {})
+    lr, lb, tq, tf = res.get('@info', {1: -1, 2: -1, 3: -1, 4:-1}).values()
+    print(lr, lb, tq, tf)
+    log_querytime(filename[:-4], lr, lb, tq, tf, endpoint, full_query=query)
 
-    print('time query: %f, time frame: %f' % (time_query, time_frame))
-    print(len(res))
-
-    log_querytime(filename[:-4], int(time_query), endpoint, full_query=query)
-
-    # print(json.dumps(res, indent=2))
+    with open('./outputs/%s' % filename, 'w') as f:
+        json.dump(res.get('@graph', {}), f, indent=2)

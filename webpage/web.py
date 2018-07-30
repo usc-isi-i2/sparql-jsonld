@@ -5,8 +5,7 @@ import json, os
 app = Flask(__name__, template_folder='./')
 
 
-def generate_options(dir_path):
-    filelist = os.listdir(dir_path)
+def generate_options(filelist):
     options = ['<option value="%s">%s</option>' % (fname.split('.')[0], fname.split('.')[0]) for fname in filelist]
     return '\n'.join(options)
 
@@ -18,7 +17,20 @@ with open('../resources/dbpedia_example/context.json') as f:
     DBPEDIA_CONTEXT = f.read()
 with open('../resources/karma_context.json') as f:
     PROD_CONTEXT = f.read()
-PREFIX = """
+with open('../examples/info.log') as f:
+    loginfo = f.readlines()[-6:]
+    head = ['Query Name', '#Results', '#Buckets', 'Query Time(sec)', 'Framing Time(sec)']
+    results = ['<tr><th style="text-align: left">%s</th></tr>' % '</th><th>'.join(head)]
+    for line in loginfo:
+        cells = []
+        start = 0
+        for l in [35, 8, 8, 8, 8]:
+            cells.append('<td>%s</td>' % line[start: start + l])
+            start += l
+        results.append('<tr style="border: 1px solid #e0e0e0">%s</tr>' % ''.join(cells))
+    report = '\n'.join(results)
+PREFIX = {
+    'default': """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -26,7 +38,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX scm: <http://schema.org/>
 PREFIX dig: <http://schema.dig.isi.edu/ontology/>
 PREFIX eff: <http://effect.isi.edu/data/>
-"""
+"""}
 
 query_result = '/ * Framed query results * /'
 query_str = ''
@@ -34,8 +46,9 @@ frame = ''
 context = ''
 endpoint = ''
 
-option_real_queries = generate_options('../resources/prod_query/query')
-option_full_frames = generate_options('../resources/frames')
+option_real_queries = generate_options(os.listdir('../resources/prod_query/query'))
+option_full_frames = generate_options(os.listdir('../resources/frames'))
+option_prefix = generate_options(list(PREFIX.keys()))
 
 frame_files = set(os.listdir('../resources/prod_query/frame'))
 
@@ -51,7 +64,9 @@ def hello_world():
                            frame=frame,
                            context=context,
                            option_real_queries=option_real_queries,
-                           option_full_frames=option_full_frames
+                           option_full_frames=option_full_frames,
+                           option_prefix=option_prefix,
+                           report=report
                            )
 
 
@@ -125,11 +140,10 @@ def full_frames():
 
 @app.route('/prefix', methods=['POST'])
 def prefix():
-    print('-----')
     global query_str, context, endpoint
+    filename = request.form['prefix']
 
-    query_str = '%s SELECT ?s WHERE { ?s ?p ?o } \nLIMIT 10' % PREFIX
-    print(query_str)
+    query_str = '%s SELECT ?s WHERE { ?s ?p ?o } \nLIMIT 10' % PREFIX[filename]
     context = PROD_CONTEXT
     endpoint = PROD_ENDPOINT
 

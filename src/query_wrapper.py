@@ -60,7 +60,7 @@ class QueryWrapper(object):
                 }
 
                 if res == '[]':
-                    return {'@error': 'Empty Result'}
+                    return {'@graph': [], '@info': self.wrap_info(0, -1, time_query, -1)}
                 # print(res)
 
                 start_frame = time.time()
@@ -71,8 +71,7 @@ class QueryWrapper(object):
                                       })
 
                 time_frame = time.time() - start_frame
-                framed['time_query'] = time_query
-                framed['time_frame'] = time_frame
+                framed['@info'] = self.wrap_info(len(framed.get('@graph', {})), -1, time_query, time_frame)
                 return framed
             except jsonld.JsonLdError as e:
                 return {'@error': 'Framing Error: %s' % e}
@@ -96,7 +95,8 @@ class QueryWrapper(object):
             self.graph.setReturnFormat(JSON)
             res = self.graph.query().convert()
             time_query = time.time() - start_query
-            return {'@graph': res, 'time_query': time_query}
+            len_buckets = len(res.get('results', {}).get('bindings', {}))
+            return {'@graph': res, '@info': self.wrap_info(-1, len_buckets, time_query, -1)}
 
     def remove_a(self, frame, context):
         target = {}
@@ -114,5 +114,14 @@ class QueryWrapper(object):
                 else:
                     target[k] = v
         return target
+
+    @staticmethod
+    def wrap_info(len_results, len_buckets, time_query, time_frame):
+        return {
+            'len_results': len_results,
+            'len_buckets': len_buckets,
+            'time_query': time_query,
+            'time_frame': time_frame
+        }
 
 

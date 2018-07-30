@@ -14,6 +14,13 @@
         textarea {
             width: 95%;
         }
+        h4 {
+            margin-bottom: 5px;
+        }
+        #send_query {
+            border: 1px solid #2500ff;
+            padding: 5px 20px;
+        }
     </style>
         <head>
         <title>sparql-jsonld playground</title>
@@ -40,31 +47,35 @@
                 </select>
                 <input type="submit" value="Apply Example">
             </form>
-            <form action="/query" method="post">
+
+            <table>{{report|safe}}</table>
+
+            <form>
 
                 <h4>Endpoint</h4>
                 <textarea name="endpoint" cols="50" rows="1">{{ endpoint }}</textarea>
 
+                <input type="submit" value="Send Query" formaction="/query" formmethod="post" id="send_query">
+
                 <h4>Query</h4>
-                <form action="/prefix" method="post">
-                    <input type="submit" value="Apply Prefix">
-                </form>
+                prefix:
+                <select name="prefix" id="prefix">
+                    {{option_prefix|safe}}
+                </select>
+                <input type="submit" value="Apply Prefix" formaction="/prefix" formmethod="post" >
                 <textarea name="query" cols="50" rows="15">{{ query_str }}</textarea>
 
                 <h4>Context</h4>
                 <textarea name="context" cols="50" rows="15">{{ context }}</textarea>
 
                 <h4>Frame</h4>
-                <form action="/full_frames" method="post">
-                    real data examples:
-                    <select name="full_frames" id="full_frames">
-                        {{option_full_frames|safe}}
-                    </select>
-                    <input type="submit" value="Apply Frame">
-                </form>
+                full frames:
+                <select name="full_frames" id="full_frames">
+                    {{option_full_frames|safe}}
+                </select>
+                <input type="submit" value="Apply Frame" formaction="/full_frames" formmethod="post">
                 <textarea name="frame" cols="50" rows="15">{{ frame }}</textarea>
 
-                <input type="submit" value="Send Query">
             </form>
         </div>
 

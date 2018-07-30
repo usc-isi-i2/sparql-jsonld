@@ -3,3 +3,4 @@ src/__pycache__/
 src/unit_tests/.pytest_cache/v/cache
 src/unit_tests/__pycache__
 webpage/__pycache__
+log/__pycache__
