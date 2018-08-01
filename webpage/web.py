@@ -9,10 +9,10 @@ def generate_options(filelist):
     options = ['<option value="%s">%s</option>' % (fname.split('.')[0], fname.split('.')[0]) for fname in filelist]
     return '\n'.join(options)
 
-# PROD_ENDPOINT = "http://kg2018a.isi.edu:3030/test/sparql"
 # PROD_ENDPOINT = "http://localhost:3030/ds/query"
-PROD_ENDPOINT = "http://kg2018a.isi.edu:3030/fixed/sparql"
+PROD_ENDPOINT = "http://gaiadev01.isi.edu:3030/effect/sparql"
 DBPEDIA_ENDPOINT = 'http://dbpedia.org/sparql'
+
 with open('../resources/dbpedia_example/context.json') as f:
     DBPEDIA_CONTEXT = f.read()
 with open('../resources/karma_context.json') as f:

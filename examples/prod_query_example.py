@@ -4,7 +4,7 @@ import json, os, time
 
 # endpoint = "http://kg2018a.isi.edu:3030/test/sparql"
 # endpoint = "http://localhost:3030/ds/query"
-endpoint = "http://kg2018a.isi.edu:3030/fixed/sparql"
+endpoint = "http://gaiadev01.isi.edu:3030/effect/sparql"
 graph = QueryWrapper(endpoint)
 
 with open('../resources/karma_context.json') as f:
