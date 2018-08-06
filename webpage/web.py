@@ -1,6 +1,7 @@
+import json, os, sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from flask import Flask, render_template, request, redirect
 from src.query_wrapper import QueryWrapper
-import json, os
 
 app = Flask(__name__, template_folder='./')
 
@@ -91,7 +92,7 @@ def query():
 
 @app.route('/example/dbpedia', methods=['POST'])
 def example_dbpedia():
-    global query_str, frame, context, endpoint
+    global query_str, frame, context, endpoint, query_result
     no = request.form['dbpedia']
 
     with open('../resources/dbpedia_example/query%s.txt' % no) as f:
@@ -100,13 +101,14 @@ def example_dbpedia():
         frame = f.read()
     context = DBPEDIA_CONTEXT
     endpoint = DBPEDIA_ENDPOINT
+    query_result = ''
 
     return redirect('/')
 
 
 @app.route('/example/realdata', methods=['POST'])
 def example_realdata():
-    global query_str, frame, context, endpoint, frame_files
+    global query_str, frame, context, endpoint, frame_files, query_result
 
     filename = request.form['realdata']
     with open('../resources/prod_query/query/%s.txt' % filename) as f:
@@ -119,13 +121,14 @@ def example_realdata():
 
     context = PROD_CONTEXT
     endpoint = PROD_ENDPOINT
+    query_result = ''
 
     return redirect('/')
 
 
 @app.route('/full_frames', methods=['POST'])
 def full_frames():
-    global frame, context, endpoint
+    global frame, context, endpoint, query_result
 
     filename = request.form['full_frames']
 
@@ -134,18 +137,20 @@ def full_frames():
 
     context = PROD_CONTEXT
     endpoint = PROD_ENDPOINT
+    query_result = ''
 
     return redirect('/')
 
 
 @app.route('/prefix', methods=['POST'])
 def prefix():
-    global query_str, context, endpoint
+    global query_str, context, endpoint, query_result
     filename = request.form['prefix']
 
     query_str = '%s SELECT ?s WHERE { ?s ?p ?o } \nLIMIT 10' % PREFIX[filename]
     context = PROD_CONTEXT
     endpoint = PROD_ENDPOINT
+    query_result = ''
 
     return redirect('/')
 

@@ -1,5 +1,7 @@
+import json, os, time, sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from src.query_wrapper import QueryWrapper
-import json, os, time
+
 
 # endpoint = "http://kg2018a.isi.edu:3030/test/sparql"
 endpoint = "http://localhost:3030/ds/query"

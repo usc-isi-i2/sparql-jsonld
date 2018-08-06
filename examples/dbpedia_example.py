@@ -1,5 +1,6 @@
+import json, sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from src.query_wrapper import QueryWrapper
-import json
 
 endpoint = "http://dbpedia.org/sparql"
 with open('../resources/dbpedia_example/context.json') as f:
