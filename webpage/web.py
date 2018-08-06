@@ -20,14 +20,18 @@ with open('../resources/karma_context.json') as f:
     PROD_CONTEXT = f.read()
 with open('../examples/info.log') as f:
     loginfo = f.readlines()[-6:]
-    head = ['QueryName', '#Results', '#Buckets', 'QueryTime/s', 'FramingTime/s']
+    head = ['QueryName', '#Results', '#Buckets', 'QueryTime/s', 'FramingTime/s', 'TotalTime/s']
     results = ['<tr><th>%s</th></tr>' % '</th><th>'.join(head)]
     for line in loginfo:
         cells = []
         start = 0
+        total = 0
         for l in [35, 8, 8, 8, 8]:
+            if (start == 51 or start == 59) and int(line[start: start + l].strip()) != -1:
+                total += int(line[start: start + l].strip())
             cells.append('<td>%s</td>' % line[start: start + l])
             start += l
+        cells.append('<td>%d</td>' % total)
         results.append('<tr>%s</tr>' % ''.join(cells))
     report = '\n'.join(results)
 PREFIX = {
