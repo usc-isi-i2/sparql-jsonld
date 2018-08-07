@@ -25,13 +25,9 @@ with open('../examples/info.log') as f:
     for line in loginfo:
         cells = []
         start = 0
-        total = 0
-        for l in [35, 8, 8, 8, 8]:
-            if (start == 51 or start == 59) and int(line[start: start + l].strip()) != -1:
-                total += int(line[start: start + l].strip())
+        for l in [35, 8, 8, 8, 8, 8]:
             cells.append('<td>%s</td>' % line[start: start + l])
             start += l
-        cells.append('<td>%d</td>' % total)
         results.append('<tr>%s</tr>' % ''.join(cells))
     report = '\n'.join(results)
 PREFIX = {
