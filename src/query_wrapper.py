@@ -20,13 +20,14 @@ class QueryWrapper(object):
 
         self.graph = SPARQLWrapper(database)
 
-    def query(self, query: str, frame: dict=None, context: dict=None, optional: bool=True) -> dict:
+    def query(self, query: str, frame: dict=None, context: dict=None, optional: bool=True, paging=0) -> dict:
         """
         Take in a SPARQL query and return the final nested results as a list of json objects
         :param query: a SPARQL query string
         :param frame: a json frame
         :param context: context for the frame in json
         :param optional: if the extra fields in the frame is optional, default to be true(optional)
+        :param paging: limit per query, default 0 means no limit
         :return: a dict holding nested json-ld results
         """
 
@@ -37,21 +38,25 @@ class QueryWrapper(object):
             frame = self.remove_a(frame, context)
 
             # parse and update the query by the frame:
-            q = SPARQLQuery(query)
+            ori_q = SPARQLQuery(query)
             updater = Updater(context)
 
-            subjects = q.get_limit_subjects(graph=self.graph)
-            q.update_query_by_frame(updater, frame, optional=optional, specified_subjects=subjects)
+            subjects = ori_q.get_limit_subjects(graph=self.graph)
 
-            # print(q.str_query)
-            # q.pprint_tree()
-
-            # query with the updated query:
-            self.graph.setQuery(q.str_query)
-            self.graph.setReturnFormat(JSONLD)
             try:
+
                 start_query = time.time()
-                res = self.graph.query().convert().serialize(format='json-ld').decode('utf-8')
+                if paging:
+                    res = []
+                    ss = [subjects[i:i + paging] for i in range(0, len(subjects), paging)]
+                    for s in ss:
+                        q = SPARQLQuery(query)
+                        q.update_query_by_frame(updater, frame, optional=optional, specified_subjects=s)
+                        res += json.loads(self.query_single_construct(q))
+                else:
+                    ori_q.update_query_by_frame(updater, frame, optional=optional, specified_subjects=subjects)
+                    res = json.loads(self.query_single_construct(ori_q))
+
                 time_query = time.time() - start_query
 
                 frame_with_context = {
@@ -64,7 +69,7 @@ class QueryWrapper(object):
                 # print(res)
 
                 start_frame = time.time()
-                framed = jsonld.frame(json.loads(res),
+                framed = jsonld.frame(res,
                                       frame_with_context,
                                       options={
                                           'embed': '@always'
@@ -97,6 +102,16 @@ class QueryWrapper(object):
             time_query = time.time() - start_query
             len_buckets = len(res.get('results', {}).get('bindings', {}))
             return {'@graph': res, '@info': self.wrap_info(-1, len_buckets, time_query, -1)}
+
+    def query_single_construct(self, q):
+        # print(q.str_query)
+        # q.pprint_tree()
+
+        # query with the updated query:
+        self.graph.setQuery(q.str_query)
+        self.graph.setReturnFormat(JSONLD)
+
+        return self.graph.query().convert().serialize(format='json-ld').decode('utf-8')
 
     def remove_a(self, frame, context):
         target = {}

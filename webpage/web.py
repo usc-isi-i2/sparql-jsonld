@@ -19,7 +19,7 @@ with open('../resources/dbpedia_example/context.json') as f:
 with open('../resources/karma_context.json') as f:
     PROD_CONTEXT = f.read()
 with open('../examples/info.log') as f:
-    loginfo = f.readlines()[-6:]
+    loginfo = f.readlines()[-len(os.listdir('../resources/prod_query/query')):]
     head = ['QueryName', '#Results', '#Buckets', 'QueryTime/s', 'FramingTime/s', 'TotalTime/s']
     results = ['<tr><th>%s</th></tr>' % '</th><th>'.join(head)]
     for line in loginfo:
@@ -77,15 +77,15 @@ def hello_world():
 
 @app.route('/query', methods=['POST'])
 def query():
+    global query_str, frame, context, endpoint, query_result
     try:
-        global query_result
         ep = request.form['endpoint']
-        q = request.form['query']
-        f = json.loads(request.form['frame'])
-        c = json.loads(request.form['context'])
+        query_str = request.form['query']
+        frame = request.form['frame']
+        context = request.form['context']
 
         graph = QueryWrapper(ep)
-        res = graph.query(q, f, c)
+        res = graph.query(query_str, json.loads(frame), json.loads(context))
         query_result = json.dumps(res.get('@graph', {}), indent=2)
 
         return redirect('/')

@@ -7,6 +7,7 @@ prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
 prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
 prefix scm:   <http://schema.org/>
 prefix dcm:   <http://dcm.com/>
+PREFIX text: <http://jena.apache.org/text#>
 
 select ?dailyCounts ?ft (count(?x) as ?Tags_dailyCounts)
 where{
@@ -17,4 +18,6 @@ where{
   FILTER ( ?dr >= xsd:dateTime("2000-06-27T02:36:31")
     && ?dr <= xsd:dateTime("2020-06-27T02:36:31") )
   bind(xsd:date(?dp) as ?dailyCounts)
-} group by ?dailyCounts ?ft limit 10000
+} group by ?dailyCounts ?ft
+having (count(?x) > 3)
+limit 10000

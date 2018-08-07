@@ -1,0 +1,11 @@
+{
+  "head": {
+    "vars": [
+      "term_over_time",
+      "dateAttr"
+    ]
+  },
+  "results": {
+    "bindings": []
+  }
+}

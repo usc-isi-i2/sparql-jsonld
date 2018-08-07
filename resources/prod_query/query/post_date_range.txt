@@ -6,6 +6,8 @@ PREFIX scm: <http://schema.org/>
 PREFIX dig: <http://schema.dig.isi.edu/ontology/>
 PREFIX eff: <http://effect.isi.edu/data/>
 PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+PREFIX text: <http://jena.apache.org/text#>
+
 select ?p ?dr ?dp ?x
 where {
   ?p a dig:Post .

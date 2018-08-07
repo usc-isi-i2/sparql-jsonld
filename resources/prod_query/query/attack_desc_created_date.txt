@@ -6,6 +6,8 @@ PREFIX scm: <http://schema.org/>
 PREFIX dig: <http://schema.dig.isi.edu/ontology/>
 PREFIX eff: <http://effect.isi.edu/data/>
 PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+PREFIX text: <http://jena.apache.org/text#>
+
 PREFIX dcm: <http://dcm.com/>
 select ?p ?d
 where {
